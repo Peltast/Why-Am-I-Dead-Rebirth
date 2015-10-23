@@ -1,0 +1,193 @@
+
+
+dialogue start
+Orval-Cricket
+
+action:response:root
+Orval
+root-A:"What's up man?"
+root-B:"Hey...you wanna see somethin'?"
+action end
+
+action:statement:root-A
+Cricket:"Nothing.  Please leave me alone."
+next:root-null
+action end
+
+action:statement:root-B
+Cricket:"No.  Go away."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+Orval-Lucille
+
+action:response:root
+Orval
+root-A:"What's up miss?"
+root-B:"Hey, you wanna see somethin'?"
+action end
+
+action:statement:root-A
+Lucille:"..."
+next:root-null
+action end
+
+action:statement:root-B
+Lucille:"I don't have time for you."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+Orval-Morgan
+
+action:response:root
+Orval
+root-A:"Hey there, miss."
+root-B:"So uh, how're things goin?"
+root-C:"You wanna see somethin'?"
+action end
+
+action:statement:root-A
+null:She glares at you with utter contempt.
+next:root-null
+action end
+
+action:statement:root-B
+null:She glares at you with utter contempt.
+next:root-null
+action end
+
+action:statement:root-C
+null:She glares at you with utter contempt.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Orval-Randy
+
+action:statement:root
+Randy:"Stay far away from me, you weirdo."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+Orval-Rose
+
+action:statement:root
+Rose:"I have nothing to say to you."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+Orval-Pooper
+
+action:response:root
+Orval
+root-A:"Hey man, what's up?"
+root-B:"Hey man, you wanna see somethin'?"
+action end
+
+action:statement:root-A
+Pooper:"...Nothing?"
+Pooper:"You are quite strange."
+Pooper:"I can tell you are a man of little consequence."
+next:root-null
+action end
+
+action:statement:root-B
+Pooper:"Uh.  I couldn't if I wanted to.  There's a door in the way."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+Orval-Ted
+
+action:response:root
+Orval
+root-A:"What's goin' on buddy?"
+root-B:"Hey, you wanna see somethin'?"
+action end
+
+action:statement:root-A
+Ted:"Nothing...buddy."
+Ted:"If I need your help with anything I'll let you know.  Okay?"
+next:root-null
+action end
+
+action:statement:root-B
+Ted:"I definitely do not."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+Orval-Iblis
+
+action:response:root
+Orval
+root-A:"Hi there little girl!  How's it going?"
+root-null:"Uhh, never mind..."
+action end
+
+action:statement:root-A
+Iblis:"Mommy said if you came up to me I should scream."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Orval
+root-A-2:"Huh?  Why would she say that?"
+action end
+
+action:statement:root-A-2
+Iblis:"EEEEEEEEEEEEEEE--"
+next:root-null
+action end
+
+dialogue end

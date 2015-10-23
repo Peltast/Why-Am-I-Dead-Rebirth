@@ -1,0 +1,142 @@
+
+trigger start
+othersAlibi,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Lucille<hyphen>Cricket-root2
+trigger end
+
+
+trigger start
+notAboutCricket,1
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+aboutCricket,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-notAboutCricket-asleep
+trigger end
+
+
+trigger start
+lucilleEnding,0
+requirements
+	trigger.triggerIsStatus-lucillePartner-on
+	trigger.triggerIsStatus-lucilleMeeting-on
+	gui.outOfDialogue
+effects
+	gui.startDialogue-LucilleRealization-root
+	trigger.triggerStatus-lucillePartner-asleep
+	trigger.triggerStatus-lucilleMeeting-asleep
+	trigger.triggerStatus-lucilleCricketOwner-on
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+lucilleCricketOwner,0
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+lucilleEnding2,0
+requirements
+	trigger.triggerIsStatus-lucilleSuspicion-on
+	trigger.triggerIsStatus-lucilleCricketOwner-on
+	gui.outOfDialogue
+effects
+	gui.startDialogue-LucilleRealization2-root
+	trigger.triggerStatus-lucilleSuspicion-asleep
+	trigger.triggerStatus-lucilleCricketOwner-asleep
+	dialogue.changeDialogueRoot-LucilleLucillesDrawer-root2
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+lucilleFinalePrep,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-lucilleFinale-awake
+	trigger.triggerStatus-lucilleFinale-on
+	self.setStatus-asleep
+trigger end
+
+trigger start
+lucilleFinale,-1
+requirements
+	.null
+effects
+trigger end
+
+
+trigger start
+lucilleFBI,-1
+requirements
+	character.isOnTile-Cricket-Owner's Room-5,12
+	trigger.triggerIsStatus-lucilleFinale-on
+effects
+	character.animate-Cricket-Evil
+	trigger.triggerStatus-lucilleFBI2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+lucilleFBI2,-1
+requirements
+	gui.outOfDialogue
+	self.timer-15
+effects
+	character.animate-Lucille-FBI
+	gui.startDialogue-Finale-root2
+	trigger.triggerStatus-lucilleFBI3-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+lucilleFBI3,-1
+requirements
+	self.timer-10
+effects
+	character.animate-Cricket-Defeated
+	sound.playSound-Remington-1
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+lucilleEnding3,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-lucilleEnding4-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+lucilleEnding4,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	cinematic.endGame-1
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+

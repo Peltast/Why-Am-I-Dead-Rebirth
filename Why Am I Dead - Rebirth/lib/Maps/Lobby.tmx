@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Mainsheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Mainsheet.png" width="224" height="192"/>
+ </tileset>
+ <tileset firstgid="50" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../PropGrid.png" width="192" height="416"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="22" height="15">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="39"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="38"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="9"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="13"/>
+   <tile gid="3"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="16"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="20"/>
+   <tile gid="10"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="17"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="38"/>
+   <tile gid="22"/>
+   <tile gid="39"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="13"/>
+   <tile gid="4"/>
+   <tile gid="9"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="20"/>
+   <tile gid="11"/>
+   <tile gid="16"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="18"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="22" height="15">
+  <object name="Booth1" gid="107" x="416" y="224">
+   <properties>
+    <property name="Bounds" value="0,20,32,12"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothTop"/>
+   </properties>
+  </object>
+  <object name="Booth2" gid="119" x="416" y="256">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothCorner"/>
+   </properties>
+  </object>
+  <object gid="125" x="416" y="288"/>
+  <object name="Booth3" gid="120" x="448" y="256">
+   <properties>
+    <property name="Bounds" value="0,30,32,34"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothFront"/>
+   </properties>
+  </object>
+  <object gid="126" x="448" y="288"/>
+  <object name="Booth6" gid="121" x="544" y="256">
+   <properties>
+    <property name="Bounds" value="0,30,32,34"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothEnd"/>
+   </properties>
+  </object>
+  <object gid="127" x="544" y="288"/>
+  <object gid="50" x="512" y="128"/>
+  <object gid="56" x="512" y="160"/>
+  <object gid="50" x="128" y="128"/>
+  <object gid="56" x="128" y="160"/>
+  <object gid="126" x="480" y="288"/>
+  <object name="Booth4" gid="120" x="480" y="256">
+   <properties>
+    <property name="Bounds" value="0,30,32,34"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothFront"/>
+   </properties>
+  </object>
+  <object gid="126" x="512" y="288"/>
+  <object name="Booth5" gid="120" x="512" y="256">
+   <properties>
+    <property name="Bounds" value="0,30,32,34"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BoothFront"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AI" width="22" height="15">
+  <object name="OrvalPath" gid="22" x="352" y="352">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="3"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="OrvalPath" gid="22" x="288" y="320">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="4"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="OrvalPath" gid="22" x="352" y="288">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="5"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="OrvalPath" gid="22" x="288" y="288">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="8"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="OrvalPath" gid="22" x="352" y="320">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="7"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+  <object name="OrvalPath" gid="22" x="288" y="352">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="30"/>
+    <property name="Index" value="6"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

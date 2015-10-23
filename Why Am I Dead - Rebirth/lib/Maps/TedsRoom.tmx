@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Mainsheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Mainsheet.png" width="224" height="192"/>
+ </tileset>
+ <tileset firstgid="43" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../PropGrid.png" width="192" height="416"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="14" height="10">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="14" height="10">
+  <object name="TedsBed" gid="57" x="256" y="142">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Bed"/>
+    <property name="SuccessDialogue" value="Bed"/>
+   </properties>
+  </object>
+  <object gid="58" x="288" y="142"/>
+  <object gid="63" x="256" y="174"/>
+  <object gid="64" x="288" y="174"/>
+  <object name="TedsDrawer" gid="55" x="102" y="114">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Drawer"/>
+    <property name="SuccessDialogue" value="TedsDrawer"/>
+   </properties>
+  </object>
+  <object gid="56" x="134" y="114"/>
+  <object gid="61" x="102" y="146"/>
+  <object gid="62" x="134" y="146"/>
+  <object name="TedsFlowers" gid="45" x="70" y="156">
+   <properties>
+    <property name="Bounds" value="0,50,32,14"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="TableFlowers"/>
+   </properties>
+  </object>
+  <object gid="51" x="70" y="188"/>
+  <object name="TedsMirror1" gid="47" x="165" y="70">
+   <properties>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Mirror"/>
+    <property name="SuccessDialogue" value="Mirror"/>
+   </properties>
+  </object>
+  <object gid="53" x="165" y="102"/>
+  <object name="TedsMirror2" gid="47" x="214" y="71">
+   <properties>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Mirror"/>
+    <property name="SuccessDialogue" value="Mirror"/>
+   </properties>
+  </object>
+  <object gid="53" x="214" y="103"/>
+  <object name="TedsMirror3" gid="47" x="265" y="71">
+   <properties>
+    <property name="Sprite" value="Mirror"/>
+   </properties>
+  </object>
+  <object gid="53" x="265" y="103"/>
+ </objectgroup>
+</map>

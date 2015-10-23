@@ -1,0 +1,492 @@
+
+
+dialogue start
+Ted-Cricket
+
+action:response:root
+Ted
+root-A:"Hey, how's it going?"
+root-B:"You look stressed.  Everything okay?"
+root-trigger.tedConfession:"Looks like your alibi checks out."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Cricket:"Things could be better."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Ted
+root-null:"Sorry to hear that."
+action end
+
+action:statement:root-B
+Cricket:"I don't know how you can be so calm."
+Cricket:"A man was killed last night.  And nobody here seems to care."
+Cricket:"And we're stranded from the police by a storm."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Ted
+root-B-2:"I'm not calm.  I'm just trying not to freak other people out."
+root-B-3:"There are some cynical types here, for sure."
+action end
+
+action:statement:root-B-2
+Cricket:"Well, at least I'm not the only one."
+next:root-null
+action end
+
+action:statement:root-B-3
+Cricket:"You can say that again."
+next:root-null
+action end
+
+action:statement:root-trigger.cricketsAlibi
+Cricket:"Good.  Now that I'm spoken for, can you tell me what you know?"
+next:root-C
+action end
+
+action:response:root-C
+Ted
+root-C-1:"Sure.  Ask me whatever you need to know."
+action end
+
+action:statement:root-C-1
+Cricket:"Alright."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Lucille
+
+action:response:root
+Ted
+root-A:"How's it going?"
+root-B:"You seem uneasy."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Lucille:"Oh, umm...I'm okay..."
+next:root
+action end
+
+action:statement:root-B
+Lucille:"I...I do?"
+next:root-B-1
+action end
+
+action:response:root-B-1
+Ted
+root-B-2:"You do.  Are you shy?"
+action end
+
+action:statement:root-B-2
+Lucille:"..."
+Lucille:"...I..."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Ted
+root-B-4:"Hey, after this storm clears up, you wanna get dinner some time?"
+root-null:"Yeah, I guess so."
+action end
+
+action:statement:root-B-4
+Lucille:"...I...."
+Lucille:"...Sure."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Morgan
+
+action:response:root
+Ted
+root-A:"How's everything going?"
+root-B:"I'm Ted.  Nice to meet you!"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Morgan:"It's alright."
+Morgan:"My daughter Iblis is a bit shaken up, but we'll be fine."
+next:root
+action end
+
+action:statement:root-B
+Morgan:"Hello, darling.  What can I do for you?"
+next:root-B-1
+action end
+
+action:response:root-B-1
+Ted
+root-null:"Nothing, just stopping by."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Orval
+
+action:response:root
+Ted
+root-A:"Hey, how's it going?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Orval:"Good, good.  Things are good."
+next:root
+action end
+
+action:response:root-A-1
+Ted
+root-A-2:"Not freaked out?  The owner, and all.  Y'know."
+root-null:"Glad to hear it."
+action end
+
+action:statement:root-A-2
+Orval:"Oh, yeah.  That was bad.  But, no, man, I'm okay."
+Orval:"People in my occupation gotta deal with the bad."
+next:root
+action end
+
+action:statement:root-B
+Orval:"Me?  No, ah, no.  Nope."
+next:root-B-1
+action end
+
+action:response:root-B-1
+statement
+Ted
+root-B-2:"You sure?  You seem distracted."
+root-null:"If you say so."
+action end
+
+action:statement:root-B-2
+Orval:"Yeah man, sure, sure!  I'm just, you know, chillin'."
+Orval:"Hangin' out."
+Orval:"Bein' natural."
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+			
+
+
+dialogue start
+Ted-Randy
+
+action:response:root
+Ted
+root-A:"Hey bud, how's it going?"
+root-B:"You look stressed.  What's up?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Randy:"I'm not your bud.  Who are you?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Ted
+root-A-2:"My name's Ted, I'm staying at the hotel."
+action end
+
+action:statement:root-A-2
+Randy:"Hi, Ted.  Nice to meet you."
+Randy:"Now go away."
+next:root-null
+action end
+
+action:statement:root-B
+Randy:"I'm sober, that's what's up."
+Randy:"If you wanna help out, bring me a bottle of vodka."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Ted
+root-B-2:"It sounds like there's something else, too."
+root-B-3:"That's not a healthy habit."
+action end
+
+action:statement:root-B-2
+Randy:"Jesus christ, everybody thinks they're a fuckin' detective around here."
+Randy:"You really want to know?"
+next:root-C
+action end
+
+action:statement:root-B-3
+Randy:"Go fuck yourself."
+next:root-null
+action end
+
+action:response:root-C
+Ted
+root-C-1:"Yes, I do!"
+root-null:"Haha, not really."
+action end
+
+action:statement:root-C-1
+Randy:"Well, I haven't seen my daughter in two years."
+Randy:"That's a good place to start."
+Randy:"And I'm also unemployed now.  So there's that too."
+Randy:"And lastly, I'm sober."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Rose
+
+action:response:root
+Ted
+root-A:"Hello ma'am!  How's it going?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Rose:"It'd be going better if people stopped pestering me."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Ted
+root-A-2:"Is something wrong?"
+root-null:"I'll be going then."
+action end
+
+action:statement:root-A-2
+Rose:"Yes.  There's a smug young man bothering me."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Pooper
+
+action:response:root
+statement
+Ted
+root-A:"Hey, someone in there?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Pooper:"Yeah, sorry.  It's gonna be a while."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Ted
+root-A-2:"How long, exactly?"
+root-null:"Okay.  Well...good luck?"
+action end
+
+action:statement:root-A-2
+Pooper:"REALLY long."
+next:root-null
+action end
+
+
+action:response:root2
+Ted
+root2-A:"Hey, someone in there?"
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Pooper:"Yeah, sorry.  It's gonna be a while."
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Ted
+root2-A-2:"No worries.  So, uh, how long have you been in there?"
+action end
+
+action:statement:root2-A-2
+Pooper:"............."
+next:root2-A-3
+action end
+
+action:response:root2-A-3
+Ted
+root2-A-4:"Okay, maybe that was the wrong kind of question.  That came out pretty weird."
+action end
+
+action:statement:root2-A-4
+Pooper:"Yeah, it did."
+next:root2-A-5
+action end
+
+action:response:root2-A-5
+Ted
+root2-A-6:"I ask because there's a guy who says he was here during the murder, and that you can back up his story."
+action end
+
+action:statement:root2-A-6
+Pooper:"Oh.  Guy with the red hair?  Yeah, he was here."
+Pooper:"I was having a bit of a night-time emergency and he was using the bathroom at the time."
+Pooper:"Not sure what he was doing, but he was taking a long time, and refusing to get out."
+next:root2-A-7
+action end
+
+action:response:root2-A-7
+Ted
+root2-A-8:"Sort of like you, right now?"
+action end
+
+action:statement:root2-A-8
+Pooper:"Maybe we ate the same thing."
+Pooper:"When we were in the middle of switching 'shifts', as it were, there was a gunshot."
+Pooper:"I wasn't in any position to go check it out at the time.  Don't know what the redhead did."
+next:root2-A-9
+action end
+
+action:response:root2-A-9
+Ted
+root2-A-10:"I see.  Well, thanks for the info.":trigger.tedConfession.on
+action end
+
+action:statement:root2-A-10
+Pooper:"Right.  Bye."
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Ted-Iblis
+
+action:response:root
+Ted
+root-A:"Hey there!  How's it going?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Iblis:"I'm fine."
+Iblis:"..."
+Iblis:"Say, mister..."
+Iblis:"You ever get the feeling like people sometimes pretend to be things they aren't?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Ted
+root-A-2:"Haha, well, sure, sometimes.  Why?"
+action end
+
+action:statement:root-A-2
+Iblis:"Oh, no reason.."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+

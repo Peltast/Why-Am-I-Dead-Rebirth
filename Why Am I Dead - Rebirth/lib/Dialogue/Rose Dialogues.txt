@@ -1,0 +1,564 @@
+
+
+dialogue start
+Rose-Cricket
+
+action:response:root
+Rose
+root-A:"Who are you again?"
+root-null:"Good bye."
+action end
+
+action:statement:root-A
+Cricket:"My name's Cricket, I've been staying at this hotel recently."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"Is that all you have to say about yourself?"
+root-null:"Good bye."
+action end
+
+action:statement:root-A-2
+Cricket:"Oh, well...I'm a lawyer.  Criminal lawyer, that is."
+Cricket:"Usually I live in the city for work, but I thought I'd take a break and head to the boonies."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Rose
+root-A-4:"A lawyer?  So you're a heartless, soulless leech on society?  Sorry to hear it."
+root-A-5:"So you're another yuppie city slicker on vacation?  How boring."
+root-null:"Good bye."
+action end
+
+action:statement:root-A-4
+Cricket:"..."
+Cricket:"Some people certainly think of my vocation that way..."
+next:root-null
+action end
+
+action:statement:root-A-5
+Cricket:"Er, yeah, I guess that's me...haha..."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Rose-Morgan
+
+action:response:root
+Rose
+root-A:"How are you doing, darling?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Morgan:"I'm alright.  My name's Morgan."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"Alright, Morgan.  What brings you out here?"
+root-B:"How are you taking the owner's death?"
+root-null:"Forget it."
+action end
+
+action:statement:root-A-2
+Morgan:"I'm here with my daughter.  I thought I'd take her on a short vacation."
+Morgan:"Living in the city for too long at ta time isn't good, I think."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Rose
+root-A-4:"Oh, you're a mother!  How...splendid."
+root-A-5:"But why here?  There is nothing interesting here."
+action end
+
+action:statement:root-A-4
+Morgan:"Why, thank you.  It's not easy, but it's rewarding."
+next:root-A-3
+action end
+
+action:statement:root-A-5
+Morgan:"Well, it's not too far from home, and it's inexpensive."
+Morgan:"Personally, I'd like to take my daughter elsewhere, but finances are tight."
+next:root-null
+action end
+
+action:statement:root-B
+Morgan:"Why, it's always unnerving for someone in such close proximity to die in such a ghastly way."
+Morgan:"Although it's my daughter that I'm worried the most about.  It's not something a child should see."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Rose
+root-B-2:"That's all?  I was thinking you might feel more strongly, given your relationship with the owner."
+action end
+
+action:statement:root-B-2
+Morgan:"I...I'm sorry?  There was no relationship between me and the owner."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Rose
+root-B-4:"Oh, it was very obvious.  I only wonder if it was purely physical or if there was money involved."
+action end
+
+action:statement:root-B-4
+Morgan:"You cannot be serious!  Physical?  Money?!"
+Morgan:"I don't even want to consider what you mean by that."
+next:root-B-5
+action end
+
+action:response:root-B-5
+Rose
+root-C:"I'm suggesting you two were sleeping together."
+root-D:"I think you were chasing his money."
+action end
+
+action:statement:root-C
+Morgan:"That's a vulgar accusation!  I barely knew the man!"
+Morgan:"I'm not that kind of woman and I'm insulted that you would suggest I am."
+next:root-B-5
+action end
+
+action:statement:root-D
+Morgan:"If I were in a relationship with someone, it would not be for their money!"
+Morgan:"You must be a bitter, cynical person for that to be your first assumption."
+next:root-D-1
+action end
+
+action:response:root-D-1
+Rose
+root-D-2:"Honey, listen to me and listen good.  The whole thing was obvious.  You aren't fooling me.  All I want to know is - was he loaded?"
+action end
+
+action:statement:root-D-2
+Morgan:"..."
+Morgan:"You are a vile and spiteful woman."
+Morgan:"If you want to hear it so badly, then fine.  I was sleeping with the owner."
+Morgan:"And yes, he was wealthy.  In fact, grossly wealthy."
+Morgan:"At first, I considered myself lucky, but I soon realized something was wrong."
+Morgan:"There was no way he could have acquired that wealth through this hotel.  And yet, the money was pouring in."
+Morgan:"I stayed close to him in part to spy on him and his finances.  My efforts led me to believe this hotel is nothing but a giant front."
+Morgan:"I hid away some of his paperwork in my dresser that points to this conclusion."
+Morgan:"If I had more time, I might have..."
+next:root-D-3
+action end
+
+action:response:root-D-3
+Rose
+root-D-4:"None of that really interests me.  I already knew he was a rotten thieving bastard.":trigger.filesAvailable.on
+action end
+
+action:statement:root-D-4
+Morgan:"I...seriously?  I'm saying the hotel is a front for something illegal.  That doesn't bother you?"
+Morgan:"You are truly a twisted person."
+next:root-D-5
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Rose-Orval
+
+action:response:root
+Rose
+root-A:"And who, exactly, are you?"
+root-null:"Forget it."
+action end
+
+action:statement:root-A
+Orval:"My name's Orval!  I'm what some people might call an exhibitionist.  You see - "
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"That sounds disgusting."
+root-B:"Never mind.  I don't care."
+action end
+
+action:statement:root-A-2
+Orval:"...Haha, well, it's kinda misunderstood, I think..."
+Orval:"Y'see, it's not like how you think it is.  It's really about - "
+next:root-A-3
+action end
+
+action:response:root-A-3
+Rose
+root-A-4:"Do you have a brain?  Are you actually trying to have a conversation with me right now?"
+root-B:"Shut up.  I don't need to know."
+action end
+
+action:statement:root-A-4
+Orval:"I...!"
+Orval:"You are...you are not a nice lady!"
+Orval:"You look nice, but...but you're not!"
+next:root-null
+action end
+
+action:statement:root-B
+Orval:"...Okay..."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Rose-Randy
+
+action:response:root
+Rose
+root-A:"You are the hotel manager, yes?"
+root-trigger.roseAndRandy:"Did you know about the hotel owner and Morgan?"
+root-null:"Never mind, goodbye."
+action end
+
+action:statement:root-A
+Randy:"Eh, yeah, I guess I am."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-B:"You guess?"
+root-C:"Well, I have to say you're doing a marvelous job on the hotel."
+root-D:"Wait, do you smell something?"
+root-null:"Never mind."
+action end
+
+action:statement:root-B
+Randy:"Well, I was just assistant manager a couple days ago."
+Randy:"Now, I guess I could call myself the hotel emperor for all anyone cares."
+next:root-A-1
+action end
+
+action:statement:root-C
+Randy:"...Really?  You actually like this dump?"
+next:root-C-1
+action end
+
+action:response:root-C-1
+Rose
+root-C-2:"No.  I was being sarcastic.  This place is disgusting."
+action end
+
+action:statement:root-C-2
+Randy:"Y'know, I really don't have time for your whinin'."
+Randy:"If you had the money or common sense to be anywhere else, that's where ya'd be."
+next:root-A-1
+action end
+
+action:statement:root-D
+Randy:"No, can't say I do."
+next:root-D-1
+action end
+
+action:response:root-D-1
+Rose
+root-D-2:"Really?  I'm picking up an overpowering stench of...is it whiskey?"
+action end
+
+action:statement:root-D-2
+Randy:"Uhh, yeah, actually, that'd be it.  Good nose."
+next:root-D-3
+action end
+
+action:response:root-D-3
+Rose
+root-D-4:"I have a knack for it.  All my husbands have been drunks."
+root-D-5:"So I take it you've embraced your rampant alcoholism then?"
+action end
+
+action:statement:root-D-4
+Randy:"I can see why."
+next:root-A-1
+action end
+
+action:statement:root-D-5
+Randy:"Alright, lady.  Maybe others put up with your shit, but I won't."
+Randy:"You keep being a snide old hag, see what good that does ya."
+next:root-D-6
+action end
+
+
+action:statement:root-trigger.roseAndRandy
+Randy:"Uh...what?"
+next:root2
+action end
+
+action:response:root2
+Rose
+root2-1:"You know they were sleeping with each other, right?"
+action end
+
+action:statement:root2-1
+Randy:"I...I mean...why are you talking to me about this?"
+Randy:"How do you even know about that?"
+next:root2-2
+action end
+
+action:response:root2-2
+Rose
+root2-A:"Oh, don't play dumb, you knew about it too."
+root2-B:"I managed to get that blonde biddy to confess all about it."
+root2-C:"You were interested in her, weren't you?"
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Randy:"Yeah, I guess I had my suspicions."
+Randy:"Excuse me for being in disbelief, this ain't exactly routine fuckin' smalltalk."
+next:root2-2
+action end
+
+action:statement:root2-B
+Randy:"Why in all the hells would she talk to you about something like this?"
+Randy:"And why do you care either way?"
+Randy:"Actually, scratch that, I don't want to know."
+next:root2-D
+action end
+
+action:response:root2-D
+Rose
+root2-E:"She felt guilty.  A guilty conscience always talks."
+root2-F:"She was trying to tell me about the owner, some kind of conspiracy theory, I don't know."
+action end
+
+action:statement:root2-E
+Randy:"So it was some kinda challenge to you to get it out of her?"
+Randy:"I don't get you, lady."
+next:root2-D
+action end
+
+action:statement:root2-C
+Randy:"...Huh?!  N-no!  Why would you...?"
+Randy:"Oh, I get it.  You're trying to rub it in.  Make me jealous or something."
+next:root2-2
+action end
+
+action:statement:root2-F
+Randy:"..."
+Randy:"Wait, what was that?"
+Randy:"She knew something about the owner?"
+next:root2-G
+action end
+
+action:response:root2-G
+Rose
+root2-H:"Oh, she made it sound like she was only with the owner to dig up dirt on him.  She said the hotel might be a front or some such nonsense.":trigger.roseConfession.on
+action end
+
+action:statement:root2-H
+Randy:"She said that?  She was investigating the owner?"
+Randy:"I wonder what she found out.  If we combined our knowledge...what could we find out?"
+Randy:"...She'd probably never trust me, though, would she?"
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Rose-Pooper
+
+action:response:root
+Pooper
+root-null:"Hi, yeah, lady's room is on the other side."
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+Rose-Lucille
+
+action:response:root
+Rose
+root-A:"Darling.  What are you doing in a place like this?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Lucille:"I....I'm sorry?  I don't understand what you mean..."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"You seem like a good person.  This is a place for bad people."
+action end
+
+action:statement:root-A-2
+Lucille:"Really?  What about you?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Rose
+root-A-4:"What about me makes you think I'm a good person?"
+action end
+
+action:statement:root-A-4
+Lucille:"..."
+Lucille:"I won't argue with you."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+dialogue start
+Rose-Ted
+
+action:response:root
+Rose
+root-A:"Who are you supposed to be?"
+root-null:"Good bye."
+action end
+
+action:statement:root-A
+Ted:"Hello, ma'am!  My name's Ted!  Glad to meet you."
+Ted:"I'm normally a salesman, but I thought I'd take a little vacation."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"A salesman?  As in, a corporate flunky?"
+root-A-3:"Is there a reason you are constantly smiling?"
+root-null:"I can't look at your face anymore.  Good bye."
+action end
+
+action:statement:root-A-2
+Ted:"Oh, no no no!  I go door to door.  You know...meet the real working people!"
+next:root-A-4
+action end
+
+action:response:root-A-4
+Rose
+root-A-C:"Oh, then you're even more of a scumbag than I thought."
+action end
+
+action:statement:root-A-3
+Ted:"I...I don't suppose so.  But let me ask you this: is there any reason not to smile?"
+next:root-B
+action end
+
+action:response:root-B
+Rose
+root-C:"Yes.  So many.  You must be a crazy person."
+action end
+
+action:statement:root-C
+Ted:"Haha.  Funny old lady."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+Rose-Iblis
+
+action:response:root
+Rose
+root-A:"You know sweety, you're a sharper tack than you look."
+root-null:"Forget it."
+action end
+
+action:statement:root-A
+Iblis:"Thanks lady!  Mommy says I have good, uh..."
+Iblis:"What's the word?"
+Iblis:"In-too-i-shun.."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Rose
+root-A-2:"Yes, dear, I'd say that sums it up.  Shame you're a spoiled rotten brat, though."
+action end
+
+action:statement:root-A-2
+Iblis:"Mommy also says something about you, too."
+Iblis:"....I'm not allowed to use bad words, though."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+

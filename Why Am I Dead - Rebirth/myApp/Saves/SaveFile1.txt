@@ -1,0 +1,585 @@
+Cricketx~Int~837
+Crickety~Int~111
+Cricketz~Int~0
+CricketposStatus~Int~1
+Cricketalignment~String~Front
+Cricketmap~String~Hallway
+Cricketcontrolled~null~null
+Cricketfollower~String~false
+CricketAInull~Boolean~true
+Pooperx~Int~96
+Poopery~Int~64
+Pooperz~Int~0
+PooperposStatus~Int~0
+Pooperalignment~String~Front
+Poopermap~String~Bathroom
+Poopercontrolled~null~null
+Pooperfollower~String~false
+PooperAInull~Boolean~true
+Morganx~Int~156
+Morgany~Int~152
+Morganz~Int~0
+MorganposStatus~Int~1
+Morganalignment~String~Front
+Morganmap~String~Morgan's Room
+Morgancontrolled~null~null
+Morganfollower~String~false
+MorganAInull~Boolean~false
+Morgan behaviorOriginMap~String~Morgan's Room
+Morgan behaviorOriginPoint~Point~(x=3, y=6)
+Morgan behaviorFreq~Int~120
+Morgan behaviorStatus~String~active
+Morgan behaviorType~String~Random
+Morgan randomHorBound~Int~4
+Morgan randomVerBound~Int~4
+Orvalx~Int~157
+Orvaly~Int~73
+Orvalz~Int~0
+OrvalposStatus~Int~1
+Orvalalignment~String~Front
+Orvalmap~String~Orval's Room
+Orvalcontrolled~null~null
+Orvalfollower~String~false
+OrvalAInull~Boolean~false
+Orval behaviorOriginMap~String~Hallway
+Orval behaviorOriginPoint~Point~(x=31, y=4)
+Orval behaviorFreq~Int~-1
+Orval behaviorStatus~String~active
+Orval behaviorType~String~Routine
+Orval routineDestinations~VectorPoint~(x=5, y=3),(x=31, y=4),(x=11, y=10),(x=9, y=9),(x=11, y=8),(x=9, y=10),(x=11, y=9),(x=9, y=8),(x=12, y=4)
+Orval routineDestMaps~Array~Orval's Room,Hallway,Lobby,Lobby,Lobby,Lobby,Lobby,Lobby,Hallway
+Orval routineFrequencies~Array~360,45,30,30,30,30,30,30,90
+Orval routineLoop~String~true
+Orval routineWaitTime~Int~0
+Tedx~Int~280
+Tedy~Int~122
+Tedz~Int~0
+TedposStatus~Int~1
+Tedalignment~String~Left
+Tedmap~String~Lobby
+Tedcontrolled~null~null
+Tedfollower~String~false
+TedAInull~Boolean~false
+Ted behaviorOriginMap~String~Lobby
+Ted behaviorOriginPoint~Point~(x=12, y=8)
+Ted behaviorFreq~Int~60
+Ted behaviorStatus~String~active
+Ted behaviorType~String~Random
+Ted randomHorBound~Int~5
+Ted randomVerBound~Int~3
+Randyx~Int~224
+Randyy~Int~72
+Randyz~Int~0
+RandyposStatus~Int~1
+Randyalignment~String~Front
+Randymap~String~Randy's Room
+Randycontrolled~null~null
+Randyfollower~String~false
+RandyAInull~Boolean~false
+Randy behaviorOriginMap~String~Randy's Room
+Randy behaviorOriginPoint~Point~(x=7, y=5)
+Randy behaviorFreq~Int~60
+Randy behaviorStatus~String~active
+Randy behaviorType~String~Random
+Randy randomHorBound~Int~3
+Randy randomVerBound~Int~3
+Lucillex~Int~384
+Lucilley~Int~157
+Lucillez~Int~0
+LucilleposStatus~Int~1
+Lucillealignment~String~Right
+Lucillemap~String~Lobby
+Lucillecontrolled~Int~1
+Lucillefollower~String~false
+LucilleAInull~Boolean~false
+Lucille behaviorOriginMap~String~Lucille's Room
+Lucille behaviorOriginPoint~Point~(x=7, y=4)
+Lucille behaviorFreq~Int~120
+Lucille behaviorStatus~String~paused
+Lucille behaviorType~String~Random
+Lucille randomHorBound~Int~2
+Lucille randomVerBound~Int~2
+possessedCharacter~String~Lucille
+Rosex~Int~123
+Rosey~Int~126
+Rosez~Int~0
+RoseposStatus~Int~1
+Rosealignment~String~Left
+Rosemap~String~Morgan's Room
+Rosecontrolled~null~null
+Rosefollower~String~false
+RoseAInull~Boolean~true
+Ghostx~Int~234
+Ghosty~Int~46
+Ghostz~Int~0
+GhostposStatus~Int~0
+Ghostalignment~String~Back
+Ghostmap~null~null
+Ghostcontrolled~null~null
+Ghostfollower~String~false
+GhostAInull~Boolean~true
+Iblisx~Int~527
+Iblisy~Int~123
+Iblisz~Int~0
+IblisposStatus~Int~1
+Iblisalignment~String~Right
+Iblismap~String~Hallway
+Ibliscontrolled~null~null
+Iblisfollower~String~false
+IblisAInull~Boolean~false
+Iblis behaviorOriginMap~String~Hallway
+Iblis behaviorOriginPoint~Point~(x=21, y=5)
+Iblis behaviorFreq~Int~-1
+Iblis behaviorStatus~String~active
+Iblis behaviorType~String~Routine
+Iblis routineDestinations~VectorPoint~(x=21, y=5),(x=8, y=5),(x=41, y=5),(x=7, y=6)
+Iblis routineDestMaps~Array~Hallway,Hallway,Hallway,Morgan's Room
+Iblis routineFrequencies~Array~60,90,120,150
+Iblis routineLoop~String~true
+Iblis routineWaitTime~Int~0
+Bathroom transition:6,8~Int~1
+Bathroom transition:6,8permissions~null~null
+Bathroomcharacters~Vector~Pooper
+Bathroomprops~Vector~BathroomDoor1,BathroomDoor2,BathroomMirror,BathroomFlowers1,BathroomFlowers2
+BathroomplayerVisited~Boolean~true
+Bathroomsounds~Dictionary~_undefined,
+Orval's Room transition:6,8~Int~1
+Orval's Room transition:6,8permissions~null~null
+Orval's Roomcharacters~Vector~Orval
+Orval's Roomprops~Vector~OrvalsBed,OrvalsDrawer,OrvalsTable,OrvalsMirror
+Orval's RoomplayerVisited~Boolean~true
+Orval's Roomsounds~Dictionary~_undefined,
+Lobby transition:10,1~Int~1
+Lobby transition:10,1permissions~null~null
+Lobby transition:11,1~Int~1
+Lobby transition:11,1permissions~null~null
+Lobbycharacters~Vector~Ted,Lucille
+Lobbyprops~Vector~SaveProp,OwnersDoor,RandysDoor,Booth1,Booth2,Booth3,Booth6,Booth4,Booth5
+LobbyplayerVisited~Boolean~true
+Lobbysounds~Dictionary~_undefined,
+Lucille's Room transition:7,8~Int~1
+Lucille's Room transition:7,8permissions~null~null
+Lucille's Roomcharacters~Vector~
+Lucille's Roomprops~Vector~LucillesBed,LucillesDrawer,LucillesMirror,LucillesFlowers
+Lucille's RoomplayerVisited~Boolean~true
+Lucille's Roomsounds~Dictionary~_undefined,
+Hallway transition:24,10~Int~1
+Hallway transition:24,10permissions~null~null
+Hallway transition:25,10~Int~1
+Hallway transition:25,10permissions~null~null
+Hallwaycharacters~Vector~Cricket,Iblis
+Hallwayprops~Vector~RosesDoor,MorgansDoor,CricketsDoor,Bathroom,LucillesDoor,TedsDoor,OrvalsDoor
+HallwayplayerVisited~Boolean~true
+Hallwaysounds~Dictionary~_undefined,
+Morgan's Room transition:5,9~Int~1
+Morgan's Room transition:5,9permissions~null~null
+Morgan's Roomcharacters~Vector~Rose,Morgan
+Morgan's Roomprops~Vector~MorgansBed,IblisBed,IblisDoll,MorgansDrawer,MorgansTable,IblisTable
+Morgan's RoomplayerVisited~Boolean~true
+Morgan's Roomsounds~Dictionary~_undefined,
+Owner's Room transition:14,15~Int~1
+Owner's Room transition:14,15permissions~null~null
+Owner's Roomcharacters~Vector~
+Owner's Roomprops~Vector~OwnersBed,OwnersMirror,OwnersTable,OwnersFlowers,OwnersCabinet,OwnersFlowers3,OwnersFlowers2,OwnersMirror2,Owner
+Owner's RoomplayerVisited~Boolean~true
+Owner's Roomsounds~Dictionary~_undefined,
+Cricket's Room transition:4,8~Int~1
+Cricket's Room transition:4,8permissions~null~null
+Cricket's Roomcharacters~Vector~
+Cricket's Roomprops~Vector~CricketsBed,CricketsDrawer,CricketsTable
+Cricket's RoomplayerVisited~Boolean~false
+Cricket's Roomsounds~Dictionary~_undefined,
+Rose's Room transition:5,8~Int~1
+Rose's Room transition:5,8permissions~null~null
+Rose's Roomcharacters~Vector~
+Rose's Roomprops~Vector~RosesBed,RosesDrawer,RosesMirror,RosesTable
+Rose's RoomplayerVisited~Boolean~true
+Rose's Roomsounds~Dictionary~_undefined,
+Randy's Room transition:6,8~Int~1
+Randy's Room transition:6,8permissions~null~null
+Randy's Roomcharacters~Vector~Randy
+Randy's Roomprops~Vector~RandysTable,RandysMirror,RandysBooze4,RandysBooze2,RandysBooze3,RandysBooze,RandysBed,RandysTV
+Randy's RoomplayerVisited~Boolean~true
+Randy's Roomsounds~Dictionary~_undefined,
+Ted's Room transition:6,8~Int~1
+Ted's Room transition:6,8permissions~null~null
+Ted's Roomcharacters~Vector~
+Ted's Roomprops~Vector~TedsBed,TedsDrawer,TedsFlowers,TedsMirror1,TedsMirror2,TedsMirror3
+Ted's RoomplayerVisited~Boolean~false
+Ted's Roomsounds~Dictionary~_undefined,
+currentMap~String~Lobby
+RandysBed successdialogue~String~RandysBed
+RandysBed successKeyCricket~String~CricketRandysBed
+RandysBed successKeyRandy~String~RandyRandysBed
+RandysBed successDialogueStrings~Vector~Cricket,Randy
+RandysBed failDialogueStrings~Vector~
+RandysBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RosesBed successdialogue~String~Bed
+RosesBed successDialogueStrings~Vector~
+RosesBed failDialogueStrings~Vector~
+RosesBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+MorgansDoor successDialogueStrings~Vector~
+MorgansDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+MorgansDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+Booth5 successDialogueStrings~Vector~
+Booth5 failDialogueStrings~Vector~
+Booth5 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+IblisBed successdialogue~String~MessyBed
+IblisBed successDialogueStrings~Vector~
+IblisBed failDialogueStrings~Vector~
+IblisBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+SaveProp successdialogue~String~SaveConfirmation
+SaveProp successDialogueStrings~Vector~
+SaveProp failDialogueStrings~Vector~
+SaveProp permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+CricketsDoor successDialogueStrings~Vector~
+CricketsDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+CricketsDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysBooze2 successdialogue~String~RandysBooze
+RandysBooze2 successDialogueStrings~Vector~
+RandysBooze2 failDialogueStrings~Vector~
+RandysBooze2 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysTable successDialogueStrings~Vector~
+RandysTable failDialogueStrings~Vector~
+RandysTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OrvalsDrawer successdialogue~String~OrvalsDrawer
+OrvalsDrawer successDialogueStrings~Vector~
+OrvalsDrawer failDialogueStrings~Vector~
+OrvalsDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+LucillesBed successdialogue~String~Bed
+LucillesBed successDialogueStrings~Vector~
+LucillesBed failDialogueStrings~Vector~
+LucillesBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsMirror2 successdialogue~String~Mirror
+TedsMirror2 successDialogueStrings~Vector~
+TedsMirror2 failDialogueStrings~Vector~
+TedsMirror2 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysBooze successdialogue~String~RandysBooze
+RandysBooze successDialogueStrings~Vector~
+RandysBooze failDialogueStrings~Vector~
+RandysBooze permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+BathroomDoor2 successDialogueStrings~Vector~
+BathroomDoor2 failDialogueStrings~Vector~
+BathroomDoor2 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersFlowers3 successDialogueStrings~Vector~
+OwnersFlowers3 failDialogueStrings~Vector~
+OwnersFlowers3 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersFlowers2 successDialogueStrings~Vector~
+OwnersFlowers2 failDialogueStrings~Vector~
+OwnersFlowers2 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+BathroomFlowers2 successDialogueStrings~Vector~
+BathroomFlowers2 failDialogueStrings~Vector~
+BathroomFlowers2 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+RosesMirror successdialogue~String~Mirror
+RosesMirror successDialogueStrings~Vector~
+RosesMirror failDialogueStrings~Vector~
+RosesMirror permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OwnersMirror successdialogue~String~OwnersMirror
+OwnersMirror successDialogueStrings~Vector~
+OwnersMirror failDialogueStrings~Vector~
+OwnersMirror permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+MorgansTable successDialogueStrings~Vector~
+MorgansTable failDialogueStrings~Vector~
+MorgansTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+Booth2 successDialogueStrings~Vector~
+Booth2 failDialogueStrings~Vector~
+Booth2 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersFlowers successDialogueStrings~Vector~
+OwnersFlowers failDialogueStrings~Vector~
+OwnersFlowers permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+Booth3 successDialogueStrings~Vector~
+Booth3 failDialogueStrings~Vector~
+Booth3 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+LucillesDoor successDialogueStrings~Vector~
+LucillesDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+LucillesDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+IblisDoll successdialogue~String~Sarah
+IblisDoll successKeyIblis~String~SarahAndIblis
+IblisDoll successDialogueStrings~Vector~Iblis
+IblisDoll failDialogueStrings~Vector~
+IblisDoll permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysMirror successDialogueStrings~Vector~
+RandysMirror failDialogueStrings~Vector~
+RandysMirror permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersMirror2 successdialogue~String~Mirror
+OwnersMirror2 successDialogueStrings~Vector~
+OwnersMirror2 failDialogueStrings~Vector~
+OwnersMirror2 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysTV successdialogue~String~RandysTV
+RandysTV successDialogueStrings~Vector~
+RandysTV failDialogueStrings~Vector~
+RandysTV permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OwnersBed successdialogue~String~OwnersBed
+OwnersBed successDialogueStrings~Vector~
+OwnersBed failDialogueStrings~Vector~
+OwnersBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsMirror3 successDialogueStrings~Vector~
+TedsMirror3 failDialogueStrings~Vector~
+TedsMirror3 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+LucillesDrawer successdialogue~String~LucillesDrawer
+LucillesDrawer successKeyLucille~String~LucilleLucillesDrawer
+LucillesDrawer successDialogueStrings~Vector~Lucille
+LucillesDrawer failDialogueStrings~Vector~
+LucillesDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+CricketsTable successDialogueStrings~Vector~
+CricketsTable failDialogueStrings~Vector~
+CricketsTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersCabinet successdialogue~String~OwnersDrawer
+OwnersCabinet successDialogueStrings~Vector~
+OwnersCabinet failDialogueStrings~Vector~
+OwnersCabinet permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsDoor successDialogueStrings~Vector~
+TedsDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+TedsDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+MorgansBed successdialogue~String~Bed
+MorgansBed successDialogueStrings~Vector~
+MorgansBed failDialogueStrings~Vector~
+MorgansBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OrvalsBed successdialogue~String~MessyBed
+OrvalsBed successDialogueStrings~Vector~
+OrvalsBed failDialogueStrings~Vector~
+OrvalsBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RosesDrawer successdialogue~String~RosesDrawer
+RosesDrawer successDialogueStrings~Vector~
+RosesDrawer failDialogueStrings~Vector~
+RosesDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+Booth4 successDialogueStrings~Vector~
+Booth4 failDialogueStrings~Vector~
+Booth4 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+BathroomDoor1 successDialogueStrings~Vector~
+BathroomDoor1 failDialogueStrings~Vector~
+BathroomDoor1 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+CricketsBed successdialogue~String~Bed
+CricketsBed successDialogueStrings~Vector~
+CricketsBed failDialogueStrings~Vector~
+CricketsBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+LucillesFlowers successDialogueStrings~Vector~
+LucillesFlowers failDialogueStrings~Vector~
+LucillesFlowers permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+OwnersTable successdialogue~String~OwnersVase
+OwnersTable successDialogueStrings~Vector~
+OwnersTable failDialogueStrings~Vector~
+OwnersTable permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OrvalsMirror successDialogueStrings~Vector~
+OrvalsMirror failDialogueStrings~Vector~
+OrvalsMirror permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+LucillesMirror successdialogue~String~Mirror
+LucillesMirror successDialogueStrings~Vector~
+LucillesMirror failDialogueStrings~Vector~
+LucillesMirror permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OrvalsTable successDialogueStrings~Vector~
+OrvalsTable failDialogueStrings~Vector~
+OrvalsTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+Bathroom successDialogueStrings~Vector~
+Bathroom failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+Bathroom permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+BathroomFlowers1 successDialogueStrings~Vector~
+BathroomFlowers1 failDialogueStrings~Vector~
+BathroomFlowers1 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+RandysBooze3 successdialogue~String~RandysBooze2
+RandysBooze3 successDialogueStrings~Vector~
+RandysBooze3 failDialogueStrings~Vector~
+RandysBooze3 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OrvalsDoor successDialogueStrings~Vector~
+OrvalsDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+OrvalsDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsDrawer successdialogue~String~TedsDrawer
+TedsDrawer successDialogueStrings~Vector~
+TedsDrawer failDialogueStrings~Vector~
+TedsDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+MorgansDrawer successdialogue~String~MorgansDrawer
+MorgansDrawer successKeyCricket~String~CricketMorgansDrawer
+MorgansDrawer successKeyMorgan~String~MorganMorgansDrawer
+MorgansDrawer successDialogueStrings~Vector~Cricket,Morgan
+MorgansDrawer failDialogueStrings~Vector~
+MorgansDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+BathroomMirror successdialogue~String~Mirror
+BathroomMirror successDialogueStrings~Vector~
+BathroomMirror failDialogueStrings~Vector~
+BathroomMirror permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsMirror1 successdialogue~String~Mirror
+TedsMirror1 successDialogueStrings~Vector~
+TedsMirror1 failDialogueStrings~Vector~
+TedsMirror1 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RosesTable successDialogueStrings~Vector~
+RosesTable failDialogueStrings~Vector~
+RosesTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+RandysDoor successDialogueStrings~Vector~
+RandysDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+RandysDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RosesDoor successDialogueStrings~Vector~
+RosesDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+RosesDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+CricketsDrawer successdialogue~String~CricketsDrawer
+CricketsDrawer successDialogueStrings~Vector~
+CricketsDrawer failDialogueStrings~Vector~
+CricketsDrawer permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+RandysBooze4 successdialogue~String~RandysBooze2
+RandysBooze4 successDialogueStrings~Vector~
+RandysBooze4 failDialogueStrings~Vector~
+RandysBooze4 permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+OwnersDoor successDialogueStrings~Vector~
+OwnersDoor failDialogueStrings~Vector~Marcurio,Gwen,Donovan,Garv,Quella,Xu,Cat,Ferdinand,Alton,Darryl
+OwnersDoor permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+TedsBed successdialogue~String~Bed
+TedsBed successDialogueStrings~Vector~
+TedsBed failDialogueStrings~Vector~
+TedsBed permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+Booth1 successDialogueStrings~Vector~
+Booth1 failDialogueStrings~Vector~
+Booth1 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+Owner successdialogue~String~OwnersBody
+Owner successDialogueStrings~Vector~
+Owner failDialogueStrings~Vector~
+Owner permissions~Vector~Ghost,Cricket,Randy,Lucille,Ted,Morgan,Iblis,Rose,Orval
+Booth6 successDialogueStrings~Vector~
+Booth6 failDialogueStrings~Vector~
+Booth6 permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+IblisTable successDialogueStrings~Vector~
+IblisTable failDialogueStrings~Vector~
+IblisTable permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+TedsFlowers successDialogueStrings~Vector~
+TedsFlowers failDialogueStrings~Vector~
+TedsFlowers permissions~Vector~Ghost,Cat,Alton,Marcurio,Xu,Ferdinand,Donovan,Garv,Quella,Darryl,Gwen
+lucilleFinalePrepstatus~Int~-1
+lucilleEnding2status~Int~-1
+aboutIblisstatus~Int~0
+cricketEvilstatus~Int~-1
+tedsAlibistatus~Int~0
+cricketEndingstatus~Int~0
+lucilleCricketOwnerstatus~Int~-1
+lucilleTedLead2status~Int~1
+lucilleMeetingstatus~Int~-1
+morganConfessedstatus~Int~1
+lucilleFBI2status~Int~-1
+morgansDresserSearchedstatus~Int~-1
+cricketFinale2status~Int~-1
+randyLeavesstatus~Int~-1
+lucilleOrvalLead2status~Int~1
+filesAvailablestatus~Int~-1
+tedPooperstatus~Int~-1
+cricketFinale3status~Int~-1
+lucilleEndingstatus~Int~-1
+lucilleSuspicionstatus~Int~-1
+cricketEnding2status~Int~-1
+notAboutCricketstatus~Int~-1
+lucilleTedLeadstatus~Int~1
+lucilleFBIstatus~Int~-1
+moveRandystatus~Int~-1
+morganGreetedstatus~Int~0
+tedConfessionstatus~Int~-1
+randysLettersstatus~Int~1
+lucilleFinalestatus~Int~1
+greetedMorganstatus~Int~1
+cricketConfessionstatus~Int~0
+letterAvailablestatus~Int~-1
+lucilleEnding3status~Int~0
+aboutCricketstatus~Int~1
+saveGamestatus~Int~0
+cricketFinalestatus~Int~0
+lucillePartnerstatus~Int~-1
+morgansTheorystatus~Int~1
+lucilleOrvalLeadstatus~Int~1
+lucilleEnding4status~Int~-1
+randysBedSearchedstatus~Int~-1
+morgansFilesstatus~Int~1
+othersAlibistatus~Int~1
+randyConfessedstatus~Int~1
+lucilleCorneredstatus~Int~-1
+Iblis-Rose rootAction~String~root
+RandysBed rootAction~String~root2
+Finale rootAction~String~root
+Morgan-Cricket rootAction~String~root
+Orval-Ted rootAction~String~root
+Iblis-Orval rootAction~String~root
+Rose-Orval rootAction~String~root
+Rose-Morgan rootAction~String~root
+Orval-Iblis rootAction~String~root
+Morgan-Rose rootAction~String~root
+Morgan-Orval rootAction~String~root
+Cricket-Ted rootAction~String~root2
+Rose-Lucille rootAction~String~root
+MorganMorgansDrawer rootAction~String~root
+Rose-Iblis rootAction~String~root
+Sarah rootAction~String~root
+Rose-Cricket rootAction~String~root
+Cricket-Iblis rootAction~String~root
+Ted-Rose rootAction~String~root
+Rose-Ted rootAction~String~root
+Morgan-Randy rootAction~String~root
+RandysBooze rootAction~String~root
+Randy-Lucille rootAction~String~root
+RandysBooze2 rootAction~String~root
+Morgan-Lucille rootAction~String~root
+Orval-Rose rootAction~String~root
+Ted-Lucille rootAction~String~root
+Iblis-Cricket rootAction~String~root
+SaveConfirmation rootAction~String~root
+Randy-Morgan rootAction~String~root
+Randy-Cricket rootAction~String~root
+OwnersMirror rootAction~String~root
+Cricket-Randy rootAction~String~root2
+Morgan-Iblis rootAction~String~root
+OwnersBed rootAction~String~root
+Randy-Orval rootAction~String~root
+Cricket-Rose rootAction~String~root
+Ted-Cricket rootAction~String~root
+Iblis-Morgan rootAction~String~root
+Morgan-Pooper rootAction~String~root
+CricketMorgansDrawer rootAction~String~root3
+RandysTV rootAction~String~root
+Lucille-Orval rootAction~String~root
+Orval-Morgan rootAction~String~root
+Ted-Morgan rootAction~String~root
+Cricket-Lucille rootAction~String~root2
+Ted-Iblis rootAction~String~root
+SarahAndIblis rootAction~String~root
+LucilleRealization2 rootAction~String~root
+OrvalsDrawer rootAction~String~root
+Lucille-Randy rootAction~String~root
+Cricket-Orval rootAction~String~root
+Cricket-Morgan rootAction~String~root
+Randy-Iblis rootAction~String~root
+Lucille-Iblis rootAction~String~root
+RandyRandysBed rootAction~String~root
+Lucille-Pooper rootAction~String~root
+Mirror rootAction~String~root
+LucillesDrawer rootAction~String~root
+Orval-Lucille rootAction~String~root
+OwnersDrawer rootAction~String~root
+Randy-Pooper rootAction~String~root
+RosesDrawer rootAction~String~root
+Lucille-Morgan rootAction~String~root
+Lucille-Cricket rootAction~String~root2
+Ted-Randy rootAction~String~root
+Lucille-Rose rootAction~String~root
+OwnersVase rootAction~String~root
+Ted-Orval rootAction~String~root
+Iblis-Randy rootAction~String~root
+Cricket-Pooper rootAction~String~root
+Orval-Randy rootAction~String~root
+Ted-Pooper rootAction~String~root2
+MorgansDrawer rootAction~String~root
+LucilleRealization rootAction~String~root
+Rose-Pooper rootAction~String~root
+Lucille-Ted rootAction~String~root
+Iblis-Pooper rootAction~String~root
+Morgan-Ted rootAction~String~root
+Bed rootAction~String~root
+OwnersBody rootAction~String~root
+Randy-Rose rootAction~String~root
+Orval-Cricket rootAction~String~root
+CricketRandysBed rootAction~String~root3
+Rose-Randy rootAction~String~root
+TedsDrawer rootAction~String~root
+Orval-Pooper rootAction~String~root
+LucilleLucillesDrawer rootAction~String~root2
+Iblis-Lucille rootAction~String~root
+CricketsDrawer rootAction~String~root
+Iblis-Ted rootAction~String~root
+Randy-Ted rootAction~String~root
+MessyBed rootAction~String~root
+saveDate~String~24 / 9 / 2014
+saveTime~String~10:01  PM
+currentChapter~String~Chapter ?
+init~Int~1

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Mainsheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Mainsheet.png" width="224" height="192"/>
+ </tileset>
+ <tileset firstgid="43" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../PropGrid.png" width="192" height="416"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="14" height="10">
+  <data>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="14" height="10">
+  <object name="OrvalsBed" gid="67" x="255" y="158">
+   <properties>
+    <property name="Bounds" value="0,16,64,48"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="MessyBed"/>
+    <property name="SuccessDialogue" value="MessyBed"/>
+   </properties>
+  </object>
+  <object gid="68" x="287" y="158"/>
+  <object gid="73" x="255" y="190"/>
+  <object gid="74" x="287" y="190"/>
+  <object name="OrvalsDrawer" gid="55" x="134" y="159">
+   <properties>
+    <property name="Bounds" value="0,32,64,32"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Drawer"/>
+    <property name="SuccessDialogue" value="OrvalsDrawer"/>
+   </properties>
+  </object>
+  <object gid="56" x="166" y="159"/>
+  <object gid="61" x="134" y="191"/>
+  <object gid="62" x="166" y="191"/>
+  <object name="OrvalsTable" gid="44" x="247" y="92">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BedsideTable"/>
+   </properties>
+  </object>
+  <object gid="50" x="247" y="124"/>
+  <object name="OrvalsMirror" gid="47" x="248" y="32">
+   <properties>
+    <property name="Sprite" value="Mirror"/>
+   </properties>
+  </object>
+  <object gid="53" x="248" y="64"/>
+ </objectgroup>
+ <objectgroup name="AI" width="14" height="10">
+  <object name="OrvalPath" gid="22" x="160" y="128">
+   <properties>
+    <property name="Character" value="Orval"/>
+    <property name="Frequency" value="360"/>
+    <property name="Index" value="1"/>
+    <property name="Loop" value="true"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

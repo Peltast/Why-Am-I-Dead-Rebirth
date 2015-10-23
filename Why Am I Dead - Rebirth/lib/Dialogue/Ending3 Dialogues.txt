@@ -1,0 +1,310 @@
+
+
+dialogue start
+MorganOwnersTable
+
+action:statement:root
+null:On the table there are shards of blood stained porcelain.
+null:It appears the vase was broken in a terrible struggle.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+null:There's nothing else notable about this table.
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+MorganOwnersBed
+
+action:statement:root
+null:The bed is in disarray and covered in blood.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+null:There isn't anything of interest under or around the bed.
+null:You decide not to mess with the sheets that are drenched in blood.
+next:root-null
+action end
+dialogue end
+
+
+
+dialogue start
+MorganOwnersFlowers
+
+action:statement:root
+null:A vase with some flowers is sitting on a small table.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+null:On further inspection, it still just appears to be an ordinary vase with some flowers.
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+MorganOwnersMirror
+
+action:statement:root
+null:The glass in the mirror has been shattered, and is covered in blood.
+null:Maybe it has something to do with the dead body just in front of it.
+next:root-1
+action end
+
+action:response:root-1
+<player>
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+null:Nothing seems out of the ordinary about this mirror.
+null:Well, aside from the fact that it's broken and has blood all over it.
+next:root-null
+action end
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+MorganOwnersMirror2
+
+
+action:statement:root
+null:Looking good!
+next:root-1
+action end
+
+action:response:root-1
+Morgan
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+Morgan:"Looks like a regular mirror."
+Morgan:"..."
+Morgan:"Hold on a second.  Behind the mirror it looks like there's a switch."
+next:root-3
+action end
+
+action:response:root-3
+Morgan
+root-A:Flip it:trigger.hiddenDoorSwitch.on
+root-null:Leave it alone
+action end
+
+action:statement:root-A
+Randy:"Holy mother of..."
+Randy:"It's a hidden door!  Right inside the owner's room!"
+next:root-null
+action end
+
+
+action:statement:root2
+null:Behind the mirror is what looks like a switch.
+next:root2-A
+action end
+
+action:response:root2-A
+Morgan
+root2-null:Flip it:trigger.hiddenDoorSwitch.on
+root2-null2:Leave it alone
+action end
+
+
+dialogue end
+
+
+
+dialogue start
+HiddenDoor
+
+action:statement:root
+Randy:"Who knows where this thing leads to."
+Randy:"The truth may be in here, but who knows what else we'll find."
+Randy:"I think we should be absolutely sure we're ready before we go in there."
+Randy:"If there's anything else you wanna do, you should do that first."
+next:root-A
+action end
+
+action:response:root-A
+Morgan
+root-B:Go in!:trigger.enterDarkHallway.on
+root-null:Maybe later...
+action end
+
+
+dialogue end
+
+
+
+
+dialogue start
+MorganBlackDoor
+
+action:statement:root
+Morgan:"What kind of door is this?  It's huge..."
+next:root-1
+action end
+
+action:statement:root-1
+Randy:"Look at that thing...talk about ominous."
+Randy:"I can't believe a place like this was under the hotel the whole damn time."
+next:root-2
+action end
+
+action:response:root-2
+Morgan
+root-3:Open the door:trigger.grayEnding.on
+root-null:Leave it alone
+action end
+
+action:statement:root-3
+Morgan:"...It won't open."
+Morgan:"It looks like there's a giant lock on the door that needs a key."
+Morgan:"Do you know anything about that, Randy?"
+next:root-4
+action end
+
+action:statement:root-4
+Randy:"I don't know.  I have several hotel keys with me that I guess I could try out."
+Randy:"..."
+Randy:"...."
+Randy:"None of them fit.  None are even close.  This keyhole is one of a kind."
+Randy:"....."
+Randy:"Jesus, the doors won't budge.  They look like they weigh several tons a piece."
+next:root-5
+action end
+
+action:statement:root-5
+Morgan:"Looks like we need a special key to get any further..."
+Morgan:"Now what?"
+next:root-null
+action end
+
+
+action:statement:root2
+Morgan:"...Still can't budge this door at all."
+Morgan:"It looks like without a certain key, there's no way we're getting through here."
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+dialogue start
+GrayEnding
+
+action:statement:root
+Morgan:"...!"
+Morgan:"The entrance we came from.  It's gone!"
+next:root-1
+action end
+
+action:statement:root-1
+Randy:"No way!  There was a staircase here just a moment ago!"
+Randy:"What the hell happened to it?"
+next:root-2
+action end
+
+action:statement:root-2
+Morgan:"The flip upstairs must have been switched again to close the hidden entrance."
+Morgan:"Somebody...somebody must have hit that switch."
+next:root-3
+action end
+
+action:statement:root-3
+Randy:"Well, we need to figure something out."
+Randy:"If we can't get through that door, and we can't go back, it means we got nowhere to go."
+Randy:"I also just noticed, there isn't a lot of ventilation in here.  Or any."
+next:root-4
+action end
+
+action:statement:root-4
+Morgan:"Who would have hit that switch?  And why?"
+Morgan:"It must have been somebody who already knew about this area.  They...trapped us here on purpose."
+Morgan:"Oh my god.  They're trying to get rid of us."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+GrayEnding2
+
+action:statement:root
+Morgan:"We've looked everywhere.  There's no other exit to this place."
+Morgan:"I...I can't think of any ideas.  My head is starting to hurt."
+Randy:"Me too.  I need...I need some whiskey.  And a nap..."
+Randy:"I just need to take a nap and then we can figure...how to escape..."
+Morgan:"..."
+Randy:"......"
+Morgan:"........."
+Randy:"............"
+next:root-null
+
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

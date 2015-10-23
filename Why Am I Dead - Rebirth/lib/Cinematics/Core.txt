@@ -1,0 +1,66 @@
+
+
+
+
+trigger start
+saveGame,0
+requirements
+	.null
+effects
+	gui.flashEffect
+	self.setStatus-awake
+	trigger.triggerStatus-tutorialClear2-on
+	cinematic.saveGame
+trigger end
+
+
+
+
+trigger start
+tutorialOne,0
+requirements
+	gui.outOfDialogue
+effects
+	cinematic.fadeInProp-Owner's Room-Tutorial1-<dot>01
+	self.setStatus-asleep
+trigger end
+
+trigger start
+tutorialTwo,0
+requirements
+	character.isPastPoint-Ghost-Owner's Room-Up-160
+effects
+	cinematic.fadeInProp-Owner's Room-Tutorial2-<dot>01
+	self.setStatus-asleep
+trigger end
+
+trigger start
+tutorialThree,0
+requirements
+	character.isPastPoint-Cricket-Owner's Room-Down-320
+effects
+	cinematic.fadeInProp-Owner's Room-Tutorial3-<dot>01
+	self.setStatus-asleep
+trigger end
+
+trigger start
+tutorialClear,0
+requirements
+	character.isInMap-Cricket-Lobby
+effects
+	cinematic.removeProp-Owner's Room-Tutorial1
+	cinematic.removeProp-Owner's Room-Tutorial2
+	cinematic.removeProp-Owner's Room-Tutorial3
+	cinematic.fadeInProp-Lobby-Tutorial4-<dot>01
+	self.setStatus-asleep
+trigger end
+
+trigger start
+tutorialClear2,0
+requirements
+	.null
+effects
+	cinematic.removeProp-Lobby-Tutorial4
+	self.setStatus-asleep
+trigger end
+	

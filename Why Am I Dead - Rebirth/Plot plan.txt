@@ -1,0 +1,122 @@
+
+
+I.  Narrowing down the suspects
+
+The first character you meet outside of the owner's room is Ted.  This isn't a coincidence, of course - Cricket talking to Ted is how to initiate a sequence leading to the information of all the hotel residents' whereabouts on the night of the murder.  Cricket will ask Ted if he knows anything, who in turn suggests he might know what people were doing the night before - but he will only spill if Cricket has a tight alibi.
+
+Cricket says he was in the bathroom the night before.  Ted asks if anyone can back this up, and Cricket says he ran into someone before, but he doesn't know where they would be.  Ted then says he'll have to check it out before he can get back to Cricket.
+
+The player then has to possess Ted and check out the bathroom, where Cricket's 'friend' can confirm he was using the bathroom most of the night.  The next time Cricket talks to Ted, he can ask where each resident was at the night of the murder.  The result is there are three people unaccounted for: Randy, Morgan, and Lucille.
+
+
+II.  Randy's Past
+
+None of this has to be done in a particular order, but the player is nudged towards Randy since they already met him and Ted mentions him in his dialogue.  When Cricket interrogates him about the owner, Randy reveals they had an antagonistic past, but won't go any further into things.  In other dialogue branches, as well as when talking to Randy as Ted, Randy mentions missing his daughter.
+
+So bringing Iblis and talking to Randy as her triggers memories of his daughter and he reveals that the owner being dead means he will never see his daughter again - implying they had some sort of underhanded deal, and more importantly, showing Randy had zero motivation to kill the owner.  Still, he doesn't tell this to Cricket and there is no solid proof of such a deal.  Instead, Randy hints at letters hidden in his room.
+
+Cricket can then go and find these letters and confront Randy with them, who has little choice but to confirm their truth - the owner was using Randy's past to blackmail him and giving him promises that if he served the hotel, he would eventually be able to return to his country and see his family.
+
+Not everything is cleared up by this.  Why would the owner go to such lengths to keep one man under his employ?  In addition, this gives Randy a good story, but Morgan and Lucille are still unaccounted for.  Randy hints that Morgan may know more about the owner than he does - so she is the next step.
+
+
+III.  Morgan's Intel
+
+When Cricket interrogates Morgan, it seems clear she was close to the owner in some way, but she denies any relationship with him entirely.  If he presses her, she shuts him down entirely, insulting him for being a green whelp.  In other parts of the conversation (perhaps talking about her relationship with Iblis), she alludes to her mother who was a truly fearsome person.  Morgan clearly respects age and does not take the young Cricket seriously.
+
+But Rose will not think twice about tearing into Morgan for her decisions and behavior, and directly accusing her of sleeping with the owner to try and get a hold of his wealth.  Eventually Morgan snaps and admits that she was in a relationship with the owner, and whatever her initial intentions, it became very serious when she discovered something darker...the possibility that the hotel is a front.  Problem is, Rose isn't terribly interested in this stuff, and doesn't press into the details of what Morgan found or how she found it.  But she does say that she has possession of some of the files that are suspicious in her room.
+
+Again, some quick scavenger hunting by Cricket results in him getting these files.  He can then confront Morgan with them and ask her how/why she has these files.  She will be forced to admit she was in a relationship with the owner and quickly realized that the hotel is a front for something, as the profits do not match the expenditures and money seems to appear/disappear magically.  However, her intel is incredibly incomplete and she doesn't have enough to make a case, so it would be unlikely she had a motive to kill the owner.
+
+This leaves many questions about the hotel, but it mostly clears Morgan as a suspect for murder.  This leaves one person - Lucille.
+
+
+IV.  Lucille's Confession
+
+The player can 'end' the game at this point if they want to by talking to Lucille and explaining that she is the only person in the hotel who doesn't have an alibi and isn't ruled out by motivation like Randy or Morgan.  When pressed for an explanation of some sort, Lucille offers to meet Cricket at the scene of the crime.
+
+There, Lucille explains her true motivations to catch a serial killer and her subsequent realization that the owner was running some illicit business, and finally her fatal struggle with him.  After this, Cricket reveals his true motivations to catch the person who murdered his business partner, and puts an end to Lucille.
+
+
+V.  The Truth
+
+But it doesn't have to end this way.  Of course if you play almost entirely as Cricket, he will be the one who gets what he wants.  But others are looking for the truth; the player simply has to look beyond the outer layer to find more possibilities.
+
+Other endings:
+	- Ted discovers the secret passage and gets Orvall to investigate it with him.  When they get there, Ted kills Orvall.
+	- Randy and Morgan discover the secret passage that leads to the hotel's dark underbelly.  But when they go inside, they are locked in and left to die.
+	- Lucille discovers Cricket's identity and is prepared during their meeting.  She arrests him but lets Ted go, and does not discover the hotel's secret.
+	- Lucille discovers the secret passage and enters the hotel's black room.  After investigating, she learns that Cricket and Ted have fled the hotel.
+	
+
+
+VI. Ted's Score
+
+This ending can be achieved without completing the Randy/Morgan arcs with Cricket; so long as Ted gets Cricket's alibi, the player is eligible to see this ending.
+
+Even though Ted's initial mark, Lucille, turns out to be a bust, that doesn't mean he can't find a different, more safe victim.  Orvall is a very dim and impressionable man, perfect for Ted's needs, although the lack of challenge is a bit disappointing.  The only thing Ted is lacking is a good place to carry out the torture/murder and hide the body.
+
+At first, Ted is totally unaware of the secret passages that run through the hotel.  In fact, there is only one person who is aware of these passages now that the owner is dead: Cricket.  However, Cricket wants to keep these passages a secret to everyone at all costs, so if Ted is going to find them, he isn't going to get any direct help from Cricket.  He has to rely on clues that arise from his close observation of peoples' movements and reactions people make to intuit the answer.  Ted doesn't interpret things through evidence - he feels them out by talking to people and observing how they react.
+
+There are, then, several clues that can lead Ted to this conclusion.  Firstly is how Orvall mentions up until recently, Cricket had been going in and out of the bathroom quite regularly.  Now, he goes in and out of the owner's room regularly.  The Pooper also shares with Ted, of course, that Cricket had been using the bathroom for a very long time the night before - though now he seems to be okay.  When Cricket is asked about these things, he comes across as defensive and quick to deflect the questions.  If Randy is asked about the hotel owner's movements, Randy replies brusquely about him staying in his room.  If Morgan is asked, she says that he would go out all the time for a smoke - these things don't match up, but hint that the owner seemed to routinely go "somewhere" that people wouldn't see him...
+
+After several of these hints, Ted can interact with the mirror in the owner's room to discover there is a switch that opens a door.  He remarks that he should bring someone to investigate with him - Orvall is the obvious choice.  When they go down, they see a big door that they don't have the key for.  But when Orvall moves to leave, Ted stops him and remarks that it would be a shame to come all this way and leave with nothing.  So he ties Orvall up and and reveals that he wants to play a bit of a game...
+
+
+VII. Randy and Morgan's Teamwork
+
+This ending requires Randy/Morgan confessions to be completed first.  Cricket, does not, however, have to confront them with evidence of their confessions.
+
+Morgan's investigation of the hotel hit a serious road-bump with the death of the owner; it is likely she would have discovered more than Lucille if left to her own devices, though even she cannot be sure what she would have done with the information she would fall into.  That aside, the point is she is motivated to pursue the truth - she simply doesn't know how to continue from this point.
+
+Randy was the closest man to the owner before his death, and while he was kept an arm's length from the hotel's real work, he knows things about the owner's patterns and ways of thinking that Morgan doesn't.  And he also happens to have a thing for her, making him very easy to persuade.  But there's one more agent involved in this track: Rose.  After she gets the confession from Morgan, she can go to Randy and rub it in his face that the owner and Morgan were screwing.  In doing so, she reveals that Morgan was in fact digging up dirt on the owner.  If Morgan then talks to him and suggests trading information, Randy will be willing to collaborate.
+
+Interrogating Randy about the owner's movements brings them both to the mutual conclusion that the owner had some secret area, perhaps where he stored some illegal cargo or files.  They decide that the only way to reach the truth of the hotel is to find this area.  The way they do so has to be completely different from Ted, however - he is good with people, but Morgan and Randy are not as much.  What they have, however, is information.  If Randy investigates the confidential documents that she palmed from the owner, he will find some sort of clue that points to a mirror.  With this, Morgan sets out to find what this means, and Randy follows her.
+
+If Morgan interacts with the mirror in the owner's room, she will find the switch.  After a moment of hesitation, the player can make them go down and investigate.  They will find the black door, but realize they don't have the key for it, and there don't appear to be any alternate ways of moving forward.  But when they turn back to leave, they discover that the door they came through has been closed and locked from the outside.  The hallway is airtight, and not soon after they begin to feel faint...
+
+
+VIII. Lucille's Turnabout
+
+This ending requires Randy/Morgan confessions to be completed.  It is triggered the same way as the vanilla ending, but so long as certain conditions have been met it results in a different ending.
+
+Once Cricket has shared with Ted his alibi, Lucille has the option of questioning Cricket's place last night.  In his response, Cricket unnoticingly mentions Ted and Orvall talking to each other.  This opens up a conversation tree with Lucille where she interrogates Orvall and gets him to cough up the fact that he's been updating Ted on the whereabouts of everyone at the hotel.  This confirms her suspicions on Ted a great deal, and also implicates Cricket as he had been talking to Ted as well.
+
+If she asks Randy at any point, it brings up a small tree where she can ask if the owner was going to meet someone.  Randy clams up and says it's none of her business, but first betrays he's surprised she knows so much.  This confirms to the player, as well as Lucille, that the owner had someone he was going to meet and more importantly, that it was confidential...therefore, something related with the hotel's illicit activities.  In the same tree, he complains about how another person has been asking all sorts of questions about the owner and snooping around.
+
+If she talks to Morgan after Cricket has, she is able to ask Morgan about Cricket.  In the resulting tree, Morgan mentions off hand that Cricket said he came to the hotel to meet somebody.  This confirms, in Lucille's mind, that the business partner of the owner is Cricket.
+
+Once all of these clues have been picked out, Lucille makes a comment to herself that she should go to her room and open the box in her drawer.  When the player complies, Lucille unlocks it and takes out her badge, pistol, and the strange key she found on the owner's person (!!!).  She then makes a comment that she will have to be wary in the immediate future.  If the player then tries to finish the game with Cricket's initial ending, where Cricket goes and accuses Lucille and they talk in the owner's room, the outcome is reversed - Lucille holds Cricket at gunpoint and explains that she was trying to smoke out the owner's business partner.
+
+This ending is arguably the most positive one, since it is the only one in which Cricket is taken into custody.  However, Lucille does not discover the secret passage, and the player does not see what is behind the black door.
+
+
+IX. The Black Room
+
+This ending requires almost everything before it to be completed.  The only exception is the arc that leads Ted/Orvall into the passage.  This means the Randy/Morgan confessions must be finished, as well as their collaboration, as well as Lucille's own detective-work.  Perhaps there should be something in the game notifying the player that all of this has been done, and that from here almost all endings are possible.
+
+Randy and Morgan know about the secret passage, but don't have the key for the black room.  Lucille has the key, but hasn't realized what it's for.  If the three of them pool their resources, they can find the truth...but how does that happen?
+
+There's one last 'character' that hasn't been used to push the story forward yet: Sarah!  The plushy embodiment of Iblis's intuition and subconscious is the key to unlocking this final ending.  She knows that her mother is investigating a dangerous path, and someone needs to help her...like Lucille.  But she isn't sure how she can help, especially since her mother wouldn't believe anything Iblis says to her (she's just a child).  So another way is to go directly to Lucille and confess everything about what her mother has been investigating.  Lucille can then approach Morgan and convince her/Randy to follow Lucille.
+
+Under control of Lucille, the player can now enter the passage.  Lucille will use the skeleton key on the black door and proceed inside.  There, the three of them will find the dark truth of the hotel - it is a storage facility and storefront in human trafficking.  People - mostly young women - are bound and heavily drugged.  Inside is a folder with much more confidential information on the owner and the hotel.  After discussing it and investigating the room, the three leave the black room through another exit - the bathroom!
+
+Outside, they discover that both Ted and Cricket are nowhere to be found.  Lucille explains her mission to the residents of the hotel and what she expects to become of the two and their crimes.  Curtains fall.
+
+
+X. The Red Room
+
+Though this is not an ending to the game, it's something that needs planning.  As an extra secret to the perceptive or determined, the player can access a psychic area as the ghost which is created by Ted's own insanity.  I can come up with whatever psychic ghost explanation I want, but essentially it is a surreal location representing the horrificness of Ted's mind and the suffering that his actions create.  Inside are the spirits of his victims, and they will speak a few choice words to the player.
+
+But how is it accessed?  It should be emphasized this does not in any way contribute to the game's ending, and is only tangentially related to any events that occur at the hotel.  It is there purely as a reward for curiosity.  So, the way it is accessed should be especially obscure and involve some kind of lateral thinking.  I'd like the player to solve a puzzle that the game doesn't even acknowledge or show to exist.
+
+I can do this with the three mirrors in Ted's room.  When as the ghost, interacting with the mirrors in a certain order will take the player to this room.  There will be two hints: one, showing the shape of the ghost and the mirror leading to a strange symbol.  The second will show the symbol, and underneath it the sequence required by the mirrors.  These hints are placed in the main menu, if the right thing is clicked.
+
+
+XI. Epilogue
+
+One could say there are many potential epilogues, one for each ending the game has.  But since there is an actual sequel, it makes sense to pick one as the most canon, even if multiple endings could actually fit with the sequel.  For the sake of establishing references to each other and simply thinking things through, one ending is the "real" ending, whatever that means.  This would be the one where the black room is discovered, the human trafficking ring is brought to light, and Cricket/Ted flee the hotel.
+
+Although Lucille has discovered a great deal, her work is far from over.  This hotel is only one stop in what must be a larger organization, shipping and selling off humans right under the nose of incredibly powerful governments.  And unfortunately, they're aware of their discovery, which means they'll be much more cautious and future leads are going to be harder.  And of course, Lucille's original assignment to find evidence against the serial killer thought to be in that hotel ended up completely fruitless.
+
+The trail of Ted/Cricket wasn't too hard to follow, since she possessed all of the hidden paperwork of the hotel owner, and there weren't many places to go after the hotel.  Since it's on an island, she observed all ways off to predict how the two of them would leave.  

@@ -1,0 +1,548 @@
+
+
+dialogue start
+Sarah-Cricket
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Randy
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Ted
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Lucille
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Rose
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Morgan
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+dialogue start
+Sarah-Orval
+
+action:response:root
+Sarah
+root-1:"Hey!"
+root-1:"I have something very important to tell you."
+root-1:"Fear me, for I am a doll that can speak!"
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+null:You try to say the words, but you don't actually have a mouth.
+null:Because you're a doll.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+dialogue start
+Sarah-Iblis
+
+action:response:root
+Sarah
+root-1:"Hi Iblis!"
+root-2:"Do you believe in ghosts?"
+root-3:"What do you think about the owner?"
+root-4:"How is your mother?"
+root-trigger.sarahIblis:"I know what your mother is doing."
+root-null:"Never mind."
+action end
+
+action:statement:root-1
+Iblis:"Hi Sarah!  Hee hee!"
+next:root-1-A
+action end
+
+action:response:root-1-A
+Sarah
+root-1-B:"Wait, how are you able to talk to me?"
+root-1-C:"Do you want to play any games today?"
+action end
+
+action:statement:root-1-B
+Iblis:"Heehee!  Stop being silly, Sarah!"
+Iblis:"We talk all the time!  Remember?"
+next:root
+action end
+
+action:statement:root-1-C
+Iblis:"Really?  You're usually not interested in games, Sarah."
+Iblis:"But I can't play right now either.  My head kinda hurts..."
+next:root
+action end
+
+action:statement:root-2
+Iblis:"Ghosts?  Of course there's no such thing as ghosts!"
+Iblis:"Next you're going to ask me if I believe in Santa Claus or the Easter Bunny!"
+next:root
+action end
+
+action:statement:root-3
+Iblis:"That's the dead guy, right?"
+Iblis:"Mommy said he was a bad guy, and I shouldn't talk to him."
+Iblis:"...But she sure spent a lot of time with him..."
+next:root
+action end
+
+action:statement:root-4
+Iblis:"Lately, mommy's been...weird."
+Iblis:"I feel like she's not telling me everything."
+Iblis:"I can tell when people are lying.  Mommy's lying to me."
+next:root
+action end
+
+
+action:statement:root-trigger.sarahIblis
+Iblis:"Really?  What do you mean, Sarah?"
+next:root-blackDoor
+action end
+
+action:response:root-blackDoor
+Sarah
+root-blackDoor-2:"Your mother is investigating the owner and the hotel.  But on her own, she won't reach the truth."
+action end
+
+action:statement:root-blackDoor-2
+Iblis:"Hmm...like a mystery or something?  That sounds fun!"
+Iblis:"My mommy's a detective!"
+next:root-blackDoor-3
+action end
+
+action:response:root-blackDoor-3
+Sarah
+root-blackDoor-4:"Yes, a detective.  She's close to uncovering a dark secret.  But she needs someone to help her.  Someone she can trust."
+action end
+
+action:statement:root-blackDoor-4
+Iblis:"Ooooh...spooky..."
+Iblis:"Someone she can trust, huh...?"
+Iblis:"Like that woman with the glasses?"
+Iblis:"I can sense it.  The others in this hotel are bad people.  But not her.  She could help!"
+next:root-blackDoor-5
+action end
+
+action:response:root-blackDoor-5
+Sarah
+root-blackDoor-6:"Yes, that's right.  And your mother needs you to talk to the woman with glasses.":trigger.iblisLucille.on
+action end
+
+action:statement:root-blackDoor-6
+Iblis:"Okay!  Sounds easy."
+Iblis:"Don't worry mommy, I can help you!"
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+dialogue start
+Randy-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+dialogue start
+Morgan-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+dialogue start
+Ted-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+dialogue start
+Lucille-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+dialogue start
+Rose-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+
+dialogue start
+Orval-Sarah
+
+action:statement:root
+null:A doll of a little girl is propped up against the table.
+next:root-A
+action end
+
+action:response:root-A
+<player>
+root-B:"Hello."
+root-B:"Who are you?"
+root-B:"What do you make of things here?"
+root-null:"I'm not going to talk to a doll."
+action end
+
+action:statement:root-B
+Doll:"..."
+next:root-A
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+Iblis-Sarah
+
+action:response:root
+Iblis
+root-B:"Hello Sarah!"
+root-C:"Mommy says we'll leave the hotel as soon as the storm goes away."
+root-D:"What do you think of the people here?"
+root-null:"Bye bye!"
+action end
+
+action:statement:root-B
+Sarah:"Hello, Iblis."
+next:root-A
+action end
+
+action:statement:root-C
+Sarah:"Of course.  There is nothing in it for her to stay here longer."
+next:root-C-1
+action end
+
+action:response:root-C-1
+Iblis
+root-C-2:"What do you mean, Sarah?"
+root-A:"Never mind."
+action end
+
+action:statement:root-C-2
+Sarah:"Think, Iblis.  Why do you think she came out here in the first place?"
+Sarah:"Do you still believe it was for vacation?"
+next:root-C-3
+action end
+
+action:response:root-C-3
+Iblis
+root-C-4:"But that's what Mommy told me.  She wouldn't lie to me...right?"
+action end
+
+action:statement:root-C-4
+null:...
+null:Sarah has gone quiet.
+next:root-A
+action end
+
+action:statement:root-D
+Sarah:"They are all liars."
+Sarah:"Big lies, small lies, white lies, dark lies..."
+Sarah:"But especially dark lies."
+next:root-D-1
+action end
+
+action:response:root-D-1
+Iblis
+root-D-2:"What about that guy in the trench-coat?"
+root-D-3:"You sound so serious, Sarah!"
+action end
+
+action:statement:root-D-2
+Sarah:"Oh, except for him.  He's just an idiot."
+next:root-D-1
+action end
+
+action:statement:root-D-3
+Sarah:"I am serious."
+Sarah:"The lies are moving towards each other.  They will soon be in collision."
+Sarah:"Someone else will die.  This I know."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

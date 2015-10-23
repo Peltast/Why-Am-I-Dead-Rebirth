@@ -1,0 +1,1197 @@
+
+dialogue start
+Cricket-Randy
+
+action:response:root
+Cricket
+root-A:"Well...I didn't find anything."
+action end
+
+action:statement:root-A
+Randy:"Didn't think so."
+Randy:"Not sure what you were trying to do coming in here."
+next:root-B
+action end
+
+action:response:root-B
+Cricket
+root-B-A:"Don't you think we should try and find out who did this?"
+action end
+
+action:statement:root-B-A
+Randy:"No."
+Randy:"That's what cops do.  And I'm not a cop."
+Randy:"We've already called 911.  Leave it at that."
+next:root-B-B
+action end
+
+action:response:root-B-B
+Cricket
+root-B-C:"But with the storm that's going on, nobody'll make it here for weeks."
+action end
+
+action:statement:root-B-C
+Randy:"So we wait 'til they do make it.  He's not going anywhere."
+next:root-B-D
+action end
+
+action:response:root-B-D
+Cricket
+root-C:"Don't you care?  He was your boss.":trigger.randyLeaves.on
+root-D:"Why would someone want to kill the owner of the hotel?":trigger.randyLeaves.on
+action end
+
+action:statement:root-C
+Randy:"Yeah, and now I'm unemployed.  Thanks for the reminder."
+Randy:"...I care alright.  More than a kid like you'd know."
+Randy:"But it's done.  He's dead, and without its owner, this hotel's finished."
+Randy:"And nothing's gonna change that."
+Randy:"Now, excuse me while I go booze up."
+next:root-null
+action end
+
+action:statement:root-D
+Randy:"Beats the hell outta me."
+Randy:"The boss had a way of pissing people off."
+Randy:"Can't imagine anyone pissed off enough to kill him though."
+Randy:"Now if you're done playin' detective, I'm gonna booze up."
+next:root-null
+action end
+
+
+action:statement:rootfake
+Randy:"See ya."
+next:root-null
+action end
+
+
+action:response:root2
+Cricket
+root2-A:"So you're the hotel manager?"
+root2-B:"Do you know why anyone would want to kill the owner?"
+root2-C:"Did you notice anything suspicious last night?"
+root2-trigger.othersAlibi:"What were you doing last night?"
+root2-trigger.randysLetters:"So, I found these letters in your room..."
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Randy:"Was."
+Randy:"I was the hotel manager."
+Randy:"Now I'm just a goddamn bum."
+next:root2
+action end
+
+action:statement:root2-B
+Randy:"Well, he was a hard guy to like."
+Randy:"Pissed plenty a people off..."
+Randy:"...But not enough anyone'd want to murder him."
+next:root2-B-1
+action end
+
+action:response:root2-B-1
+Cricket
+root2-B-2:"It sounds like you two had a history."
+root2-B-3:"Who'd he piss off?"
+root2-null:"Never mind.'
+action end
+
+action:statement:root2-B-2
+Randy:"We sure did."
+Randy:"And that's what it is.  History."
+next:root2-B-5
+action end
+
+action:response:root2-B-5
+Cricket
+root2-B-6:"Sounds like you're almost happy he's dead."
+action end
+
+action:statement:root2-B-6
+Randy:"Calm down there, Dick Tracy.  I know what you're thinking and you're wrong."
+Randy:"Sure, I hated the guy's guts.  But his death wouldn'ta helped me."
+Randy:"If anything, it's the worst thing to happen to me in the last three years."
+Randy:"So that's that.  I don't owe you any explanations."
+next:root2-null
+action end
+
+
+action:statement:root2-B-3
+Randy:"Past tenants, mainly.  He wasn't a very friendly person."
+Randy:"But I don't think anyone'd wanna kill him for poor manners."
+next:root2-B-1
+action end
+
+action:statement:root2-C
+Randy:"Well, I heard the gunshot."
+Randy:"It woke me up in the middle 'a the night."
+Randy:"I ran out of my room soon after I heard it, but didn't see anything."
+Randy:"When I checked the owner's room, it was just him inside, dead."
+next:root2-C-1
+action end
+
+action:response:root2-C-1
+Cricket
+root2-C-2:"Wait...then how did the killer get away?"
+root2-null:"Never mind."
+action end
+
+action:statement:root2-C-2
+Randy:"Maybe they were faster than I was."
+Randy:"Maybe they hid somewhere and I didn't see 'em."
+Randy:"Maybe they walked through the hotel walls."
+Randy:"I don't know.  I don't care."
+next:root2
+action end
+
+
+action:statement:root2-trigger.othersAlibi
+Randy:"Me?  I was gettin' hammered and tryin' to fix my TV."
+next:root2-trigger.othersAlibi-2
+action end
+
+action:response:root2-trigger.othersAlibi-2
+Cricket
+root2-trigger.othersAlibi-3:"Is there anyone that can back that up?"
+action end
+
+action:statement:root2-trigger.othersAlibi-3
+Randy:"Huh?  Oh, sure."
+Randy:"Whenever I'm gettin' drunk and fixin' appliances I make sure to invite company."
+next:root2-trigger.othersAlibi-4
+action end
+
+action:response:root2-trigger.othersAlibi-4
+Cricket
+root2-trigger.othersAlibi-5:"So...you were alone."
+action end
+
+action:statement:root2-trigger.othersAlibi-5
+Randy:"No shit."
+next:root2-null
+action end
+
+
+action:statement:root2-trigger.randysLetters
+Randy:"You...how did you find these!?"
+next:root3
+action end
+
+action:response:root3
+Cricket
+root3-1:"The owner was blackmailing you, wasn't he?"
+action end
+
+action:statement:root3-1
+Randy:"...I guess there's no point lying about it if you've already seen those letters."
+Randy:"Yeah.  Me and the owner had some screwed up arrangement."
+Randy:"I worked at the hotel and did errands for him.  It felt like being a house servant..."
+Randy:"In return, he promised that I'd be able to see my daughter again."
+next:root3-2
+action end
+
+action:response:root3-2
+Cricket
+root3-A:"How would you be able to see your daughter?"
+root3-B:"Errands?  What kind of errands?"
+root3-C:"Thanks for the information.":trigger.randyConfessed.on
+action end
+
+action:statement:root3-A
+Randy:"The owner...was a mysterious man."
+Randy:"This may be a rinky dink motel he was in charge of, but I could tell.  He had his fingers in a lot of pies."
+Randy:"With the right connections, and enough money, there's nothing you can't do in this world."
+Randy:"Removing one man's criminal history would be simple."
+next:root3-2
+action end
+
+action:statement:root3-B
+Randy:"Moving things around.  Transporting people.  That kinda stuff."
+Randy:"Nothing illegal, but it still left me feeling uneasy.  I was never told why I was doin' these things."
+Randy:"Like he was hiding stuff from me.  But I never cared to figure out what."
+next:root3-2
+action end
+
+action:statement:root3-C
+Randy:"Yeah, only 'cause you twisted it outta me."
+Randy:"..."
+Randy:"Look, kid.  If you're really set on uncovering things around here, you should talk to Morgan."
+Randy:"She got real close to the owner.  Real, real close.  If you know what I mean."
+Randy:"She might know even more than I do."
+next:root3-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Lucille
+
+action:response:root
+Cricket
+root-A:"Who are you?"
+root-B:"Did you know the hotel owner?"
+root-C:"Did you notice anything suspicious last night?"
+root-trigger.othersAlibi:"Where were you last night?"
+root-null:"Nevermind."
+action end
+
+action:statement:root-A
+Lucille:"Um...I'm Lucille.  Nice to meet you."
+Lucille:"Oh, I'm sorry.  What's your name?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Cricket
+root-A-2:"Cricket."
+root-A-3:"It's not important."
+action end
+
+action:statement:root-A-2
+Lucille:"Nice to meet you, Cricket."
+next:root-null
+action end
+
+action:statement:root-A-3
+Lucille:"Oh...okay...sorry."
+next:root-null
+action end
+
+action:statement:root-B
+Lucille:"...I met him when I checked in."
+Lucille:"I remember, he was very nice to me."
+next:root
+action end
+
+action:statement:root-C
+Lucille:"Hmm...I don't think so."
+next:root-C-1
+action end
+
+action:response:root-C-1
+Cricket
+root-C-2:"Are you sure?  This is important."
+root-null:"Okay."
+action end
+
+action:statement:root-C-2
+Lucille:"I, well...I heard a load bang..."
+Lucille:"It woke me up at night...did you hear it too?"
+Lucille:"I think I heard some slamming, too..."
+Lucille:"..."
+Lucille:"...I'm sorry...that's all I can think of..."
+next:root-null
+action end
+
+action:statement:root-trigger.othersAlibi
+Lucille:"Me?  I, well, I was in my room all of last evening."
+Lucille:"....I was reading a book.  Do you like books?"
+next:root-trigger.othersAlibi-A
+action end
+
+action:response:root-trigger.othersAlibi-A
+Cricket
+root-trigger.othersAlibi-B:"I'm guessing you were by yourself, then?"
+action end
+
+action:statement:root-trigger.othersAlibi-B
+Lucille:"...Yes...."
+next:root-null
+action end
+
+
+
+action:response:root2
+Cricket
+root2-A:"There are three people in this hotel without solid alibis.  You, Randy, and Morgan."
+action end
+
+action:statement:root2-A
+Lucille:"I...I see..."
+Lucille:"...I'm sure you suspect me.  But...I didn't do it."
+Lucille:"It must have been somebody else..."
+next:root2-B
+action end
+
+action:response:root2-B
+Cricket
+root2-C:"No.  Randy was being blackmailed by the owner; if he died, Randy wouldn't get to see his daughter.  So he had no motive."
+action end
+
+action:statement:root2-C
+Lucille:"..."
+next:root2-D
+action end
+
+action:response:root2-D
+Cricket
+root2-E:"And Morgan was in the middle of investigating the owner's finances.  His death only disrupted her search, so she didn't have motive either."
+action end
+
+action:statement:root2-E
+Lucille:"..."
+next:root2-F
+action end
+
+action:response:root2-F
+Cricket
+root2-G:"That leaves one person as the killer.  You.":trigger.cricketFinale.on
+action end
+
+action:statement:root2-G
+Lucille:"......"
+Lucille:".................."
+Lucille:"...We need to talk.  In complete privacy."
+Lucille:"Meet me in the owner's room.  The scene of the crime."
+next:root2-null
+action end
+
+
+
+
+action:response:root3
+Cricket
+root3-A:"Okay.  I need answers."
+action end
+
+action:statement:root3-A
+Lucille:"Then you're in luck."
+Lucille:"Tell me, what do you know about this hotel?"
+next:root3-B
+action end
+
+action:response:root3-B
+Cricket
+root3-C:"I don't know.  It sounds like the owner may have been involved with something illegal.  Morgan thought the hotel was a front."
+action end
+
+action:statement:root3-C
+Lucille:"..."
+Lucille:"Wrong."
+Lucille:"The owner was a criminal, yes.  But the hotel was not a front."
+Lucille:"The hotel was the stage of the crime."
+next:root3-D
+action end
+
+action:response:root3-D
+Cricket
+root3-E:"What do you mean?"
+action end
+
+action:statement:root3-E
+Lucille:"It suffices to say that the remote location of this hotel was by design, not accident."
+Lucille:"Away from society.  Away from the law."
+Lucille:"Make no mistake, this hotel deserves to be shut down and burned."
+next:root3-F
+action end
+
+action:response:root3-F
+Cricket
+root3-G:"And that was why you killed him?"
+action end
+
+action:statement:root3-G
+Lucille:"No.  Not exactly."
+Lucille:"Sadly, Morgan was not the only one whose investigation was ended prematurely."
+Lucille:"I had been careless, and he discovered me in my search for evidence against him."
+Lucille:"In that moment, it was me or him.  I chose myself."
+next:root3-H
+action end
+
+action:response:root3-H
+Cricket
+root3-I:"You...you have a gun?"
+action end
+
+action:statement:root3-I
+Lucille:"And a badge and license to kill, to go along with it."
+next:root3-J
+action end
+
+action:response:root3-J
+Cricket
+root3-K:"You're a cop?  You were sent here to investigate the hotel?"
+action end
+
+action:statement:root3-K
+Lucille:"No.  I came here on the trail of a known serial killer."
+Lucille:"One that I'm reasonably confident is, in fact, here."
+Lucille:"However, when I grew suspicious of the owner, I realized he was more...deserving of my attention."
+next:root3-L
+action end
+
+action:response:root3-L
+Cricket
+root3-M:"I'm....not sure how to react."
+action end
+
+action:statement:root3-M
+Lucille:"Act as if nothing has changed."
+Lucille:"If my cover is blown, all of my work could be reversed."
+next:root3-N
+action end
+
+action:response:root3-N
+Cricket
+root3-null:"I think it's too late for that.":trigger.cricketConfession.on
+action end
+
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Morgan
+
+action:response:root
+Cricket
+root-A:"Hi, my name is Cricket.  Who are you?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Morgan:"The name's Morgan.  What can I do for you, Cricket?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Cricket
+root-B:"Would you be able to answer some questions for me?"
+action end
+
+action:statement:root-B
+Morgan:"Ooh...well, that definitely depends on the type of questions you're asking."
+next:root-C
+action end
+
+action:response:root-C
+Cricket
+root-D:"It's regarding the hotel owner's death.":trigger.greetedMorgan.on
+action end
+
+action:statement:root-D
+Morgan:"...Oh.  How disappointing."
+Morgan:"Alright, ask away."
+next:root2
+action end
+
+
+action:response:root2
+Cricket
+root2-A:"Did you know the hotel owner?"
+root2-B:"Did you see or hear anything suspicious last night?":trigger.aboutIblis.on
+root2-trigger.othersAlibi:"Where were you last night?"
+root2-trigger.aboutIblis:"How is your daughter, by the way?"
+root2-trigger.morgansFiles:"So, I found these files in your room..."
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Morgan:"We bumped into each other now and again, but I can't say that I really knew the man."
+Morgan:"You might ask Randy...the man who always smells of beer?  He's been here for much longer."
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Cricket
+root2-A-2:"You really didn't know the owner at all?"
+root2-trigger.randyConfessed:"Randy says you and the hotel owner were seeing each other."
+root2-null:"Well, thank you for your time.
+action end
+
+action:statement:root2-A-2
+Morgan:"No, that's what I just finished saying.  Are you hard of hearing?"
+next:root2-null
+action end
+
+action:statement:root2-trigger.randyConfessed
+Morgan:"Ha!  And you believe what that oaf tells you?"
+Morgan:"The man is constantly drunk.  Anything he says is suspect in my eyes.  You're a fool to trust him."
+next:root2-A-4
+action end
+
+action:response:root2-A-4
+Cricket
+root2-null:"I suppose you're right."
+root2-A-5:"You yourself said that Randy knows about the owner.  Well, he knew the owner was in a relationship with you."
+action end
+
+action:statement:root2-A-5
+Morgan:"You have some nerve to call me a liar to my face, do you know that?"
+Morgan:"It's just as well for me that you are a green little boy that couldn't even intimidate my daughter."
+Morgan:"Come back to me in twenty years when you've grown a backbone and maybe we can talk."
+next:root2-null
+action end
+
+action:statement:root2-B
+Morgan:"Aside from the sound of a gunshot, no."
+Morgan:"I laid awake afterward and comforted my daughter Iblis..."
+Morgan:"So I didn't have a chance to investigate anything at the time."
+Morgan:"But to my memory, I cannot remember hearing or seeing anything else."
+next:root2
+action end
+
+action:statement:root2-trigger.othersAlibi
+Morgan:"Me?  Why, I went outside for a bit of fresh air."
+Morgan:"There's just...something about the nighttime that appeals to me."
+next:root2-trigger.othersAlibi-A
+action end
+
+action:response:root2-trigger.othersAlibi-A
+Cricket
+root2-trigger.othersAlibi-B:"You were out there alone?  During the storm?"
+action end
+
+action:statement:root2-trigger.othersAlibi-B
+Morgan:"Well of course I wasn't actually in the storm, darling."
+Morgan:"I was standing under an outdoor roof.  But yes, I was alone."
+next:root-null
+action end
+
+action:statement:root2-trigger.aboutIblis
+Morgan:"She's doing alright.  She's handled this better than I would have expected, given her age."
+Morgan:"Although sometimes, the things she says...it's as if she doesn't care at all."
+Morgan:"I wonder if I spoil her too much.  My own mother was much harsher on me."
+Morgan:"Now, there was a tough woman.  She was nothing but grit.  She could have scared a rhinoceros into submission."
+Morgan:"This world needs more women like her."
+next:root2
+action end
+
+action:statement:root2-trigger.morgansFiles
+Morgan:"W-what?  Those...how did you...I can explain those."
+next:root3
+action end
+
+action:response:root3
+Cricket
+root3-1:"You don't have to.  I know you were investigating the owner's funds."
+action end
+
+action:statement:root3-1
+Morgan:"...I don't know how you found out about those files, but I guess it doesn't matter anymore."
+Morgan:"Yes, I'd been trying to find out more about the owner's finances.  They were very suspicious."
+next:root3-2
+action end
+
+action:response:root3-2
+Cricket
+root3-A:"How were they suspicious?":trigger.morgansTheory.on
+root3-trigger.morgansTheory:"What do you think the hotel is a front for?"
+root3-B:"You were in a relationship with the owner in order to get closer to those files, weren't you?"
+root3-C:"Thank you for your help.":trigger.morganConfessed.on
+action end
+
+action:statement:root3-A
+Morgan:"Quite simply, the income the hotel should have been pulling in from tenants, and the income it actually earned...didn't match."
+Morgan:"Look at this place.  Can you actually imagine such a flimsy excuse for a hotel would be able to earn a profit?"
+Morgan:"Well, it shouldn't.  But mysteriously, money comes out of nowhere to keep this place out of the red."
+Morgan:"It has led me to think that this hotel...is nothing but a front."
+next:root3-2
+action end
+
+action:statement:root3-trigger.morgansTheory
+Morgan:"That's exactly what I was trying to figure out."
+Morgan:"I was hoping that if I stuck around long enough, I could deduce what the owner was hiding..."
+Morgan:"But with the owner gone, so is my supply of information."
+Morgan:"It's possible that's the end of it, but what if he had partners?  What if he was part of a larger ring?"
+Morgan:"Now, I'll never really know."
+next:root3-2
+action end
+
+action:statement:root3-B
+Morgan:"If you are so obsessed about my personal life, fine.  Yes, I was in a relationship with him."
+Morgan:"I don't see how that is relevant.  However I chose to obtain those files is my own concern."
+next:root3-2
+action end
+
+action:statement:root3-C
+Morgan:"Help?  Well, I suppose you can call it whatever you like."
+Morgan:"I'm sure you suspected that I was behind the owner's death, or some nonsense."
+Morgan:"The bottom line is, I had a good thing going with the owner alive.  Perhaps I could have even ended up blackmailing him."
+Morgan:"I don't have any more time for you.  Good luck with the rest of your investigation."
+next:root3-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Orval
+
+action:response:root
+Cricket
+root-A:"Who are you?"
+root-B:"Did you know the hotel owner?"
+root-C:"Did you notice anything suspicious last night?"
+root-trigger.tedsAlibi:"Ted said he was in your room last night.  Is that true?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Orval:"Why?  Who are YOU?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Cricket
+root-A-2:"I asked first."
+root-A-3:"I'm Cricket.  Now, who are you?"
+action end
+
+action:statement:root-A-2
+Orval:"Ooh, ooh, you got me there.  You're a tricky one."
+Orval:"Name's Orval.  I'm an exhibitionist.
+Orval:"Now, your turn!"
+next:root-A-4
+action end
+
+action:response:root-A-4
+Cricket
+root-A-5:"An...exhibitionist?"
+root-null:"I think I'm done talking to you."
+action end
+
+action:statement:root-A-5
+Orval:"Yeah, yeah.  Exhibitionist.  Y'know."
+next:root-A-7
+action end
+
+action:response:root-A-7
+Cricket
+root-A-8:"You mean you flash people."
+action end
+
+action:statement:root-A-8
+Orval:".....Yes."
+next:root-null
+action end
+
+action:statement:root-A-3
+Orval:"That's not really a good introduction, Cricket."
+next:root-A-6
+action end
+
+action:response:root-A-6
+Cricket
+root-null:"Forget it."
+action end
+
+action:statement:root-B
+Orval:"Hmm.  Hmmmmmmmm."
+Orval:"Define 'know'."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Cricket
+root-null:"Never mind."
+root-B-2:"Answer the question.  Did you know the hotel owner?"
+action end
+
+action:statement:root-B-2
+Orval:"Sure, I knew him.  Yeah, we go back."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Cricket
+root-B-4:"Really?  How did you know each other?
+root-B-5:"What can you tell me about him?"
+action end
+
+action:statement:root-B-4
+Orval:"Well, he was there when I checked in.  Yeah."
+Orval:"Got a bad vibe from him.  Y'know some people give bad vibes?"
+Orval:"Well he gave me a bad vibe."
+next:root-B-6
+action end
+
+action:statement:root-B-5
+Orval:"Guy gave me a bad vibe.  Just...just somethin...bad."
+Orval:"Yeah, I could tell just from lookin' at him.  Bad vibe."
+next:root-B-6
+action end
+
+action:response:root-B-6
+Cricket
+root-B-7:"...So you didn't actually know him."
+action end
+
+action:statement:root-B-7
+Orval:".....No."
+next:root-null
+action end
+
+action:statement:root-C
+Orval:"Suspicious?  Why?  Why would anything be suspicious?"
+next:root-C-1
+action end
+
+action:response:root-C-1
+Cricket
+root-C-2:"Because there was a murder last night, idiot."
+root-C-1-A:"No reason.  Did you notice anything?"
+action end
+
+action:statement:root-C-1-A
+Orval:"Hmm.  Nah, nothin' suspicious.  I'd know suspicious if I saw it."
+next:root
+action end
+
+action:statement:root-C-2
+Orval:"Oooohhh yeeeeaaaah!  Now that you mention it, yeah."
+Orval:"There was a murder, wasn't there."
+Orval:"Hm."
+Orval:"I heard a gunshot."
+Orval:"You think that had something to do with the murder?"
+next:root-C-3
+action end
+
+action:response:root-C-3
+Cricket
+root-C-5:"I think that WAS THE MURDER."
+root-C-6:"Woah, I hadn't thought of that before."
+action end
+
+action:statement:root-C-5
+Orval:"Hey, no need to get snappy!  Snappy man."
+next:root-null
+action end
+
+action:statement:root-C-6
+Orval:"Heheh, yeah, well there ya go."
+Orval:"Didn't hear nothin' else though."
+next:root-null
+action end
+
+action:statement:root-trigger.tedsAlibi
+Orval:"Hmm.  Ted.  Ted.  Tedtedtedtedted.  Hmmmmmmm....."
+next:root-trigger.tedsAlibi-A
+action end
+
+action:response:root-trigger.tedsAlibi-B
+Cricket
+root-trigger.tedsAlibi-B:"Black hair, colorful shirt, about my height."
+action end
+
+action:statement:root-trigger.tedsAlibi-C
+Orval:"Ooooooohhh yeeeaaaah!  Ted!  Of course!"
+Orval:"What a great guy, that Ted.  Yeah, we was talkin' last night about stuff."
+next:root
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Rose
+
+action:response:root
+Cricket
+root-A:"Who are you?"
+root-B:"Did you know the hotel owner?"
+root-C:"Did you notice anything suspicious last night?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Rose:"Who I am is none of your damn business, that's who I am."
+next:root
+action end
+
+action:statement:root-B
+Rose:"Not well, but I bet he deserved what he got."
+Rose:"...What?  Don't look at me like that."
+Rose:"I saw how he was with the ladies.  Any pretty thing he saw, he just had to have it."
+Rose:"That's not how a married man should act."
+Rose:"At least, I think he was married."
+next:root
+action end
+
+action:statement:root-C
+Rose:"Playing detective, are we?"
+Rose:"I'll let you in on a secret here, sweety."
+Rose:"Everything in this hotel's suspicious."
+Rose:"You should be asking me if I saw anything normal."
+next:root
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Pooper
+
+action:response:root
+Cricket
+root-A:"Who are you?"
+root-B:"Did you know the owner?"
+root-C:"Did you notice anything suspicious last night?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Pooper:"...I'm sorry?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Cricket
+root-A-2:"What's your name?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A-2
+Pooper:"Um, really?  I'm taking a dump, man."
+Pooper:"Not in the mood for introductions."
+next:root-null
+action end
+
+action:statement:root-B
+Pooper:"...Huh?"
+next:root-B-1
+action end
+
+action:response:root-B-1
+Cricket
+root-B-2:"Did you know the owner?"
+root-null:"Never mind."
+action end
+
+action:statement:root-B-2
+Pooper:"Uh, no, I didn't."
+Pooper:"Now can you go away?"
+next:root-null
+action end
+
+action:statement:root-C
+Pooper:"...What?"
+next:root-C-1
+action end
+
+action:response:root-C-1
+Cricket
+root-C-2:"Did you notice anything suspicious last night?"
+root-null:"Never mind."
+action end
+
+action:statement:root-C-2
+Pooper:"Jesus, man, what the hell is your problem?"
+Pooper:"What makes you think this is a good time and place to talk about this?"
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Cricket-Ted
+
+action:response:root
+Cricket
+root-A:"Who are you?"
+root-B:"Did you know the hotel owner?"
+root-C:"Did anybody seem out of place last night?"
+root-null:"Nevermind."
+action end
+
+action:statement:root-A
+Ted:"My name's Ted.  What's yours?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Cricket
+root-A-2:"Cricket."
+root-A-3:"It's not important."
+action end
+
+action:statement:root-A-2
+Ted:"Nice to meet you, Cricket!"
+next:root
+action end
+
+action:statement:root-A-3
+Ted:"Haha, okay."
+next:root-null
+action end
+
+action:statement:root-B
+Ted:"I didn't, no.  But I feel terrible about what happened."
+next:root
+action end
+
+action:statement:root-C
+root-C:"Well...sorta."
+next:root-C-1
+action end
+
+action:response:root-C-1
+Cricket
+root-C-2:"Sorta?"
+action end
+
+action:statement:root-C-2
+Ted:"I may know the whereabouts of...some of the people here last night."
+Ted:"But, well, it's not stuff that I could tell to just...anybody.  You know?"
+Ted:"Nothing against you, I just don't know anything about you."
+next:root-C-3
+action end
+
+action:response:root-C-3
+Cricket
+root-C-4:"A man is dead.  Why would you withhold that kind of information?"
+root-C-5:"Is there anything I could do to prove my goodwill?"
+action end
+
+action:statement:root-C-4
+Ted:"I know, I know.  But if there is really a killer in our midst..."
+Ted:"Don't you think spreading info about everyone's schedules and whereabouts..."
+Ted:"Doesn't that sound kinda dangerous?"
+Ted:"Listen, I'm just saying I need to be able to trust you first.  I don't think that's unreasonable, right?"
+Ted:"All I want to know is...How do I know you aren't the killer?  What's your alibi?"
+next:root-C-6
+action end
+
+action:statement:root-C-5
+Ted:"I mean, I'm sure you are trying to do the right thing."
+Ted:"Just, given the circumstances and all, I'd need to really trust you."
+Ted:"So here's what you'd have to do.  Give me your alibi."
+next:root-C-6
+action end
+
+action:response:root-C-6
+Cricket
+root-C-7:"Well, actually...at the time I heard the gunshot, I was using the bathroom.  The one at the center of the hall."
+action end
+
+action:statement:root-C-7
+Ted:"Can anyone back that up?  If not, it's not really an alibi..."
+next:root-C-8
+action end
+
+action:response:root-C-8
+Cricket
+root-C-9:"Actually, there was somebody there.  He could vouch for me.":trigger.tedPooper.on
+action end
+
+action:statement:root-C-9
+Ted:"Any idea where I'd find him?"
+next:root-C-10
+action end
+
+action:response:root-C-10
+Cricket
+root-C-11:"I don't know.  I guess I'd start with the bathroom?"
+action end
+
+action:statement:root-C-11
+Ted:"Okay.  I'll need to go check your alibi out before we can talk any further."
+next:root-null
+action end
+
+
+action:response:root2
+Cricket
+root2-A:"What's your alibi?":trigger.tedsAlibi.on
+root2-B:"What about the others here?":trigger.othersAlibi.on
+root2-trigger.tedsAlibi:"You said some of the people seem off?"
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Ted:"Fair enough.  You delivered, so I guess it's my turn."
+Ted:"Odd as it is, I was in Orval's room at the time."
+Ted:"He's kind of a weird fellow, but he also has a useful way of being everywhere and around everyone."
+Ted:"Some of the people here seemed off to me, so I was asking him if he knew anything."
+Ted:"So, that's where I was.  He can vouch for me if needed."
+next:root2
+action end
+
+action:statement:root2-B
+Ted:"My knowledge is a bit incomplete, and some of it can't be proven, so you have to take my word."
+Ted:"I was with Orval at the time, so he's in the clear."
+Ted:"The old lady Rose was up going through old mementos and albums in her room."
+Ted:"Iblis was sleeping at the time."
+Ted:"You and that guy in the bathroom were, well, we covered that already."
+Ted:"I don't know about Randy.  His room isn't in the main hallway, so he could've been doing anything."
+Ted:"I never saw Lucille last night.  She may have been in her room the whole time, or she may have been out the whole time."
+Ted:"Also not sure about Morgan.  At some point last night she left her room, but I don't know where she went."
+Ted:"That's about it, I think.  So the only gaps are Randy, Morgan and Lucille."
+next:root2-B-2
+action end
+
+action:statement:root2-trigger.tedsAlibi
+Ted:"Oh come on, don't tell me you haven't felt it."
+Ted:"I can't really put a finger on it.  It's not like anything specific happened."
+Ted:"It's just...things here rub me the wrong way, you know?"
+next:root2
+action end
+
+action:response:root2-B-2
+Cricket
+root2-B-3:"A lot of that was awfully....specific.  How do you know all of this?"
+action end
+
+action:statement:root2-B-3
+Ted:"Haha.  Well, I like to be aware of my surroundings."
+Ted:"That includes being aware of the people around me."
+next:root2
+action end
+
+dialogue end
+
+
+
+
+
+
+dialogue start
+Cricket-Iblis
+
+action:response:root
+Cricket
+root-A:"I'm guessing you didn't know the owner."
+root-B:"Did you see anything suspicious last night?"
+root-C:"Hey, what's your name?"
+root-null:"Nevermind."
+action end
+
+action:statement:root-A
+Iblis:"Oh, is that the dead guy?  Nah mister, didn't know him."
+Iblis:"Mommy spent a lotta time with him but I never saw him."
+next:root
+action end
+
+action:statement:root-B
+Iblis:"Hmmm, well, Sarah was pretty quiet yesterday.  That was kinda weird."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Cricket
+root-B-2:"Who's Sarah?"
+action end
+
+action:statement:root-B-2
+Iblis:"Oh, Sarah's my friend, she's by my bed now."
+Iblis:"Normally she talks all the time!  I can't get her to be quiet!"
+Iblis:"But yesterday she didn't say nothin'."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Cricket
+root-B-4:"Oh, I see, Sarah's a doll."
+root-B-5:"Did Sarah say anything today?"
+action end
+
+action:statement:root-B-4
+Iblis:"She's not just a doll!  She's my friend!"
+Iblis:"She knows things.  About people."
+Iblis:"I bet she knows things about you, too."
+next:root
+action end
+
+action:statement:root-B-5
+Iblis:"Well......she did..."
+Iblis:"Actually, it...well, Sarah scared me today."
+Iblis:"She said that somebody else would die tonight."
+next:root-B-6
+action end
+
+action:response:root-B-6
+Cricket
+root-null:"...Er.  Well, good thing that's not creepy at all!  Nope!  Not creepy."
+action end
+
+action:statement:root-C
+Iblis:"My name's Iblis, what's yours?"
+next:root-C-1
+action end
+
+action:response:root-C-1
+Cricket
+root-C-2:"I'm Cricket.  I take it Morgan is your mother?"
+action end
+
+action:statement:root-C-2
+Iblis:"Yep!"
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/3.5">
+  <id>WhyAmIDeadRebirth</id>
+  <versionNumber>1.0</versionNumber>
+  <filename>WhyAmIDeadRebirth</filename>
+  <name>Why Am I Dead - Rebirth</name>
+  <initialWindow>
+    <title>Why Am I Dead - Rebirth</title>
+    <content>WhyAmIDeadRebirth.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <minimizable>true</minimizable>
+    <maximizable>false</maximizable>
+    <resizable>false</resizable>
+    <maxSize>540 400</maxSize>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+</application>

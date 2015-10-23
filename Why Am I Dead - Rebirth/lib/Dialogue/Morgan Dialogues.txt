@@ -1,0 +1,504 @@
+
+
+
+dialogue start
+Morgan-Cricket
+
+action:response:root
+Morgan
+root-A:"Hello there, handsome."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Cricket:"I, uh...hello."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"What is it that brings you to this hotel, anyway?":trigger.aboutCricket.on
+root-A-3:"What does a guy like you do for a living?"
+action end
+
+action:statement:root-A-2
+Cricket:"Well, actually, I was supposed to meet with somebody at the hotel."
+Cricket:"He wasn't here, though.  And anyway, this mystery takes precedent."
+next:root-B
+action end
+
+action:statement:root-A-3
+Cricket:"Oh, well I'm an attorney, actually."
+Cricket:"Go ahead, tell me a lawyer joke!  I must've heard them all by now."
+next:root-C
+action end
+
+action:response:root-B
+Morgan
+root-B-1:"I'm sorry to hear that.  I hope you find him eventually."
+action end
+
+action:statement:root-B-1
+Cricket:"Thanks, but I'm not optimistic."
+next:root-null
+action end
+
+action:response:root-C
+Morgan
+root-C-1:"I wasn't going to.  I'm only impressed that a young man like you is practicing law."
+action end
+
+action:statement:root-C-1
+Cricket:"Well, uh...thanks?"
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Lucille
+
+action:response:root
+Morgan
+root-A:"Hello dear, how's it going?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Lucille:"...Fine..."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"So, what brings a girl like you to this hotel?"
+root-B:"Is something wrong, sweety?  You don't sound fine."
+action end
+
+action:statement:root-A-2
+Lucille:"Well...I, uh...it's...it was for vacation..."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Morgan
+root-null:"Is that right?  It was the same for me."
+action end
+
+action:statement:root-B
+Lucille:"No, no, really...I'm fine.  Just a bit shaken up."
+root-B-1
+action end
+
+action:response:root-B-1
+Morgan
+root-null:"I see.  Sorry to hear that."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Orval
+
+action:response:root
+statement
+Morgan
+root-null:"I haven't a clue why I'd want to talk to you, honestly."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Randy
+
+action:response:root
+Morgan
+root-A:"Hey there."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Randy:"...Hi!  Hey!  How's it going?  What can I do to help?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"Well, I did have a really important question I was hoping you could answer..."
+action end
+
+action:statement:root-A-2
+Randy:"Of course, what do you need to know?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Morgan
+root-A-4:"Why did you dislike the hotel owner so much?"
+action end
+
+action:statement:root-A-4
+Randy:"...Oh."
+Randy:"It's...it's complicated.  I'd really rather not get into it."
+next:root-A-5
+action end
+
+action:response:root-A-5
+Morgan
+root-A-6:"Aw...not even for me?  It's really, really important to me..."
+root-null:"I understand."
+action end
+
+action:statement:root-A-6
+Randy:...Alright.
+Randy:"Here's all you need to know."
+Randy:"He got in the way of me and..."
+Randy:"...my daughter."
+Randy:"And I haven't seen her since."
+Randy:"You know, your daughter Iblis looks like she did when she was younger..."
+next:root-null
+action end
+
+
+action:response:root2
+Morgan
+root2-A:"Hey there."
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Randy:"...Hi!  Hey!  How's it going?  What can I do to help?"
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Morgan
+root2-A-2:"Well, I did have a really important question I was hoping you could answer..."
+action end
+
+action:statement:root2-A-2
+Randy:"Of course, what do you need to know?"
+next:root2-A-3
+action end
+
+action:response:root2-A-3
+Morgan
+root2-A-4:"Why did you dislike the hotel owner so much?"
+action end
+
+action:statement:root2-A-4
+Randy:"..."
+Randy:"I could tell you that.  But first..."
+Randy:"Is it true that you were investigating the owner?"
+Randy:"Is it true that you think the hotel is...a front?"
+next:root2-B
+action end
+
+action:response:root2-B
+Morgan
+root2-C:"...Who told you that!?":trigger.morganAndRandy.on
+action end
+
+action:statement:root2-C
+Randy:"So, it's true."
+Randy:"I had my suspicions about the owner, but I never tried to find the truth."
+Randy:"I was...scared.  Scared of him.  Scared I'd never see my daughter again."
+Randy:"None of it matters now.  You can ask me anything you want.  Maybe you'll find what you're looking for."
+next:root2-null
+action end
+
+
+action:response:root3
+Morgan
+root3-A:"Why did you dislike the hotel owner so much?"
+root3-B:"Did you know this hotel was running a huge deficit?"
+root3-C:"What made you suspicious of the owner?":trigger.ownerErrands.on
+root3-trigger.ownerVisitors:"What would these visitors do?":trigger.ownerVisitors2.on
+root3-trigger.ownerErrands:"What about the errands the owner gave you?":trigger.ownerErrands2.on
+root3-trigger.ownerHiddenRoom:"From what you're saying...maybe the owner did have a spare dimension."
+root3-null:"Never mind."
+action end
+
+
+action:statement:root3-A
+Randy:"Well, long story short, I have a criminal record and can't go back home."
+Randy:"The owner made a deal with me - I work here, and do everything he tells me, without question.  And he'll make my past go away."
+Randy:"Meaning, I was his servant.  A whipped dog.  He wasn't my boss, he was my extortionist."
+Randy:"How could I like him?"
+next:root3
+action end
+
+action:statement:root3-B
+Randy:"No, but I guess it wouldn't surprise me."
+Randy:"I never got close to hotel finances and profit.  But we don't get many tenants, it's true."
+next:root3-front
+action end
+
+
+action:response:root3-front
+Morgan
+root3-front-A:"Any idea where the rest of the money is coming from?"
+root3-front-B:"Was the owner involved in any other kind of business?  Apart from the hotel?":trigger.ownerVisitors.on
+root3-null:"Never mind."
+action end
+
+action:statement:root3-front-A
+Randy:"You think the hotel's a front, right?  I think that's a good theory."
+Randy:"Money probably comes from outside.  But I can't guess any more than that."
+next:root3-front-B
+action end
+
+action:statement:root3-front-B
+Randy:"I couldn't say anything about business, but I could tell the man had power.  Connections."
+Randy:"I don't know where it came from.  But certain people would visit.  People who...well, could afford better than here."
+next:root3
+action end
+
+action:statement:root3-C
+Randy:"Aside from his general nature and the fact he was extorting me?"
+Randy:"Well, he would give me strange odd jobs all the time.  Nothing illegal, but...suspicious."
+next:root3
+action end
+
+
+action:statement:root3-trigger.ownerVisitors
+Randy:"Far as I could tell, they'd spend time in his room together, talking or whatnot."
+Randy:"Sometimes they'd spend all day in there, doing who knows what."
+Randy:"Though come to think of it...I never really heard them.  It was always very quiet when visitors were over."
+next:root3
+action end
+
+action:statement:root3-trigger.ownerErrands
+Randy:"The weird thing was they seemed to have no connection to the hotel."
+Randy:"Maybe I'd fix something he gave me, or I'd go out and buy something and bring it to the hotel."
+Randy:"But then...I'd never see it again.  Like, I'd buy blankets, but never see them used for the tenant's beds."
+Randy:"I always wondered where they went.  It was like there was some other dimension they went to..."
+next:root3
+action end
+
+action:statement:root3-trigger.ownerHiddenRoom
+Randy:"..."
+Randy:"What are you saying?"
+next:root3-blackRoom
+action end
+
+action:response:root3-blackRoom
+Morgan
+root3-blackRoom-A:"Let's go through everything we've established, between my and your information."
+action end
+
+action:statement:root3-blackRoom-A
+Randy:"Well, I know the owner's got some weird connections.  People visit him and seem to dissapear into his room for days at a time."
+Randy:"He gave me all sorts of work to do that seemed like they were for the hotel, but then I never heard of 'em again."
+Randy:"The hotel's expenses don't add up with the number of tenants, so it has to be getting its money somewhere else."
+Randy:"It's possibly a front for a larger, illegal business."
+Randy:"Am I missing anything?"
+next:root3-blackRoom-B
+action end
+
+action:response:root3-blackRoom-B
+Morgan
+root3-blackRoom-C:"Did it ever occur to you that there is another section to the hotel?  A hidden area?"
+action end
+
+action:statement:root3-blackRoom-C
+Randy:"A hidden area?  That...that would make sense.  That would explain things."
+Randy:"Maybe like a storage area, or something?  For drugs?"
+next:root3-blackRoom-D
+action end
+
+action:response:root3-blackRoom-D
+Morgan
+root3-blackRoom-E:"We can't know until we find it.":trigger.morganRandyTeam.on
+action end
+
+action:statement:root3-blackRoom-E
+Randy:"Find it?  You really wanna...search for it?"
+Randy:"Well, if there really is a hidden area, there has to be an entrance somewhere."
+Randy:"Based on what we already know, maybe we can figure out where it might be."
+Randy:"I'll follow you.  Leave no stone unturned!"
+next:root3-null
+action end
+
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Rose
+
+action:response:root
+Morgan
+root-A:"Hello, ma'am.  How are you?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Rose:"Oh, don't you "Hello ma'am" me!"
+Rose:"I know all about you and the owner!"
+Rose:"Does your husband know what you did?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"Ma'am, I'm divorced...I have no husband."
+root-null:"I'm not going to stand for this.  Goodbye."
+action end
+
+action:statement:root-A-2
+Rose:"Ha, I should have known!  Of course you're divorced."
+Rose:"Disgraceful.  Have you no shame?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Morgan
+root-null:"Goodbye, old hag."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Pooper
+
+action:statement:root
+Pooper:"Hi, yeah, lady's room is on the other side."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Ted
+
+action:response:root
+Morgan
+root-A:"Hello there, handsome."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Ted:"Hello there!"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"What brings a man like you to this hotel?"
+action end
+
+action:statement:root-A-2
+Ted:"Oh, you know, just taking a break from it all."
+Ted:"A vacation is really useful every now and again."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Morgan
+root-A-4:"And what better place than the most isolated hotel in the country?"
+action end
+
+action:statement:root-A-4
+Ted:"Haha.  Yes, my thoughts exactly."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Morgan-Iblis
+
+action:response:root
+Morgan
+root-A:"Hey sweety!  How are things going?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Iblis:"I'm fine mommy!  Sarah is still being real quiet though."
+Iblis:"It's like she's scared, or somethin'."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Morgan
+root-A-2:"Oh, honey...don't be afraid.  We're going to be okay."
+action end
+
+action:statement:root-A-2
+Iblis:"No, mommy I'm not scared!  Just Sarah is scared."
+Iblis:"She's never been scared like this before, either."
+next:root-null
+action end
+
+dialogue end
+
+

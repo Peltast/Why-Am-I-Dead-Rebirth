@@ -1,0 +1,376 @@
+
+
+dialogue start
+Randy-Cricket
+
+action:response:root
+Randy
+root-A:"Oh hey, It's Dick Tracy.  You're still here, huh?"
+root-null:"See ya."
+action end
+
+action:statement:root-A
+Cricket:"I can't leave even if I wanted to because of the storm."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"Yeah, but I was hoping you'd have tried anyway."
+action end
+
+action:statement:root-A-2
+Cricket:"..."
+next:root-null
+action end
+
+
+action:response:root2
+Randy
+root2-A:"So, you actually found anything of interest, Dick Tracy?"
+root2-B:"You sure you don't wanna give the storm a shot?  Maybe you can break through."
+root2-null:"See ya."
+action end
+
+action:statement:root2-A
+Cricket:"Actually, yes, I have.  And stop calling me Dick Tracy."
+Cricket:"I've established that only three people in the hotel don't have alibis."
+Cricket:"That would be Morgan, Lucille, and...you."
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Randy
+root2-A-2:"Oh, great.  I feel real safe now that Dick Tracy's on the case."
+root2-A-3:"Ha!  What are you trying to say?  You think I did it?"
+root2-null:"See ya."
+action end
+
+action:statement:root2-A-2
+Cricket:"Hey, it's more than you've figured out."
+Cricket:"And stop calling me that!"
+next:root2-A-1
+action end
+
+action:statement:root2-A-3
+Cricket:"I didn't say that.  I'm just saying...watch your step."
+Cricket:"You're on thin ice."
+next:root2-A-1
+action end
+
+action:statement:root2-B
+Cricket:"I'm not going to try and leave the hotel!  I was never going to!"
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Lucille
+
+action:response:root
+Randy
+root-A:"So, what's up with you?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Lucille:"...I...um...I'm sorry?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"You shy or something?  What's your problem?"
+root-null:"You know what, forget it."
+action end
+
+action:statement:root-A-2
+Lucille:"I, no...I...it's just..."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Randy
+root-A-4:"Seriously, what's going on with you?  Something happen?"
+action end
+
+action:statement:root-A-4
+Lucille:"...Nothing's going on with me.  Please lower your voice."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Morgan
+
+action:response:root
+Randy
+root-A:"Hey, miss.  The name's Randy.  Hotel manager."
+root-B:"How're you holding up, miss?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Morgan:"Um, yes, I met you when I checked in."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"Well, just swingin' by to let you know if you need any help, just call on me."
+action end
+
+action:statement:root-A-2
+Morgan:"...Yes.  I know."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Randy
+root-A-4:"Anything comes up, just give me a call.  Wouldn't be a bother."
+action end
+
+action:statement:root-A-4
+Morgan:"You already said that.  Just now."
+next:root-B-7
+action end
+
+action:statement:root-B
+Morgan:"Oh, I'm doing alright.  Just trying to take care of Iblis..."
+next:root-A-1
+action end
+
+action:response:root-B-1
+Randy
+root-B-2:"Iblis?"
+action end
+
+action:statement:root-B-2
+Morgan:"Oh, yes.  My daughter Iblis.  She's quite a handful."
+Morgan:"She's a curious girl, but at times like this, curiosity doesn't pay off."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Randy
+root-B-4:"True.  Kids shouldn't have to see this stuff..."
+action end
+
+action:statement:root-B-4
+Morgan:"Indeed."
+Morgan:"...Did you want to ask me something?"
+next:root-B-5
+action end
+
+action:response:root-B-5
+Randy
+root-B-6:"...Yeah.  Oh, I mean, no."
+action end
+
+action:statement:root-B-6
+Morgan:"I see."
+next:root-B-7
+action end
+
+action:response:root-B-7
+Randy
+root-B-8:"...Alright, I guess I should go then."
+action end
+
+action:statement:root-B-8
+Morgan:"Yes, it's been a pleasure.  Bye now."
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Orval
+
+action:response:root
+Randy
+root-A:"You creep me out.  Bye."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Rose
+
+action:response:root
+Randy
+root-A:"Hey, ma'am, you holdin' up alright?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Rose:"Don't patronize me, son.  I'm fine."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-null:"Fair enough."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Pooper
+
+action:response:root
+Randy
+root-A:"How long have you been in there?"
+root-null:"...Forget it."
+action end
+
+action:statement:root-A
+Pooper:"You know, I'd rather keep that information to myself."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"Sure thing, bud.  I just hope you enjoyed all that Mexican."
+action end
+
+action:statement:root-A-2
+Pooper:"Yeah, yeah, laugh it up."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Ted
+
+action:response:root
+Randy
+root-A:"You look real smug.  You know something I don't?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Ted:"Me?  No!  I'm just trying to relax."
+Ted:"Trying to put people at ease."
+Ted:"They may not show it, but the people here are uneasy."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"Yeah, no.  Not buying it.  You know something."
+action end
+
+action:statement:root-A-2
+Ted:"Haha, if you say so."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Randy-Iblis
+
+action:response:root
+Randy
+root-A:"Wow, you look...you look just like she did..."
+root-null:"Nevermind.."
+action end
+
+action:statement:root-A
+Iblis:"Huh?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Randy
+root-A-2:"Oh, uh, nothing."
+action end
+
+action:statement:root-A-2
+Iblis:"...Okay.  You're kinda weirding me out, mister."
+next:root-null
+action end
+
+dialogue end
+
+
+

@@ -1,0 +1,301 @@
+
+
+dialogue start
+LucilleOwnersMirror2
+
+
+action:statement:root
+null:"Looking good!
+next:root-1
+action end
+
+action:response:root-1
+Lucille
+root-2:Investigate
+root-null:Leave it alone
+action end
+
+action:statement:root-2
+Lucille:"Looks like a regular mirror."
+Lucille:"..."
+Lucille:"Hold on a second.  Behind the mirror it looks like there's a switch."
+next:root-3
+action end
+
+action:response:root-3
+Lucille
+root-A:Flip it:trigger.hiddenDoorSwitch2.on
+root-null:Leave it alone
+action end
+
+action:statement:root-A
+Randy:"Holy mother of..."
+Randy:"It's a hidden door!  Right inside the owner's room!"
+Morgan:"I knew it.  This must be the entrance that hides this hotel's illicit profits."
+next:root-null
+action end
+
+
+
+action:statement:root2
+null:Behind the mirror is what looks like a switch.
+next:root2-A
+action end
+
+action:response:root2-A
+Lucille
+root2-null:Flip it:trigger.hiddenDoorSwitch2.on
+root2-null2:Leave it alone
+action end
+
+
+dialogue end
+
+
+
+
+dialogue start
+LucilleHiddenDoor
+
+action:statement:root
+Lucille:"Here it is.  The way into the hotel's underbelly."
+Randy:"When we go in there, who knows what we'll find.  Just be sure you want to do this."
+Morgan:"I'm ready.  It's about time we found out what's really going on here."
+next:root-A
+action end
+
+action:response:root-A
+Lucille
+root-B:Go in!:trigger.enterDarkHallway2.on
+root-null:Maybe later...
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+LucilleBlackDoor
+
+action:statement:root
+Morgan:"What kind of door is this?  It's huge..."
+Randy:"Look at that thing...talk about ominous."
+Randy:"I can't believe a place like this was under the hotel the whole damn time."
+next:root-2
+action end
+
+action:response:root-2
+Lucille
+root-3:Open the door
+root-null:Leave it alone
+action end
+
+action:statement:root-3
+Morgan:"...It won't open."
+Morgan:"It looks like there's a giant lock on the door that needs a key."
+Morgan:"Do you know anything about that, Randy?"
+Randy:"I don't know.  I have several hotel keys with me that I guess I could try out."
+Randy:"..."
+Randy:"......"
+Randy:"None of them fit.  None are even close.  This keyhole is one of a kind."
+next:root2
+action end
+
+action:statement:root2
+Lucille:"Wait!  I have a key.  I had almost forgotten about it, but it might just work."
+next:root2-2
+action end
+
+action:response:root2-2
+Lucille
+root2-null:Open the black door:trigger.blackEnding2.on
+action end
+
+dialogue end
+
+
+
+dialogue start
+Tenant
+
+actin:statement:root
+null:There's a pulse, but the person is completely unresponsive.
+null:It would appear they've been heavily drugged.
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+dialogue start
+BlackRoomEnding
+
+action:statement:root
+Randy:"What the hell?  What are all these people down here for?"
+Randy:"I was thinkin' we'd find a drug stockpile.  What is this?"
+Morgan:"Randy, don't you get it?  These people are...are..."
+next:root-null
+
+action end
+dialogue end
+
+
+dialogue start
+BlackDesk
+
+action:statement:root
+null:At the back of the room is a black desk.
+null:There are scattered files laying on top of it.
+next:root-A
+action end
+
+action:response:root-A
+Lucille
+root-1:Investigate the files:trigger.blackEnding4.on
+root-null:Leave them alone
+action end
+
+action:statement:root-1
+null:The files contain lists of people.
+null:Along with each person is information on where they came from, where they're going, and an estimated range of money.
+next:root-2
+action end
+
+action:statement:root-2
+Lucille:"It's exactly what I suspected."
+Lucille:"But this is the most detailed, concrete proof I've found."
+Lucille:"I might even be able to use this to find out who else is involved in this crime ring."
+next:root-null
+action end
+
+action:statement:root2
+???:"You might.  Or you might not."
+???:"Either way, you're in for a disappointment."
+next:root-null
+action end
+
+action:statement:root3
+Randy:"You?  What the hell are you doin' down here?!"
+Morgan:"You knew about this place, Cricket?  I don't understand."
+Lucille:"I always thought it was you, Cricket.  Or whatever your name is."
+Lucille:"You came here to meet with the hotel owner, didn't you?  To talk about...business."
+Cricket:"That's right.  But someone interfered with that by killing him.  I decided to find out who it was...and I suppose I did."
+Randy:"Someone feel like explaining things here to me?"
+Lucille:"..."
+Lucille:"The truth is, I've been investigating this hotel almost since I first got here."
+Lucille:"The owner found out, and I was forced to kill him in self defense."
+Lucille:"By that time, I had my suspicions what he was up to...but seeing it in person is different entirely."
+next:root3-null
+action end
+
+action:statement:root4
+Cricket:"Admit it, you're impressed.  At least, you should be."
+Cricket:"This whole storage facility has been operating for years and years under the noses of the world's most powerful governments."
+Cricket:"And directly under the nose of regular, conscientious citizens.  Isn't that right, Randy?"
+Randy:"I never knew about this.  I never could have guessed.  If I knew, I wouldn't have..."
+Cricket:"Of course you didn't know.  Nobody ever thinks it can happen.  Not here.  Not where I live."
+Cricket:"It's the banality of evil.  The truth is always peeking out around the corner, but you turn your head.  You don't really want to see."
+Cricket:"When you worked here, did you really never question what you were doing?  Not once?"
+Cricket:"And imagine all of the other tenants who must have noticed there was something wrong - where are they now?"
+Cricket:"Think of what we do however you want - you have been enabling us this whole time."
+next:root4-null
+action end
+
+action:statement:root5
+Lucille:"Are you done yet?"
+Lucille:"With these files, and this room, I may have enough intel to head up the chain of command.  Cut off your suppliers."
+Lucille:"And with your full cooperation, which I'm sure you will give, this nightmare can be dismantled."
+next:root6
+action end
+
+action:statement:root6
+Cricket:"Wrong on all counts."
+Cricket:"This organization is bigger than you.  It's out of your league."
+Cricket:"And I'd be a damned fool to try and rat it out.  There wouldn't be a hole dark enough for me to hide from them."
+Lucille:"And how would they feel about the guy who let a cop kill one of them and expose one of their operations?"
+Cricket:"Not too well."
+Lucille:"So what do you have to lose?  Work with us, and I will protect you."
+next:root6-null
+action end
+
+action:statement:root7
+Cricket:"...Hahaha.  I've really hit rock bottom."
+Cricket:"Beaten by a drunkard, a gold digger and a two-bit copper.  Hahahahaha!"
+Cricket:"And you of all people are trying to strike a pity bargain with me?  Haaaahahaha!"
+Cricket:"There's really only one thing left that I can do."
+Cricket:"..."
+Cricket:"......"
+Cricket:"........."
+next:root7-null
+action end
+
+action:statement:root8
+Cricket:"DIE!!!"
+next:root8-null
+action end
+
+action:statement:root9
+Morgan:"Good lord, that was close.  Was he really planning to kill all three of us?"
+Randy:"...I don't think so. Looks like suicide by cop to me."
+Randy:"Either way, I think I'm out of a job.  This hotel can't stay open now.  Not after we saw this."
+next:root9-null
+action end
+
+
+action:statement:root10
+Lucille:"With both the hotel owner and his partner dead, the hotel was shut down and put under thorough investigation."
+Lucille:"The people that were found in that horrible black room were moved to shelters where they could slowly come back to good health."
+Lucille:"It seemed like things had been resolved."
+Lucille:"But I still had questions."
+Lucille:"How many more places were out there like this one?  How many people like Cricket are out there?"
+Lucille:"How did a place like this escape our attention for so long?  Am I the first to discover it?"
+Lucille:"And was my mission that initially led me here a coincidence?  Or was there a deeper meaning to it all?"
+Lucille:"These questions haunt me, but I know that I did everything I could."
+Lucille:"The answers to my questions may be out of reach for now.  But I will find them."
+next:root10-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,707 @@
+
+
+dialogue start
+Lucille-Cricket
+
+action:response:root
+Lucille
+root-A:"You're...trying to find the murderer?"
+root-null:"Never mind..."
+action end
+
+action:statement:root-A
+Cricket:"Yeah, I guess I am."
+Cricket:"I mean, the police won't be hear for a while, and we're all trapped in by the storm."
+Cricket:"So I figure it's up to us to find the truth behind this."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"What have you found out?"
+root-null:"I see..."
+action end
+
+action:statement:root-A-2
+Cricket:"Unfortunately, nothing so far."
+Cricket:"I looked at the crime scene, but I couldn't find anything useful."
+Cricket:"Sorry.  Maybe later I'll have more helpful information."
+next:root-null
+action end
+
+
+
+action:response:root2
+Lucille
+root2-A:"You're...trying to find the murderer?"
+root-null:"Never mind..."
+action end
+
+action:statement:root2-A
+Cricket:"Yeah, I guess I am."
+Cricket:"I mean, the police won't be hear for a while, and we're all trapped in by the storm."
+Cricket:"So I figure it's up to us to find the truth behind this."
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Lucille
+root2-A-2:"What have you found out?"
+root-null:"I see..."
+action end
+
+action:statement:root2-A-2
+Cricket:"Well, taking a look at the crime scene didn't yield any clues."
+Cricket:"However, I've narrowed down the list of suspects by figuring out everyone's alibis."
+next:root2-B
+action end
+
+action:response:root2-B
+Lucille
+root2-B-1:"What are everyone's alibis?"
+root2-B-2:"How did you find something like that out?"
+root2-null:"Never mind."
+action end
+
+action:statement:root2-B-1
+Cricket:"I'm sorry to say this, but I'd rather keep that to myself."
+Cricket:"If there's a murderer walking around, I don't want to give them any information that could help them."
+Cricket:"The only alibi I can disclose is my own.  I was in the bathroom, and someone can confirm that."
+Cricket:"I hope you understand."
+next:root2-B
+action end
+
+action:statement:root2-B-2
+Cricket:"How did I find that out?  Oh, well..."
+Cricket:"To be honest I heard about it from Ted.  It all seemed to line up with the facts, and I have no reason to distrust him."
+next:root2-B-3
+action end
+
+action:response:root2-B-3
+Lucille
+root2-B-4:"Ted told you that?  Interesting...":trigger.lucilleTedLead.on
+action end
+
+action:statement:root2-B-4
+Cricket:"I-it is?"
+next:root2-B
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Morgan
+
+
+action:statement:root
+Morgan:"Oh, hello dear.  Is there something I can help you with?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"Did you know the owner?  Before he...well."
+root-B:"If you don't mind...what do you do?"
+root-trigger.lucilleMorgan:"Your daughter came up to me and told me a strange story."
+root-null:"Never mind."
+action end
+
+
+action:statement:root-A-2
+Morgan:"I wouldn't say that I knew the man.  We had some brief encounters in the hotel, but nothing more."
+Morgan:"It's a shame what happened to him, though."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Lucille
+root-trigger.notAboutCricket:"Did he mention anything about meeting someone outside the hotel?"
+root-trigger.aboutCricket:"Did he mention anything about meeting someone outside the hotel?"
+root-A-4:"I see..."
+action end
+
+action:statement:root-trigger.notAboutCricket
+Morgan:"How should I know?  Like I said, I didn't know the man."
+Morgan:"How could I have heard something like that?"
+next:root-A-3
+action end
+
+action:statement:root-trigger.aboutCricket
+Morgan:"I wouldn't know.  I never heard anything like that."
+Morgan:"..."
+Morgan:"Come to think of it, though, Cricket said he came here to meet somebody at the hotel."
+next:root-C
+action end
+
+action:response:root-C
+Lucille
+root-C-1:"Good to know...":trigger.lucilleMeeting.on
+action end
+
+action:statement:root-C-1
+Morgan:"Is it?  Well, I'm glad for you then darling."
+next:root-null
+action end
+
+
+action:statement:root-A-4
+Morgan:"Was that it, or did you have something else to add?"
+next:root-A-5
+action end
+
+action:response:root-A-5
+Lucille
+root-null:"No, that's all..."
+action end
+
+
+action:statement:root-B
+Morgan:"Oh, well, if you want to know..."
+Morgan:"I devote most of my time raising my daughter, Iblis."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Lucille
+root-B-2:"I mean, your livelihood.  Where does it come from?"
+action end
+
+action:statement:root-B-2
+Morgan:"...Not afraid to ask personal questions, I see."
+Morgan:"If you really want to know so badly, it's from a settlement with my ex-husband."
+Morgan:"That is my livelihood for now, while I spent time with my daughter."
+next:root-null
+action end
+
+
+action:statement:root-trigger.lucilleMorgan
+Morgan:"Oh?  I'm sorry, was Iblis bothering you?  I'll have a talk with her."
+next:root-blackDoor
+action end
+
+action:response:root-blackDoor
+Lucille
+root-blackDoor-2:"No, that's alright.  It was just amusing.  She said you were investigating the hotel for some kind of secret."
+action end
+
+action:statement:root-blackDoor-2
+Morgan:"..."
+Morgan:"Well...what a strange thing to say.  Iblis does have a very...active imagination."
+next:root-blackDoor-3
+action end
+
+action:response:root-blackDoor-3
+Lucille
+root-blackDoor-4:"I could see how she got the idea, with you spending so much time around the owner and snooping around here lately."
+action end
+
+action:statement:root-blackDoor-4
+Morgan:"Are you trying to insinuate that Iblis was correct?"
+Morgan:"I didn't think you the type to listen to the thoughtless babbling of little children."
+next:root-blackDoor-5
+action end
+
+action:response:root-blackDoor-5
+Lucille
+root-blackDoor-6:"I'm going to level with you.  I'm a cop, badge and all.  If you know anything about this hotel, I need you to tell me."
+action end
+
+action:statement:root-blackDoor-6
+Morgan:"..."
+Morgan:"Yes, that appears to be a badge."
+Morgan:"Oh well...it seems like everyone knows about my involvement with the owner by this point."
+Morgan:"I have reason to suspect the hotel is a front for some other kind of business."
+Morgan:"More to the point, I think there's a hidden area in the hotel where this business takes place."
+Morgan:"I've been searching for a way to access that area."
+next:root-blackDoor-7
+action end
+
+action:response:root-blackDoor-7
+Lucille
+root-null:"I see.  It would make more sense for us to search it together.  Maybe our combined knowledge will make the difference.":trigger.blackEnding.on
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Orval
+
+action:response:root
+Lucille
+root-A:"Excuse me...what is it you do?  For a living?"
+root-trigger.lucilleOrvalLead:"I hear you've been talking to Ted."
+root-null:"...Never mind."
+action end
+
+action:statement:root-A
+Orval:"Well, young miss, I'm glad you asked!"
+Orval:"It's a thing prone to lotsa judgment, by small minded people."
+Orval:"But bein' an exhibitionist is about gettin past that.  All the judgin."
+Orval:"It's about gettin' down to the root, y'know?  The root.  It's..."
+next:root-A-1
+action end
+
+
+action:response:root-A-1
+Lucille
+root-null:"I'm sorry I asked.  You aren't who I'm looking for."
+action end
+
+
+action:statement:root-trigger.lucilleOrvalLead
+Orval:"Ted?  Hmm..."
+Orval:"Sorry.  Doesn't ring any bells!"
+next:root-shakedown
+action end
+
+action:response:root-shakedown
+Lucille
+root-shakedown-A:"He's a guy about my height with black hair."
+root-shakedown-B:"He's the guy with that weird tropical t-shirt."
+root-shakedown-C:"He's the guy hanging out in the hotel lounge."
+root-shakedown-D:"That's strange.  He told me you two were best friends."
+root-null:"Forget I mentioned it."
+action end
+
+action:statement:root-shakedown-A
+Orval:"Mm...nope!  Not ringing any bells!  Sorry."
+next:root-shakedown
+action end
+
+action:statement:root-shakedown-B
+Orval:"Let me think..."
+Orval:"..."
+Orval:"Oh, right, now I remember!"
+Orval:"I remember that I haven't seen anything like that."
+next:root-shakedown
+action end
+
+action:statement:root-shakedown-C
+Orval:"I don't think I've ever been in there."
+Orval:"Actually, to be honest I'm not sure what a lounge is."
+next:root-shakedown
+action end
+
+action:statement:root-shakedown-D
+Orval:"No way!  He really said that?!  Best friends?!"
+Orval:"...!"
+Orval:"And by that I mean...who's Ted?  Sorry.  Doesn't ring any bells!"
+next:root-shakedown2
+action end
+
+action:response:root-shakedown2
+Lucille
+root-shakedown2-A:"So you do know Ted.  You just said so.  Stop wasting my time!"
+action end
+
+action:statement:root-shakedown2-A
+Orval:"Woah woah woah!  Let's just...calm down..."
+Orval:"Okay, so, I have talked to Ted.  A little bit.  We're sorta buddies."
+Orval:"Nothin' else to say about it really.  It's not so important."
+next:root-shakedown2-B
+action end
+
+action:response:root-shakedown2-B
+Lucille
+root-shakedown2-C:"You told him where people were on the night of the murder."
+root-shakedown2-D:"Why did you lie to me about not knowing Ted?"
+root-trigger.lucilleOrvalLead2:"Why did you tell Ted about the others?"
+root-null:"Goodbye."
+action end
+
+action:statement:root-shakedown2-C
+Orval:"What?  Hmm, no, I don't remember talking to him about that."
+Orval:"We talk about all kinds o stuff, but not that!  Weather...sports...chicks..."
+next:root-shakedown3
+action end
+
+action:response:root-shakedown3
+Lucille
+root-shakedown3-A:"Chicks?"
+root-shakedown3-B:"I'm about to lose my patience, and usually when that happens people go to the hospital.":trigger.lucilleOrvalLead2.on
+action end
+
+action:statement:root-shakedown3-A
+Orval:"Yeah...chicks!  Y'know, like...babes."
+Orval:"We were talking about that, because that's what guys talk about.  Guys who have experience with chicks.  Which is what we are."
+Orval:"Yep."
+next:root-shakedown3
+action end
+
+action:statement:root-shakedown3-B
+Orval:"Okay okay okay!  I'm just joshing you!  It was a joke!"
+Orval:"You're a very clever woman!  So smart.  No way I could fool you!  Please don't hurt me."
+Orval:"Yeah, I told Ted a little bit about the other hotel tenants.  Just a tiny little bit."
+Orval:"Some of that may or may not have been about where they were the night of the murder."
+next:root-shakedown2-B
+action end
+
+action:statement:root-shakedown2-D
+Orval:"I wasn't lying!  I was just fibbing a little teensy bit."
+Orval:"Ted told me that I talk too much about stuff and I should probably not mention to others what I tell him."
+Orval:"There may or may not have been some veiled threats involved.  I can't remember.  It's hard to say."
+next:root-shakedown2-B
+action end
+
+action:statement:root-trigger.lucilleOrvalLead2
+Orval:"Well, uh...to be honest.  Not that I haven't been honest up to this point.  Or that I wasn't going to be honest in the first place."
+Orval:"I mean.  Ted kinda told me to do some research for him.  Keep an eye out on the other hotel residents.  And report back to him."
+Orval:"Y'know, nothin' weird."
+next:root-shakedown4
+action end
+
+action:response:root-shakedown4
+Lucille
+root-shakedown5:"So, Ted asked you to spy on the others for him?  And then he shared that information with Cricket?  Very suspicious..."
+action end
+
+action:statement:root-shakedown5
+Orval:"Suspicious?  Is that a good thing?  Is it a good kind of suspicious?"
+next:root-shakedown6
+action end
+
+action:response:root-shakedown6
+Lucille
+root-null:"No, it isn't.":trigger.lucilleSuspicion.on
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Randy
+
+action:response:root
+Lucille
+root-A:"Uh...hello..."
+root-null:"...Bye..."
+action end
+
+action:statement:root-A
+Randy:"Holy shit, she speaks!"
+Randy:"You finally able to hold a conversation, girl?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"You knew the owner...?
+root-null:"...Never mind..."
+action end
+
+action:statement:root-A-2
+Randy:"Huh?  Oh, yeah.  'Course I did, he was my boss."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Lucille
+root-A-4:"So...you knew what he did?"
+root-B:"Did he mention he was going to meet someone from outside the hotel recently?":trigger.lucillePartner.on
+action end
+
+action:statement:root-A-4
+Randy:"...What he did?"
+Randy:"Listen, you gotta be a bit more specific than that."
+Randy:"If there's somethin' you gotta say, just come out and say it."
+next:root-A-5
+action end
+
+action:response:root-A-5
+Lucille
+root-null:"I...never mind."
+action end
+
+action:statement:root-B
+Randy:"Someone from outside the hotel...what?!  How did you know about..."
+Randy:"..."
+Randy:"What I mean is, mind your own damn business."
+Randy:"Don't see what any of the owner or his personal affairs have to do with you."
+next:root-B-1
+action end
+
+action:response:root-B-1
+Lucille
+root-B-2:"I'll take that as a yes."
+action end
+
+action:statement:root-B-2
+Randy:"Take it however you want it, just leave me alone."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Rose
+
+action:response:root
+Lucille
+root-A:"Sorry, hi, miss.  Can I ask you a question?"
+root-null:"....Nevermind."
+action end
+
+action:statement:root-A
+Rose:"I don't want you to.  But you will anyway, so just get it over with."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"Did you know the owner?  Or anyone in this hotel?"
+action end
+
+action:statement:root-A-2
+Rose:"God, no.  And I'm glad for it."
+Rose:"A bunch of degenerates, Jews, and druggies here."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Lucille
+root-null:"Wow, that was...unnecessary.  Bye."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Pooper
+
+action:response:root
+Lucille
+root-A:"Um...hello?"
+root-null:"....Sorry, nevermind..."
+action end
+
+action:statement:root-A
+Pooper:"Hi, yeah, lady's room is on the other side."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"Did you know the owner?"
+root-null:"Oh, thanks.  Sorry..."
+action end
+
+action:statement:root-A-3
+Pooper:"Huh?  No, I didn't."
+next:root-A-4
+action end
+
+action:response:root-A-4
+Lucille
+root-null:"Oh, okay.  Thanks..."
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Ted
+
+action:response:root
+Lucille
+root-A:"Hi..."
+root-trigger.lucilleTedLead:"So I hear you were talking to Cricket about alibis..."
+root-null:"...Never mind..."
+action end
+
+action:statement:root-A
+Ted:"Oh, hey!  What's up?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"If you don't mind my asking...what do you do?"
+action end
+
+action:statement:root-A-2
+Ted:"Well, I don't mind!  I'm a salesman."
+Ted:"Like a lotta people here, I'm just on vacation."
+Ted:"Normally I travel around a lot in more hospitable areas."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Lucille
+root-A-4:"Hmm...yes, that would be very convenient."
+action end
+
+action:statement:root-A-4
+Ted:"How so?"
+next:root-A-5
+action end
+
+action:response:root-A-5
+Lucille
+root-null:"Nothing."
+action end
+
+
+action:statement:root-trigger.lucilleTedLead
+Ted:"You did?  You heard that?"
+next:root-lead
+action end
+
+action:response:root-lead
+Lucille
+root-lead-A:"You told him about everyone's alibis.":trigger.lucilleTedLead2.on
+root-trigger.lucilleTedLead2:"How do you know so much about everyone?":trigger.lucilleOrvalLead.on
+root-null:"Forget it."
+action end
+
+action:statement:root-lead-A
+Ted:"..."
+Ted:"Yes, yes of course!  I did tell him that."
+Ted:"He seems very committed to finding out what happened to the owner."
+Ted:"I also determined he couldn't have been the killer, so I've tried to help where I could."
+next:root-lead
+action end
+
+action:statement:root-trigger.lucilleTedLead2
+Ted:"Well, I wouldn't say that I know about everyone."
+Ted:"It's really Orval.  I feel kind of bad for the guy, so I try and talk to him."
+Ted:"He's got an awful habit of sticking his nose into other people's business, though, and is really gabby."
+Ted:"I guess in this case it served a good purpose though."
+next:root-orval
+action end
+
+action:response:root-orval
+Lucille
+root-orval2:"So you only heard from Orval?  Good to know..."
+action end
+
+action:statement:root-orval2
+Ted:"Yeah, like I said.  He's kind of creepy, but I still feel bad for him."
+next:root-lead
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Lucille-Iblis
+
+action:response:root
+Lucille
+root-A:"Hi there little girl!  How are you?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Iblis:"I'm fine, miss."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Lucille
+root-A-2:"Are you and your mommy on vacation?"
+root-B:"Don't worry, you're safe here."
+action end
+
+action:statement:root-A-2
+Iblis:"That's what mommy says."
+Iblis:"Donno why we'd be on vacation in a place like this."
+next:root-null
+action end
+
+action:statement:root-B
+Iblis:"Who said I was in danger?"
+next:root-null
+action end
+
+dialogue end
+
+
+

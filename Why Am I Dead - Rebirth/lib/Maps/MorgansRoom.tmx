@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="11" height="10" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Mainsheet" tilewidth="32" tileheight="32">
+  <image source="../Tiles/Mainsheet.png" width="224" height="192"/>
+ </tileset>
+ <tileset firstgid="43" name="PropGrid" tilewidth="32" tileheight="32">
+  <image source="../PropGrid.png" width="192" height="608"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="11" height="10">
+  <data>
+   <tile gid="22"/>
+   <tile gid="2"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="6"/>
+   <tile gid="22"/>
+   <tile gid="8"/>
+   <tile gid="9"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="11"/>
+   <tile gid="13"/>
+   <tile gid="14"/>
+   <tile gid="15"/>
+   <tile gid="16"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="18"/>
+   <tile gid="20"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="23"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="27"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="29"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="29"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="30"/>
+   <tile gid="1"/>
+   <tile gid="34"/>
+   <tile gid="26"/>
+   <tile gid="26"/>
+   <tile gid="35"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="15"/>
+   <tile gid="1"/>
+   <tile gid="21"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+   <tile gid="22"/>
+  </data>
+ </layer>
+ <objectgroup name="Props" width="11" height="10">
+  <object name="MorgansBed" gid="57" x="44" y="114">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Bed"/>
+    <property name="SuccessDialogue" value="Bed"/>
+   </properties>
+  </object>
+  <object gid="58" x="76" y="114"/>
+  <object gid="63" x="44" y="146"/>
+  <object gid="64" x="76" y="146"/>
+  <object name="IblisBed" gid="67" x="233" y="112">
+   <properties>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="MessyBed"/>
+    <property name="SuccessDialogue" value="MessyBed"/>
+   </properties>
+  </object>
+  <object gid="68" x="265" y="112"/>
+  <object gid="73" x="233" y="144"/>
+  <object gid="74" x="265" y="144"/>
+  <object name="MorgansDrawer" gid="55" x="141" y="87">
+   <properties>
+    <property name="CharDialogue" value="Cricket-true-CricketMorgansDrawer"/>
+    <property name="CharDialogue2" value="Morgan-true-MorganMorgansDrawer"/>
+    <property name="Collidable" value="true"/>
+    <property name="Permissions" value="All"/>
+    <property name="Sprite" value="Drawer"/>
+    <property name="SuccessDialogue" value="MorgansDrawer"/>
+   </properties>
+  </object>
+  <object gid="56" x="173" y="87"/>
+  <object gid="61" x="141" y="119"/>
+  <object gid="62" x="173" y="119"/>
+  <object name="MorgansTable" gid="44" x="38" y="155">
+   <properties>
+    <property name="Bounds" value="0,45,32,19"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BedsideTable"/>
+   </properties>
+  </object>
+  <object gid="50" x="38" y="187"/>
+  <object name="IblisTable" gid="44" x="283" y="173">
+   <properties>
+    <property name="Bounds" value="0,45,32,19"/>
+    <property name="Collidable" value="true"/>
+    <property name="Sprite" value="BedsideTable"/>
+   </properties>
+  </object>
+  <object gid="50" x="283" y="205"/>
+ </objectgroup>
+ <objectgroup name="AI" width="11" height="10">
+  <object name="IblisPath" gid="22" x="224" y="224">
+   <properties>
+    <property name="Character" value="Iblis"/>
+    <property name="Frequency" value="150"/>
+    <property name="Index" value="4"/>
+    <property name="Type" value="Routine"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

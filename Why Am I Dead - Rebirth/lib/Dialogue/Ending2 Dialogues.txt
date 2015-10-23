@@ -1,0 +1,167 @@
+
+
+dialogue start
+LucilleRealization
+
+action:statement:root
+Lucille:"So, both the owner and Cricket were planning on meeting somebody here."
+Lucille:"It's most likely that they were in fact going to meet each other."
+Lucille:"They must have had some prior relationship.  Maybe even partnership."
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+LucilleRealization2
+
+action:statement:root
+Lucille:"It seems like Ted is feeding information to the owner's partner."
+Lucille:"Things aren't over yet.  I need to be prepared for the worst."
+Lucille:"I should get my things out of the briefcase in my dresser..."
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+LucilleLucillesDrawer
+
+action:statement:root
+null:Inside are very simple frugal clothes.  Underneath them is a small briefcase of mine.
+null:I don't have any reason to open it right now.
+next:root-null
+action end
+
+action:statement:root2
+null:Inside are very simple frugal clothes.  Underneath them is a small briefcase of mine.
+next:root2-1
+action end
+
+action:response:root2-1
+Lucille
+root2-2:Open it:trigger.lucilleFinalePrep.on
+root-null:Leave it alone
+action end
+
+action:statement:root2-2
+null:Inside the briefcase is a badge for an FBI agent, a pistol, a magazine, and a strange looking key.
+next:root2-3
+action end
+
+action:statement:root2-3
+Lucille:"I think I'll be needing these things in the near future."
+Lucille:"Whatever happens next, I should be prepared."
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+dialogue start
+Finale
+
+action:statement:root
+Lucille:"........."
+Lucille:"What are you doing?!"
+next:root-A
+action end
+
+action:response:root-A
+Cricket
+root-B:"Did you think I was investigating the murder out of the goodness of my heart?"
+action end
+
+action:statement:root-B
+Lucille:"I...."
+next:root-C
+action end
+
+action:response:root-C
+Cricket
+root-D:"How dumb.  I was just trying to find the person who killed my business partner."
+action end
+
+action:statement:root-D
+Lucille:"It was you...you were the one he was planning to meet with!"
+next:root-E
+action end
+
+action:response:root-E
+Cricket
+root-null:"Good bye.":trigger.cricketEnding.on
+action end
+
+
+
+
+
+action:statement:root2
+Lucille:"Yes, you're probably right."
+Lucille:"It's too late to actually let you go."
+next:root2-A
+action end
+
+action:response:root2-A
+Cricket
+root2-B:"You...you knew?!"
+action end
+
+action:statement:root2-B
+Lucille:"That you and the owner were working together?  Yeah."
+Lucille:"I thought it was suspicious that Ted, of all people, was giving you information."
+Lucille:"He may have been on to me, and figured you would be the best tool to get rid of me."
+next:root2-C
+action end
+
+action:response:root2-C
+Cricket
+root2-D:"What are you talking about?"
+action end
+
+action:statement:root2-D
+Lucille:"Once I realized the owner had a business partner that was still kicking around the hotel, I knew I wasn't finished."
+Lucille:"But when I knew that Ted was probably working with him, I figured it was only a matter of time until they made their move."
+Lucille:"All I had to do was be ready, and wait."
+Lucille:"And I was right, because you delivered yourself right to me."
+Lucille:"It's a shame - this blows my cover, so the serial killer will probably slip through my fingers this time."
+Lucille:"But arresting you will just have to do."
+next:root2-E
+action end
+
+action:response:root2-E
+Cricket
+root2-F:"T-this doesn't change anything!  I'm just a middleman.  You have no idea what you've gotten yourself into...but if you let me go, I'll tell you everything I know!"
+action end
+
+action:statement:root2-F
+Lucille:"Oh, you will definitely tell me everything you know."
+Lucille:"But I'm still arresting you."
+next:root2-G
+action end
+
+action:response:root2-G
+Cricket
+root2-H:"You don't understand.  They'll come after me.  If you want the truth, this is your only chance to hear it!":trigger.lucilleEnding3.on
+action end
+
+action:statement:root2-H
+Lucille:"..."
+Lucille:"Put your hands behind your head and get your knees on the ground."
+Lucille:"This is the end for you."
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+
+

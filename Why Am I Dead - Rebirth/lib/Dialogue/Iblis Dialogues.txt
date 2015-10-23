@@ -1,0 +1,552 @@
+
+
+dialogue start
+Iblis-Randy
+
+action:response:root
+Iblis
+root-A:"Hey mister."
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Randy:"H-hi there!  How're you, little girl?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"Are you okay mister?  You look sad."
+action end
+
+action:statement:root-A-2
+Randy:"Me?  Oh yeah, I'm okay, don't worry 'bout me."
+Randy:"Just, you look exactly like my daughter did."
+Randy:"She must look a lot older by now, I guess."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"You haven't seen your daughter?"
+action end
+
+action:statement:root-A-4
+Randy:"No.  Not for...three years now?"
+next:root-A-5
+action end
+
+
+action:response:root-A-5
+Iblis
+root-A-6:"Why not?"
+action end
+
+action:statement:root-A-6
+Randy:"Well...I did some bad things."
+Randy:"Things I'm not proud of."
+Randy:"And now I'm not allowed to see her."
+next:root-A-7
+action end
+
+action:response:root-A-7
+Iblis
+root-A-8:"What if you apologized?  Won't she forgive you?":trigger.letterAvailable.on
+action end
+
+action:statement:root-A-8
+Randy
+Randy:"Ha...it's...it's not like that."
+Randy:"I can't get back into the country.  I'd be arrested."
+Randy:"I made some big mistakes in my life, and ended up under the thumb of a complete scumbag."
+Randy:"We had a deal, me and him.  We had a deal.  I could go back.  I could see my daughter."
+Randy:"But now he's dead, and that deal is history."
+Randy:"The only proof it ever happened is just...a pile of letters under my mattress."
+next:root-null
+action end
+
+
+action:response:root2
+Iblis
+root2-A:"You smell funny, mister."
+root2-null:"Never mind."
+action end
+
+action:statement:root2-A
+Randy:"Haha!  Really?  You get right to the point, little girl."
+Randy:"You're probably smellin' garlic, I had a lot of that for dinner..."
+next:root2-A-1
+action end
+
+action:response:root2-A-1
+Iblis
+root2-A-2:"Nah, you stink more of booze, mister.  Are you an alcoholic?"
+action end
+
+action:statement:root2-A-2
+Randy:"..........."
+Randy:"That's, uh....that's quite a sense of humor you got there, kiddo...."
+Randy:"....Haha....ha...."
+next:root2-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Cricket
+
+action:response:root
+Iblis
+root-A:"Hi mister, watcha doin?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Cricket:"Oh, hey there!  I'm, well...actually, it's a bit hard to explain..."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"I heard you're tryin' to find out who killed the dead guy."
+action end
+
+action:statement:root-A-2
+Cricket:"I, uh, yes, that's right.  You know about the hotel owner?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"Jeez, mister, of course!  You think I wouldn't notice if a guy was shot in the face around here?"
+action end
+
+action:statement:root-A-4
+Cricket:"I, uh.  How old are you again?"
+next:root-A-5
+action end
+
+action:response:root-A-5
+Iblis
+root-null:"Seven and a half!"
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Ted
+
+action:response:root
+Iblis
+root-A:"Hey there, mister!  Watcha doin'?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Ted:"Nothing really!  What about yourself?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"Just going around trying to bother people, really."
+root-B:"Are you really doing nothing?"
+root-null:"Okay, bye."
+action end
+
+action:statement:root-A-2
+Ted:"Haha, that's funny!  But I'm sure you're not bothering anyone."
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"I hope I am, it's way more fun that way.  I make it a game."
+action end
+
+action:statement:root-A-4
+Ted:"You...you're not serious, are you?  A game?"
+next:root-A-5
+action end
+
+action:response:root-A-5
+Iblis
+root-A-6:"Yeah, yeah!  I try 'n find what makes people uncomfortable and talk about that.  It's fun!"
+action end
+
+action:statement:root-A-6
+Ted:"A child after my own heart."
+next:root-null
+action end
+
+action:statement:root-B
+Ted:"Well, pretty much, yeah.  Why?"
+next:root-B-1
+action end
+
+action:response:root-B-1
+Iblis
+root-B-2:"I dunno mister, you just look like you're on the watch for something."
+action end
+
+action:statement:root-B-2
+Ted:"Haha.  No, not really."
+next:root-B-3
+action end
+
+action:response:root-B-3
+Iblis
+root-B-4:"Hmmmm, I think you're lying, mister.  You're a good liar, but I can still tell."
+action end
+
+action:statement:root-B-4
+Ted:"Okay, kid, what are you talking about?"
+next:root-B-5
+action end
+
+action:response:root-B-5
+Iblis
+root-B-6:"Well, ya always seem to be gaugin' people around you.  Like you're lookin' for someone but you don't know who it is yet."
+action end
+
+action:statement:root-B-6
+Ted:"..."
+next:root-B-7
+action end
+
+action:response:root-B-7
+Iblis
+root-B-8:"Like, like, you're...picking someone.  Am I right, mister?  Am I right?"
+action end
+
+action:statement:root-B-8
+Ted:"Haha.  Go away."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Morgan
+
+action:response:root
+Iblis
+root-A:"Hi, mommy!"
+root-null:"Bye mommy!"
+action end
+
+action:statement:root-A
+Morgan:"Hey there, darling."
+Morgan:"I'm sorry you've had to stay in this mangy place for so long."
+Morgan:"Once this storm clears up we can go home, how does that sound?"
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"Sure, mommy, but it's okay.  I'm making lots of friends here!"
+action end
+
+action:statement:root-A-2
+Morgan:"Oh, really?  Well that's good."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Lucille
+
+action:response:root
+Iblis
+root-A:"Hi there, miss!  You seem anxious."
+root-trigger.iblisLucille:"Hi miss!  Are you investigating the hotel and its owner?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Lucille:"Me?  Oh, no, sweety, I'm not anxious."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"Are you a virgin?  Mommy says that virgins can be really uptight."
+action end
+
+action:statement:root-A-2
+Lucille:"What?!  Child, do you even know what that word means?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"A 'course I do!  Well, enough anyway.  So are you one?"
+action end
+
+action:statement:root-A-4
+Lucille:"I, I, I...I cannot have this conversation with a seven year old!"
+Lucille:"Mothers shouldn't tell their kids things like that.  Honestly..."
+next:root-null
+action end
+
+
+action:statement:root-trigger.iblisLucille
+Lucille:"What?!  No, don't be silly!"
+Lucille:"Who told you something like that?"
+next:root-blackDoor
+action end
+
+action:response:root-blackDoor
+Iblis
+root-blackDoor-A:"My doll Sarah told me to talk to you."
+root-blackDoor-B:"My mommy's investigating the hotel and she needs help!"
+action end
+
+action:statement:root-blackDoor-A
+Lucille:"Your...doll?  Oh!  Hahaha!  So it wasn't Cricket or anyone."
+Lucille:"I was a bit worried there."
+next:root-blackDoor
+action end
+
+action:statement:root-blackDoor-B
+Lucille:"Your mother?  Morgan is investigating the hotel?"
+next:root-blackDoor-2
+action end
+
+action:response:root-blackDoor-2
+Iblis
+root-blackDoor-3:"Yep!  Apparently it has some dark secret!  But she needs help!  Can you help her?":trigger.lucilleMorgan.on
+action end
+
+action:statement:root-blackDoor-3
+Lucille:"Hmm...could that have been why she was spending so much time with the owner?"
+Lucille:"If it's true, she could have found things even I wasn't able to."
+Lucille:"It would be worth the risk to see if there's any truth to this..."
+next:root-null
+action end
+
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Orval
+
+action:response:root
+Iblis
+root-A:"Hi mister, do you wanna play a game?"
+root-B:"Never mind."
+action end
+
+action:statement:root-A
+Orval:"Oh, sure!  I love games!  I'm great at games.  Any game, any game, yup."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"Good!  This game's called 'Gross the other person out'."
+action end
+
+action:statement:root-A-2
+Orval:"Oh, oh, so we think of grosser stuff, or somethin'?  What's the ru--"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"Aaaaaaannnnnnd YOU WIN!"
+action end
+
+action:statement:root-A-4
+Orval:".........That's....that's not nice...."
+next:root-null
+action end
+
+
+dialogue end
+
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Rose
+
+action:response:root
+Iblis
+root-A:"Wow lady, you sure are old!"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Rose:"How cute, the little girl thinks she can get a rise out of me."
+next:root-null
+action end
+
+dialogue end
+
+
+
+
+
+
+
+
+dialogue start
+Iblis-Pooper
+
+action:response:root
+Iblis
+root-A:"Hi, mister!  Whatcha doin'?"
+root-null:"Never mind."
+action end
+
+action:statement:root-A
+Pooper:"Uh, lady's room is to the right."
+next:root-A-1
+action end
+
+action:response:root-A-1
+Iblis
+root-A-2:"I know!  Watcha doin'?"
+action end
+
+action:statement:root-A-2
+Pooper:"Uhhh, where's your parents?  Shouldn't you be with them?"
+next:root-A-3
+action end
+
+action:response:root-A-3
+Iblis
+root-A-4:"Nope!  Only my mom's here, I don't see my daddy anymore."
+action end
+
+action:statement:root-A-4
+Pooper:"That's, uh, really interesting."
+next:root-A-5
+action end
+
+action:response:root-A-5
+Iblis
+root-A-6:"Watcha doin'?"
+root-null:"Alright, I've had my fun."
+action end
+
+action:statement:root-A-6
+Pooper:*There is a pause, followed by a deep and pained sigh.*
+Pooper:"Please, just leave me alone."
+next:root-A-7
+action end
+
+action:response:root-A-7
+Iblis
+root-A-8:"Why?"
+action end
+
+action:statement:root-A-8
+Pooper:"Because you're bothering me."
+next:root-A-9
+action end
+
+action:response:root-A-9
+Iblis
+root-A-10:"Why?"
+action end
+
+action:statement:root-A-10
+Pooper:"Oh, okay.  I get it.  So that's how it's going to be."
+next:root-A-11
+action end
+
+action:response:root-A-11
+Iblis
+root-A-12:"..."
+action end
+
+action:statement:root-A-12
+Pooper:"..."
+next:root-A-13
+action end
+
+action:response:root-A-13
+Iblis
+root-A-14:"..."
+action end
+
+action:statement:root-A-14
+Pooper:"..."
+next:root-A-15
+action end
+
+action:response:root-A-15
+Iblis
+root-A-16:"..."
+action end
+
+action:statement:root-A-16
+Pooper:".......Oh thank god, is she finally gone...?"
+next:root-A-17
+action end
+
+action:response:root-A-17
+Iblis
+root-A-18:"Hey mister watcha doin'!?"
+action end
+
+action:statement:root-A-18
+Pooper:"AAAAAGHHH"
+next:root-null
+action end
+
+dialogue end

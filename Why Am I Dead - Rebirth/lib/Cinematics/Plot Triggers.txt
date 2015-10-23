@@ -1,0 +1,196 @@
+
+
+trigger start
+randyLeaves,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-moveRandy-awake
+	dialogue.changeDialogueRoot-Cricket<hyphen>Randy-rootfake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+moveRandy,-1
+requirements
+	gui.outOfDialogue
+	self.timer-15
+effects
+	cinematic.moveChar-Randy-Randy's Room-7,4
+	character.setBehavior-RandyDrunk
+	dialogue.changeDialogueRoot-Cricket<hyphen>Randy-root2
+	character.setPossessable-Randy-1
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+greetedMorgan,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Cricket<hyphen>Morgan-root2
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+tedPooper,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Ted<hyphen>Pooper-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+tedConfession,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Cricket<hyphen>Ted-root2
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+letterAvailable,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-RandysBed-root2
+	dialogue.changeDialogueRoot-CricketRandysBed-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+randysBedSearched,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-randysLetters-on
+	dialogue.changeDialogueRoot-CricketRandysBed-root3
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+filesAvailable,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-MorgansDrawer-root2
+	dialogue.changeDialogueRoot-CricketMorgansDrawer-root2
+	trigger.triggerStatus-roseAndRandy-on
+	self.setStatus-asleep
+trigger end
+
+trigger start
+roseAndRandy,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+morgansDresserSearched,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-morgansFiles-on
+	dialogue.changeDialogueRoot-MorgansDrawer-root
+	dialogue.changeDialogueRoot-CricketMorgansDrawer-root3
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+trigger start
+lucilleCornered,0
+requirements
+	trigger.triggerIsStatus-othersAlibi-on
+	trigger.triggerIsStatus-randyConfessed-on
+	trigger.triggerIsStatus-morganConfessed-on
+effects
+	dialogue.changeDialogueRoot-Cricket<hyphen>Lucille-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketFinale,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-cricketFinale2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketFinale2,-1
+requirements
+	gui.outOfDialogue
+effects
+	character.setPossessable-Lucille-0
+	character.pauseBehavior-Lucille
+	dialogue.changeDialogueRoot-Cricket<hyphen>Lucille-root5
+	trigger.triggerStatus-cricketFinale3-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketFinale3,-1
+requirements
+	self.timer-15
+effects
+	cinematic.moveChar-Lucille-Owner's Room-7,11
+	character.animate-Lucille-Left Idle
+	dialogue.changeDialogueRoot-Cricket<hyphen>Lucille-root3
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketConfession,0
+requirements
+	.null
+effects
+	player.lockPlayer-true
+	cinematic.walkChar-Cricket-Owner's Room-5,12
+	trigger.triggerStatus-cricketEvil-awake
+	trigger.triggerStatus-lucilleFBI-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketEvil,-1
+requirements
+	character.isOnTile-Cricket-Owner's Room-5,12
+	trigger.triggerIsStatus-lucilleFinale-asleep
+effects
+	character.animate-Cricket-Evil
+	gui.startDialogue-Finale-root
+	self.setStatus-asleep
+trigger end
+	
+trigger start
+cricketEnding,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-cricketEnding2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketEnding2,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	cinematic.endGame-0
+	self.setStatus-asleep
+trigger end

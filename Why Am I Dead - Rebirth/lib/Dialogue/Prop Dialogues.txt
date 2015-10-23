@@ -1,0 +1,337 @@
+
+Prop dialogues
+
+
+
+
+dialogue start
+SaveConfirmation
+action:response:root
+<player>
+root-null:Save game:trigger.saveGame.on
+root-null:Cancel
+action end
+dialogue end
+
+
+
+
+dialogue start
+OwnersBody
+
+action:statement:root
+null:The lifeless body of a young man is lying on the ground.
+null:There appears to be a bullet wound in the back, and his clothes are covered in blood.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+OwnersBed
+
+action:statement:root
+null:The bed is in disarray and covered in blood.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+OwnersVase
+
+action:statement:root
+null:On the table there are shards of blood stained porcelain.
+null:It appears the vase was broken in a terrible struggle.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+OwnersMirror
+
+action:statement:root
+null:The glass in the mirror has been shattered, and is covered in blood.
+null:Maybe it has something to do with the dead body just in front of it.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+OwnersDrawer
+
+action:statement:root
+null:There's nothing out of the ordinary here.  Typical clothes and accessories.
+null:Wait...buried underneath, there is what appears to be a gun holster.
+null:Where's the gun it's meant to carry, then?
+next:root-null
+action end
+dialogue end
+
+
+
+
+dialogue start
+RandysBooze
+
+action:statement:root
+null:An empty beer bottle is lying on the floor.
+null:Really adds to the ambience.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+RandysBooze2
+
+action:statement:root
+null:Several empty bottles are lying on the floor.  Beer and whiskey.
+null:Classy.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+RandysTV
+
+action:statement:root
+null:There's a TV sitting on the drawer.  It looks like it's decades old.
+null:Not surprisingly, it's broken and is only showing static.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+RandyRandysBed
+
+action:statement:root
+null:It's tempting to straighten the sheets, but now probably isn't the time for that.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+RandysBed
+
+action:statement:root
+null:It's tempting to straighten the sheets, but now probably isn't the time for that.
+next:root-null
+action end
+
+action:statement:root2
+null:On further investigation of this bed, it appears there is something wedged underneath the mattress.
+next:root2-1
+action end
+
+action:response:root2-1
+<player>
+root2-2:Investigate it!
+root2-null:Ignore it.
+action end
+
+action:statement:root2-2
+null:It looks like there's an envelope wedged underneath the mattress.
+null:However, you don't have any use for it.  Somebody else might find this of interest...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+CricketRandysBed
+
+action:statement:root
+null:It's tempting to straighten the sheets, but now probably isn't the time for that.
+next:root-null
+action end
+
+action:statement:root2
+null:On further investigation of this bed, it appears there is something wedged underneath the mattress.
+next:root2-1
+action end
+
+action:response:root2-1
+<player>
+root2-2:Investigate it!:trigger.randysBedSearched.on
+root2-null:Ignore it.
+action end
+
+action:statement:root2-2
+Cricket:Underneath the mattress is an envelope.  Inside are several letters.
+Cricket:All of them are addressed by the owner of the hotel to Randy.
+Cricket:While they talk about different things, they all mention some kind of deal between the two.
+Cricket:There are also several veiled threats aimed at Randy.
+Cricket:What would Randy have to say about this, I wonder?
+next:root-null
+action end
+
+action:statement:root3
+Cricket:I've already retrieved the envelope under Randy's bed.
+next:root-null
+action end
+dialogue end
+
+
+
+
+
+
+
+
+
+
+dialogue start
+RosesDrawer
+
+action:statement:root
+null:Inside are exactly the kind of clothes you would expect an elderly woman to wear.
+null:It's not very interesting.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+MorganMorgansDrawer
+
+action:statement:root
+null:Inside are assorted clothes, make up, and cigarettes.
+null:Also, some very risque lingerie!
+next:root-null
+action end
+dialogue end
+
+dialogue start
+MorgansDrawer
+
+action:statement:root
+null:Inside are assorted clothes, make up, and cigarettes.
+null:Also, some very risque lingerie!
+next:root-null
+action end
+
+action:statement:root2
+null:Inside are assorted clothes, make up, and cigarettes.
+null:Also, some very risque lingerie!
+next:root2-1
+action end
+
+action:response:root2-1
+<player>
+root2-2:Investigate further.
+root2-null:That's far enough.
+action end
+
+action:statement:root2-2
+null:...Underneath the lingerie, is a giant brown envelope with the word "CONFIDENTIAL" written on it.
+null:You don't have any use for it.  Somebody else might find this of interest...
+next:root-null
+action end
+dialogue end
+
+dialogue start
+CricketMorgansDrawer
+
+action:statement:root
+null:Inside are assorted clothes, make up, and cigarettes.
+null:Also, some very risque lingerie!
+next:root-null
+action end
+
+action:statement:root2
+null:Inside are assorted clothes, make up, and cigarettes.
+null:Also, some very risque lingerie!
+next:root2-1
+action end
+
+action:response:root2-1
+<player>
+root2-2:Investigate further.:trigger.morgansDresserSearched.on
+root2-null:That's far enough.
+action end
+
+action:statement:root2-2
+null:...Underneath the lingerie, is a giant brown envelope with the word "CONFIDENTIAL" written on it.
+null:Inside the envelope are assorted files belonging to the owner of the hotel.
+null:They have to do with his personal finances and the hotel's finances.
+null:What is Morgan doing with files like these?
+next:root-null
+action end
+
+action:statement:root3
+Cricket:I've already searched Morgan's drawer and found the files.
+next:root-null
+action end
+
+dialogue end
+
+
+dialogue start
+CricketsDrawer
+
+action:statement:root
+null:The drawer is filled with black shirts and white khakis.  No variation.
+null:There are also what appear to be random souvenirs and baubels with foreign languages scribbled on them.
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+LucillesDrawer
+
+action:statement:root
+null:Inside are very simple frugal clothes.  Underneath them is a small briefcase, but it's securely locked."
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+TedsDrawer
+
+action:statement:root
+null:Inside are clothes of every color in the rainbow, and more.
+null:Some have designs that are just painful to look at.
+next:root-null
+action end
+dialogue end
+
+
+dialogue start
+OrvalsDrawer
+
+action:statement:root
+null:The drawer is completely empty except for one item - a red thong.
+null:...Yeah.
+next:root-null
+action end
+dialogue end
+
+
+
+
+
+dialogue start
+Mirror
+
+action:statement:root
+null:Looking good!
+next:root-null
+action end
+dialogue end
+
+dialogue start
+Bed
+
+action:statement:root
+null:Now isn't the time to take a rest.
+next:root-null
+action end
+dialogue end
+
+dialogue start
+MessyBed
+
+action:statement:root
+null:It's tempting to straighten the sheets, but now probably isn't the time for that.
+next:root-null
+action end
+dialogue end
+

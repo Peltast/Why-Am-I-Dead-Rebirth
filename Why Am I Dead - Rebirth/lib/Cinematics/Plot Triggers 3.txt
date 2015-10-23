@@ -1,0 +1,178 @@
+
+
+trigger start
+roseConfession,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Morgan<hyphen>Randy-root2
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+morganAndRandy,0
+requirements
+	.null
+effects
+	dialogue.changeDialogueRoot-Morgan<hyphen>Randy-root3
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+ownerHiddenRoom,0
+requirements
+	trigger.triggerIsStatus-ownerErrands2-on
+	trigger.triggerIsStatus-ownerVisitors2-on
+effects
+	trigger.triggerStatus-ownerErrands-asleep
+	trigger.triggerStatus-ownerVisitors-asleep
+	trigger.triggerStatus-ownerErrands2-asleep
+	trigger.triggerStatus-ownerVisitors2-asleep
+trigger end
+
+
+trigger start
+morganRandyTeam,0
+requirements
+	.null
+effects
+	character.followChar-Randy-Morgan
+	cinematic.addCharDialogue-OwnersFlowers2-Morgan-MorganOwnersFlowers
+	cinematic.addCharDialogue-OwnersFlowers3-Morgan-MorganOwnersFlowers
+	cinematic.addCharDialogue-OwnersMirror-Morgan-MorganOwnersMirror
+	cinematic.addCharDialogue-OwnersTable-Morgan-MorganOwnersTable
+	cinematic.addCharDialogue-OwnersBed-Morgan-MorganOwnersBed
+	cinematic.addCharDialogue-OwnersMirror2-Morgan-MorganOwnersMirror2
+	trigger.triggerStatus-morganFinale-on
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+morganFinale,0
+requirements
+	.null
+effects
+trigger end
+
+
+
+trigger start
+hiddenDoorCheck,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+hiddenDoorSwitch,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-hiddenDoorOpen-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+hiddenDoorOpen,-1
+requirements
+	trigger.triggerIsStatus-hiddenDoorCheck-awake
+effects
+	gui.blackEffect-10-<dot>05
+	dialogue.changeDialogueRoot-MorganOwnersMirror2-root2
+	cinematic.addProp-Owner's Room-HiddenDoor
+	trigger.triggerStatus-hiddenDoorCheck-off
+	trigger.triggerStatus-hiddenDoorClose-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+hiddenDoorClose,-1
+requirements
+	player.isInMap-Lobby
+effects
+	cinematic.removeProp-Owner's Room-HiddenDoor
+	trigger.triggerStatus-hiddenDoorCheck-awake
+	trigger.triggerStatus-hiddenDoorSwitch-awake
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+enterDarkHallway,0
+requirements
+	.null
+effects
+	gui.blackEffect-30-0.5
+	cinematic.moveChar-Morgan-Dark Hallway-2,22
+	cinematic.moveChar-RandyFollower-Dark Hallway-2,22
+	map.changeMap-Dark Hallway
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+grayEnding,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-grayEnding2-awake
+	dialogue.changeDialogueRoot-MorganBlackDoor-root2
+	self.setStatus-asleep
+trigger end
+
+trigger start
+grayEnding2,-1
+requirements
+	character.isPastPoint-Morgan-Dark Hallway-Down-640
+effects
+	gui.startDialogue-GrayEnding-root
+	trigger.triggerStatus-grayEnding3-awake
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+grayEnding3,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	map.fadeOutMap-<dot>005
+	trigger.triggerStatus-grayEnding4-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+grayEnding4,-1
+requirements
+	self.timer-300
+effects
+	gui.startDialogue-GrayEnding2-root
+	trigger.triggerStatus-grayEnding5-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+grayEnding5,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	cinematic.endGame-2
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+
+
+
+
+

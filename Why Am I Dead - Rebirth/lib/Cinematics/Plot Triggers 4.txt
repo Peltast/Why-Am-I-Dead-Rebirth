@@ -1,0 +1,319 @@
+
+
+trigger start
+sarahIblis,0
+requirements
+	trigger.triggerIsStatus-lucilleFinale-on
+	trigger.triggerIsStatus-morganFinale-on
+effects
+trigger end
+
+
+
+trigger start
+blackEnding,0
+requirements
+	.null
+effects
+	character.followChar-Morgan-Lucille
+	character.followChar-RandyFollower-MorganFollower
+	cinematic.addCharDialogue-OwnersFlowers2-Lucille-MorganOwnersFlowers
+	cinematic.addCharDialogue-OwnersFlowers3-Lucille-MorganOwnersFlowers
+	cinematic.addCharDialogue-OwnersMirror-Lucille-MorganOwnersMirror
+	cinematic.addCharDialogue-OwnersTable-Lucille-MorganOwnersTable
+	cinematic.addCharDialogue-OwnersBed-Lucille-MorganOwnersBed
+	cinematic.addCharDialogue-OwnersMirror2-Lucille-LucilleOwnersMirror2
+	self.setStatus-asleep
+trigger end
+
+
+
+
+
+
+trigger start
+hiddenDoorCheck2,0
+requirements
+	.null
+effects
+trigger end
+
+trigger start
+hiddenDoorSwitch2,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-hiddenDoorOpen2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+hiddenDoorOpen2,-1
+requirements
+	trigger.triggerIsStatus-hiddenDoorCheck2-awake
+effects
+	gui.blackEffect-10-<dot>05
+	dialogue.changeDialogueRoot-LucilleOwnersMirror2-root2
+	cinematic.addProp-Owner's Room-HiddenDoor
+	trigger.triggerStatus-hiddenDoorCheck2-off
+	trigger.triggerStatus-hiddenDoorClose2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+hiddenDoorClose2,-1
+requirements
+	player.isInMap-Lobby
+effects
+	cinematic.removeProp-Owner's Room-HiddenDoor
+	trigger.triggerStatus-hiddenDoorCheck2-awake
+	trigger.triggerStatus-hiddenDoorSwitch2-awake
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+enterDarkHallway2,0
+requirements
+	.null
+effects
+	gui.blackEffect-30-0.5
+	cinematic.moveChar-Lucille-Dark Hallway-2,22
+	cinematic.moveChar-MorganFollower-Dark Hallway-2,22
+	cinematic.moveChar-RandyFollower-Dark Hallway-2,22
+	map.changeMap-Dark Hallway
+	self.setStatus-asleep
+trigger end
+
+
+
+
+trigger start
+blackEnding2,0
+requirements
+	.null
+effects
+	cinematic.moveChar-Lucille-Black Room-8,25
+	cinematic.moveChar-MorganFollower-Black Room-8,25
+	cinematic.moveChar-RandyFollower-Black Room-8,25
+	map.changeMap-Black Room
+	gui.blackEffect-30-0.5
+	trigger.triggerStatus-blackEnding3-awake
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+blackEnding3,-1
+requirements
+	character.isPastPoint-Lucille-Black Room-Up-320
+effects
+	gui.startDialogue-BlackRoomEnding-root
+	self.setStatus-asleep
+trigger end
+
+
+
+trigger start
+blackEnding4,0
+requirements
+	.null
+effects
+	trigger.triggerStatus-moveEvilCricket-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+moveEvilCricket,-1
+requirements
+	gui.outOfDialogue
+effects
+	player.lockPlayer-true
+	cinematic.moveChar-Cricket-Black Room-8,25
+	cinematic.walkChar-Cricket-Black Room-8,9
+	character.unfollowChar-Randy
+	character.unfollowChar-Morgan
+	character.animate-Morgan-Front Idle
+	character.animate-Lucille-Front Idle
+	character.animate-Randy-Front Idle
+	gui.startDialogue-BlackDesk-root2
+	trigger.triggerStatus-moveEvilCricket2-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+moveEvilCricket2,-1
+requirements
+	gui.outOfDialogue
+effects
+	character.unanimate-Lucille
+	character.unanimate-Randy
+	character.unanimate-Morgan
+	cinematic.walkChar-Lucille-Black Room-8,6
+	cinematic.walkChar-Morgan-Black Room-7,5
+	cinematic.walkChar-Randy-Black Room-9,5
+	gui.startDialogue-BlackDesk-root3
+	trigger.triggerStatus-blackEnding5-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding5,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	cinematic.walkChar-Cricket-Black Room-6,7
+	character.unanimate-Lucille
+	character.unanimate-Randy
+	character.unanimate-Morgan
+	cinematic.walkChar-Randy-Black Room-9,5
+	cinematic.walkChar-Morgan-Black Room-7,5
+	cinematic.walkChar-Lucille-Black Room-10,7
+	trigger.triggerStatus-lucillePosition-awake
+	trigger.triggerStatus-randyPosition-awake
+	trigger.triggerStatus-morganPosition-awake
+	trigger.triggerStatus-cricketPosition-awake
+	trigger.triggerStatus-blackEnding6-awake
+	gui.startDialogue-BlackDesk-root4
+	self.setStatus-asleep
+trigger end
+
+trigger start
+lucillePosition,-1
+requirements
+	self.timer-45
+effects
+	character.stopChar-Lucille
+	character.animate-Lucille-Left Idle
+	self.setStatus-asleep
+trigger end
+
+trigger start
+cricketPosition,-1
+requirements
+	self.timer-45
+effects
+	character.stopChar-Cricket
+	character.animate-Cricket-Right Idle
+	self.setStatus-asleep
+trigger end
+
+trigger start
+morganPosition,-1
+requirements
+	self.timer-45
+effects
+	character.animate-Morgan-Front Idle
+	self.setStatus-asleep
+trigger end
+
+trigger start
+randyPosition,-1
+requirements
+	self.timer-45
+effects
+	character.animate-Randy-Front Idle
+	self.setStatus-asleep
+trigger end
+
+
+trigger start
+blackEnding6,-1
+requirements
+	gui.outOfDialogue
+	self.timer-30
+effects
+	character.animate-Lucille-FBI
+	gui.startDialogue-BlackDesk-root5
+	trigger.triggerStatus-blackEnding7-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding7,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	gui.startDialogue-BlackDesk-root7
+	trigger.triggerStatus-blackEnding8-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding8,-1
+requirements
+	gui.outOfDialogue
+	self.timer-60
+effects
+	character.animate-Cricket-Evil
+	gui.startDialogue-BlackDesk-root8
+	trigger.triggerStatus-blackEnding9-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding9,-1
+requirements
+	gui.outOfDialogue
+effects
+	map.fadeInMap-<dot>005
+	sound.playSound-Remington-1
+	character.animate-Cricket-Shot
+	cinematic.moveChar-Cricket-Black Room-5,6
+	trigger.triggerStatus-blackEnding10-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding10,-1
+requirements
+	self.timer-120
+effects
+	gui.startDialogue-BlackDesk-root9
+	character.animate-Lucille-Left Idle
+	trigger.triggerStatus-blackEnding11-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding11,-1
+requirements
+	self.timer-10
+	gui.outOfDialogue
+effects
+	map.fadeOutMap-<dot>01
+	trigger.triggerStatus-blackEnding12-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding12,-1
+requirements
+	self.timer-200
+effects
+	gui.startDialogue-BlackDesk-root10
+	trigger.triggerStatus-blackEnding13-awake
+	self.setStatus-asleep
+trigger end
+
+trigger start
+blackEnding13,-1
+requirements
+	self.timer-60
+	gui.outOfDialogue
+effects
+	cinematic.endGame-3
+	self.setStatus-asleep
+trigger end
+	
+
+
+
+
+
+
+
+
