@@ -21,7 +21,6 @@ package Core
 	{
 		private var splashTimer:int;
 		private var splashImage:Bitmap;
-		private var agLoader:Loader;
 		
 		public function SplashState() 
 		{
@@ -46,9 +45,8 @@ package Core
 			agLoader.x = -75;
 			agLoader.y = 0;
 			
-			this.addChild(agLoader);
-			//this.addChild(blackBG);
-			//this.addChild(splashImage);
+			this.addChild(blackBG);
+			this.addChild(splashImage);
 			this.addEventListener(Event.ENTER_FRAME, updateSplash);
 			this.addEventListener(MouseEvent.MOUSE_UP, checkClick);
 		}
@@ -81,8 +79,7 @@ package Core
 		private function checkClick(mouse:MouseEvent):void {
 			var tempRect:Rectangle = new Rectangle(splashImage.x, splashImage.y, splashImage.width, splashImage.height);
 			if (tempRect.containsPoint(new Point(mouse.stageX, mouse.stageY)))
-				navigateToURL(new URLRequest("http://armor.ag/MoreGames"));
-				//navigateToURL(new URLRequest("http://www.peltastdesign.com"));
+				navigateToURL(new URLRequest("http://www.peltastdesign.com"));
 		}
 		
 	}

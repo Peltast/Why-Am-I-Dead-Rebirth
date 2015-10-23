@@ -139,13 +139,12 @@ package
 			removeEventListener(Event.ENTER_FRAME, checkFrame);
 			loaderInfo.removeEventListener(ProgressEvent.PROGRESS, progress);
 			
-			/*addChild(playButton);
+			addChild(playButton);
 			
 			playButton.addEventListener(MouseEvent.MOUSE_OVER, checkHover);
 			playButton.addEventListener(MouseEvent.MOUSE_OUT, checkOut);
-			playButton.addEventListener(MouseEvent.MOUSE_UP, checkClick);*/
+			playButton.addEventListener(MouseEvent.MOUSE_UP, checkClick);
 			
-			startup();
 		}
 		
 		private function startup():void 

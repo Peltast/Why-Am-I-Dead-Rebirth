@@ -85,9 +85,6 @@ package Setup
 		[Embed(source = "../../lib/UI/BlackEnding.png")]
 		public static const BlackEnding:Class;
 		
-		[Embed(source = "../../lib/ag_intro_2011.swf", mimeType="application/octet-stream")]
-		public static const AGIntro:Class;
-		
 		
 		// Embed character graphics
 		[Embed(source = "../../lib/Characters/Ghost.png")]
