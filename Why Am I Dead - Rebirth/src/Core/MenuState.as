@@ -127,7 +127,7 @@ package Core
 			mainMenu.resetOverlayItem();
 			
 			mainMenu.x = Main.getSingleton().getStageWidth() - mainMenu.getMenuWidth() - 30;
-			mainMenu.y = (Main.getSingleton().getStageHeight() / 2) - (mainMenu.height / 2) - 50;
+			mainMenu.y = (Main.getSingleton().getStageHeight() / 2) - (mainMenu.height / 2);
 			
 			return mainMenu;
 		}

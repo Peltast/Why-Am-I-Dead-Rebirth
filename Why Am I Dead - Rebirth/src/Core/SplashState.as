@@ -40,10 +40,6 @@ package Core
 			
 			var context:LoaderContext = new LoaderContext (false, ApplicationDomain.currentDomain);
 			context.allowCodeImport = true;
-			agLoader = new Loader ();
-			agLoader.loadBytes (new GameLoader.AGIntro(), context);
-			agLoader.x = -75;
-			agLoader.y = 0;
 			
 			this.addChild(blackBG);
 			this.addChild(splashImage);
@@ -60,8 +56,6 @@ package Core
 				SoundManager.getSingleton().stopSound("Tunnel");
 				
 				this.removeEventListener(Event.ENTER_FRAME, updateSplash);
-				agLoader.unloadAndStop();
-				this.removeChild(agLoader);
 				Game.popState();
 				Game.pushState(new MenuState());
 			}
