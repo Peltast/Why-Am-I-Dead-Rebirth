@@ -65,6 +65,7 @@ package Characters
 		protected var footstepType:String;
 		private var charName:String;
 		
+		private var speechBubble:SpeechBubble;
 		protected var themeMusic:String;
 		protected var charAI:CharacterAI;
 		private var possessionStatus:int; // 0 = not possessable, 1 = half possessable, 2 = full possessable
@@ -300,6 +301,7 @@ package Characters
 			
 			updateCharacterSprite();
 			updateShadowSprite();
+			updateSpeechBubble();
 			
 			if (spectralOverlay != null)
 				if (this.contains(spectralOverlay)) this.addChild(spectralOverlay);
@@ -387,6 +389,15 @@ package Characters
 			}
 			
 			this.updateSpectralMask();
+		}
+		
+		private function updateSpeechBubble():void {
+			if (speechBubble != null) {
+				speechBubble.x = this.width / 2;
+				speechBubble.y = -this.getZPosition() - this.getElevation() - 10;
+				speechBubble.updateSpeechBubble();
+				this.addChild(speechBubble);
+			}
 		}
 		
 		override public function setZPosition(newZ:int):void 
@@ -491,6 +502,17 @@ package Characters
 			return new Point(closestX, closestY);
 		}
 		
+		public function addSpeechBubble():void {
+			this.speechBubble = new SpeechBubble();
+			this.addChild(speechBubble);
+		}
+		public function removeSpeechBubble():void {
+			if (speechBubble == null) return;
+			
+			if (this.contains(speechBubble))
+				this.removeChild(speechBubble);
+			speechBubble = null;
+		}
 		
 		public function handleTransition(transition:MapTransition):void {
 			updateShadowSprite();

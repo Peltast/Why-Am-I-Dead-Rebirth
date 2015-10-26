@@ -1,6 +1,7 @@
 package Interface.DialogueSystem 
 {
 	import Core.Game;
+	import Dialogue.Dialogue;
 	import Dialogue.Response;
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -26,7 +27,7 @@ package Interface.DialogueSystem
 			
 		}
 		
-		public function drawResponse(currentResponse:Response):void { }
+		public function drawResponse(currentResponse:Response, currentDialogue:Dialogue):void { }
 		public function undrawResponse():void { }
 		
 		public function updateResponse(event:Event, mouse:Point):void { }

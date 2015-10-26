@@ -54,6 +54,8 @@ package Setup
 		
 		[Embed(source = "../../lib/UI/XButton.png")]
 		public static const XButton:Class;
+		[Embed(source = "../../lib/UI/XButton2.png")]
+		public static const XButton2:Class;
 		[Embed(source = "../../lib/UI/CreditsText3.png")]
 		public static const CreditsText3:Class;
 		[Embed(source = "../../lib/UI/CreditsLogo1.png")]
@@ -75,6 +77,10 @@ package Setup
 		public static const CrossPromoSmall:Class;
 		[Embed(source = "../../lib/UI/CrosspromoSmall2.png")]
 		public static const CrossPromoSmall2:Class;
+		[Embed(source = "../../lib/UI/WebsiteLogo.png")]
+		public static const WebsiteLogo:Class;
+		[Embed(source = "../../lib/UI/WebsiteLogo2.png")]
+		public static const WebsiteLogo2:Class;
 		
 		[Embed(source = "../../lib/UI/RedEnding.png")]
 		public static const RedEnding:Class;
@@ -111,6 +117,8 @@ package Setup
 		[Embed(source = "../../lib/Characters/Shadow2.png")]
 		public static const Shadow2:Class;
 		
+		[Embed(source = "../../lib/Characters/SpeechBubble.png")]
+		public static const Speechbubble:Class;
 		
 		
 		// Embed prop graphics

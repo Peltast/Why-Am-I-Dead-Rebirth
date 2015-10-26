@@ -107,10 +107,12 @@ package Interface.DialogueSystem
 			
 			if (action is Statement) {
 				currentStatement = action as Statement;
+				currentDialogue.setActionVisited(action.getTitle());
 				drawStatement(currentStatement);
 			}
 			else if (action is Response) {
 				currentResponse = action as Response;
+				currentDialogue.setActionVisited(action.getTitle());
 				drawResponse(currentResponse);
 			}
 			// If currentAction is null, then the dialogue is over.
@@ -132,7 +134,7 @@ package Interface.DialogueSystem
 		
 		private function drawResponse(currentResponse:Response):void {
 			
-			responseInterface.drawResponse(currentResponse);
+			responseInterface.drawResponse(currentResponse, currentDialogue);
 		}
 		private function undrawResponse():void {
 			
@@ -323,6 +325,11 @@ package Interface.DialogueSystem
 				subjectChar.resumeBehavior();
 			this.addEventListener(Event.ENTER_FRAME, delayDialogueEnd);
 			if(this.contains(optionBox)) this.removeChild(optionBox);
+			
+			if (currentDialogue != null && subjectChar != null)
+				if (currentDialogue.isDialogueExhausted())
+					subjectChar.removeSpeechBubble();
+			
 			currentDialogue = null;
 			currentAction = null;
 			currentStatement = null;

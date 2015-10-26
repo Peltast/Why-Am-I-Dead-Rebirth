@@ -66,6 +66,14 @@ package Dialogue
 			else return false;
 		}
 		
+		public function isResponseTriggered(response:String):Boolean {
+			if (triggerDict[response] == null) return true;
+			
+			if (triggerDict[response].isOn()) return true;
+			
+			else return false;
+		}
+		
 	}
 
 }

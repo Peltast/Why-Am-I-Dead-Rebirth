@@ -28,6 +28,7 @@ package Core
 		private var backButton:BmpButton;
 		
 		private var creditsImage:Bitmap;
+		private var websiteButton:BmpButton;
 		private var waidasButton:BmpButton;
 		
 		public function CreditsPage(overlayStack:OverlayStack) 
@@ -40,12 +41,18 @@ package Core
 			backGround.graphics.endFill();
 			
 			backButton = new BmpButton(new GameLoader.XButton() as Bitmap, new Rectangle(0, 0, 36, 54), false,
-													[new ButtonEffect("RemoveOverlay", [overlayStack])]);
+									[new ButtonEffect("RemoveOverlay", [overlayStack])], [new GameLoader.XButton2() as Bitmap]);
 			backButton.x = 470;
 			backButton.y = 5;
 			
 			creditsImage = new GameLoader.CreditsImage() as Bitmap;
 			creditsImage.y = 60;
+			
+			websiteButton = new BmpButton
+				(new GameLoader.WebsiteLogo() as Bitmap, new Rectangle(0, 0, 90, 90), false,
+				[new ButtonEffect("GoToSite", ["http://www.peltastsoftware.com"])], [new GameLoader.WebsiteLogo2() as Bitmap]);
+			websiteButton.x = 85;
+			websiteButton.y = 290;
 			
 			waidasButton = new BmpButton
 				(new GameLoader.CrossPromoSmall() as Bitmap, new Rectangle(0, 0, 215, 100), false,
@@ -55,6 +62,7 @@ package Core
 			
 			this.addChild(backGround);
 			this.addChild(backButton);
+			this.addChild(websiteButton);
 			this.addChild(waidasButton);
 			
 			this.addChild(creditsImage);
@@ -65,6 +73,7 @@ package Core
 			super.activateOverlayItem();
 			
 			backButton.activateOverlayItem();
+			websiteButton.activateOverlayItem();
 			waidasButton.activateOverlayItem();
 		}
 		
@@ -73,6 +82,7 @@ package Core
 			super.deactivateOverlayItem();
 			
 			backButton.deactivateOverlayItem();
+			websiteButton.deactivateOverlayItem();
 			waidasButton.deactivateOverlayItem();
 		}
 		

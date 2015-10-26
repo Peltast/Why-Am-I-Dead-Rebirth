@@ -1,6 +1,7 @@
 package Interface.DialogueSystem 
 {
 	import Core.Game;
+	import Dialogue.Dialogue;
 	import Dialogue.Response;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
@@ -72,7 +73,7 @@ package Interface.DialogueSystem
 			selection = closestIndex;
 		}
 		
-		override public function drawResponse(currentResponse:Response):void 
+		override public function drawResponse(currentResponse:Response, currentDialogue:Dialogue):void 
 		{
 			var pastVals:Dictionary = new Dictionary();
 			spectralImage = new SpectralImage(currentResponse.getResponses().length, 

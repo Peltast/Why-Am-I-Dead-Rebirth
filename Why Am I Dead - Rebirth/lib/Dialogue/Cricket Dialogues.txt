@@ -989,7 +989,7 @@ next:root
 action end
 
 action:statement:root-C
-root-C:"Well...sorta."
+Ted:"Well...sorta."
 next:root-C-1
 action end
 

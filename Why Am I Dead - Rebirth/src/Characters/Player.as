@@ -50,6 +50,7 @@ package Characters
 		private var cameraSpeed:Number;
 		
 		private var lockedPlayer:Boolean;
+		private var charManager:CharacterManager;
 		
 		public function Player() 
 		{
@@ -71,6 +72,7 @@ package Characters
 		public function initiatePlayer(saveFile:SaveFile, charManager:CharacterManager):void {
 			
 			this.ghostForm = charManager.getCharacter("Ghost");
+			this.charManager = charManager;
 			
 			if (saveFile != null) {
 				var possessedChar:String = saveFile.loadData("possessedCharacter") + "";
@@ -259,6 +261,8 @@ package Characters
 			host.stopCharacter();
 			host.setControlled(this, true);
 			isGhost = false;
+			
+			charManager.drawSpeechBubbles(host.getName());
 		}
 		
 		private function depossess():void {
@@ -283,6 +287,8 @@ package Characters
 				ghostForm.handleTransition(null);
 				isGhost = true;
 				fullPossession = false;
+				
+				charManager.undrawSpeechBubbles();
 			}
 		}
 		

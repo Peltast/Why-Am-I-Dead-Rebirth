@@ -1,5 +1,6 @@
 package Interface.DialogueSystem 
 {
+	import Dialogue.Dialogue;
 	import Dialogue.DialogueLibrary;
 	import Dialogue.Response;
 	import flash.display.Bitmap;
@@ -34,6 +35,7 @@ package Interface.DialogueSystem
 		
 		private var selection:int;
 		private var responseHeight:int;
+		private var visitedFormat:TextFormat;
 		
 		public function RegularResponse(textFormat:TextFormat, responseHeight:int) 
 		{
@@ -64,6 +66,10 @@ package Interface.DialogueSystem
 			charName.embedFonts = true;
 			charName.defaultTextFormat = textFormat;
 			charName.selectable = false;
+			
+			visitedFormat = new TextFormat("AppleKid");
+			visitedFormat.color = 0x999999;
+			visitedFormat.size = 16;
 		}
 		
 		override public function updateResponse(event:Event, mouse:Point):void 
@@ -116,7 +122,7 @@ package Interface.DialogueSystem
 			responseImages = null;
 			responseList = null;
 		}
-		override public function drawResponse(currentResponse:Response):void 
+		override public function drawResponse(currentResponse:Response, currentDialogue:Dialogue):void 
 		{
 			this.addChild(optionBox);
 			this.addChild(nameBox);
@@ -158,10 +164,16 @@ package Interface.DialogueSystem
 				responseBullet.y = getBounds(optionBox).y + 15 + previousResponseHeight;
 				
 				// Textfield for response text
+				
+				var visited:Boolean = currentDialogue.checkActionExhausted(currentResponse.getChild(k), currentResponse.getTitle());
+				
 				var responseImg:TextField = new TextField();
 				responseImg.wordWrap = true;
 				responseImg.embedFonts = true;
-				responseImg.defaultTextFormat = textFormat;
+				if(visited)
+					responseImg.defaultTextFormat = visitedFormat;
+				else
+					responseImg.defaultTextFormat = textFormat;
 				responseImg.autoSize = "left";
 				responseImg.selectable = false;
 				responseImg.border = false;

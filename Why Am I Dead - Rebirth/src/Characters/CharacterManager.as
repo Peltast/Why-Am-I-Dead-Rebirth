@@ -7,6 +7,7 @@ package Characters
 	import Cinematics.Trigger;
 	import Core.Game;
 	import Dialogue.Dialogue;
+	import Dialogue.DialogueLibrary;
 	import flash.geom.PerspectiveProjection;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
@@ -293,6 +294,26 @@ package Characters
 				if (character.getName() == "Ghost")
 					continue;
 				character.removeSpectralOverlay(hostImage);
+			}
+		}
+		
+		public function drawSpeechBubbles(hostChar:String, fullPossess:Boolean = false):void {
+			
+			for each(var character:Character in this.characterList) {
+				
+				if (character.getName() == hostChar) continue;
+				
+				var dialogueStr:String = hostChar + "-" + character.getName();
+				
+				var tempDialogue:Dialogue = DialogueLibrary.getSingleton().retrieveDialogue(dialogueStr);
+				if (tempDialogue != null)
+					if(!tempDialogue.isDialogueExhausted())
+						character.addSpeechBubble();
+			}
+		}
+		public function undrawSpeechBubbles():void {
+			for each(var character:Character in characterList) {
+				character.removeSpeechBubble();
 			}
 		}
 		
